@@ -31,15 +31,8 @@ chunks:
 
         # Sistemi di Visione Artificiale 2021
 
-        ---
-        ## Informazioni sul corso
-
-        TBD
-
-        ---
-
         ### Esercizi di programmazione
-        TBD
+        - [Istogrammi e operatori puntuali](flow:001-istogrammi-operatori-puntuali)
 
         ### Fac-simile di prova d'esame
         TBD

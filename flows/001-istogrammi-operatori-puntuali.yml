@@ -1,0 +1,233 @@
+title: "Istogrammi e operatori puntuali"
+
+# The "|" character introduces a 'block literal', which means all text indented below
+# it is taken literally. The description property holds text marked up with 'Markdown'.
+# See https://documen.tician.de/relate/content.html#relate-markup for more.
+#
+# So the '#' character below introduces a first-level headline (not a comment).
+description: |
+
+    # Istogrammi e operatori puntuali
+
+    ### Istruzioni
+    - Dopo aver completato un esercizio, clicca su "**Submit answer for feedback**" per inviare la risposta e
+      ricevere un feedback sulla sua correttezza. Cliccando su "Save answer" la risposta verrà solo salvata in stato bozza.
+    - Dopo aver terminato la sessione, ricorda di cliccare sulla **spunta verde** in alto a destra per inviare il
+      risultato. La sessione sarà altrimenti considerata in stato bozza.
+
+notify_on_submit:
+  - lorenzo.baraldi@unimore.it
+
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, see_correctness, change_answer, send_email_about_flow_page]
+
+    grade_aggregation_strategy: use_latest
+
+    grade_identifier: filters
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+
+    # Pages can be given in-line (like this one) or brought in by including
+    # them from other files, as below.
+
+    -
+            type: PythonCodeQuestionWithHumanTextFeedback
+            rubric: ""
+            human_feedback_percentage: 50
+            id: linear_stretch
+            access_rules:
+                add_permissions:
+                   - change_answer
+            value: 1
+            timeout: 30
+            show_setup_code: True
+            prompt: |
+                # Linear stretch
+                Your code will take as input a color image `im`
+                (a `np.ndarray` with dtype `np.uint8` and rank 3) and two scalars `a` and `b`. It
+                must apply a pixel-wise linear transformation (every pixel
+                $p$ is transformed to $a\cdot p + b$). The code should produce a
+                new image `out` with the same shape and dtype.
+
+                `a` and `b` can be either ints or floats.
+                Be careful to: compute the exact result, round to nearest integer and then clip between 0 and 255.
+            setup_code: |
+                import random
+                import numpy as np
+                from skimage import data
+                from skimage.transform import resize
+
+                im = data.coffee()
+                im = resize(im, (im.shape[0] // 8, im.shape[1] // 8), mode='reflect', preserve_range=True, anti_aliasing=True).astype(np.uint8)
+                im = np.swapaxes(np.swapaxes(im, 0, 2), 1, 2)
+
+                a = random.uniform(0,2)
+                b = random.uniform(-50,50)
+            names_for_user: [im, a, b]
+
+            names_from_user: [out]
+
+            test_code: |
+                import cv2
+                import base64
+                import matplotlib.pyplot as plt
+                import io
+                import random
+                import numpy as np
+
+                # Display inputs
+                msg = "<p>Using inputs:</p>"
+
+                msg += "<p><pre>im = </pre></p>"
+                im_to_show = np.swapaxes(np.swapaxes(im, 1, 2), 0, 2)
+                plt.imshow(im_to_show, cmap='gray', vmin=0, vmax=255)
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                im_base64 = base64.b64encode(buf.getvalue()).decode('ascii')
+                msg += '<img src="data:image/png;base64,%s" />' % im_base64
+
+                msg += "<p><pre>a = " + str(a) + "</pre></p>"
+                msg += "<p><pre>b = " + str(b) + "</pre></p>"
+                feedback.add_feedback(msg)
+
+                # Check correctness
+                ref = np.clip(np.rint(im.astype(np.float32) * a + b), 0, 255).astype(np.uint8)
+                feedback.check_numpy_array_features("out", ref, out)
+
+                msg = "<p>Your code provided the following output:</p>"
+                msg += "<p><pre>out = </pre></p>"
+                im_to_show = np.swapaxes(np.swapaxes(out, 1, 2), 0, 2)
+                plt.imshow(im_to_show, cmap='gray', vmin=0, vmax=255)
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                im_base64 = base64.b64encode(buf.getvalue()).decode('ascii')
+                msg += '<img src="data:image/png;base64,%s" />' % im_base64
+                msg += "<p>The reference output was:</p>"
+                msg += "<p><pre>out = </pre></p>"
+                im_to_show = np.swapaxes(np.swapaxes(ref, 1, 2), 0, 2)
+                plt.imshow(im_to_show, cmap='gray', vmin=0, vmax=255)
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                im_base64 = base64.b64encode(buf.getvalue()).decode('ascii')
+                msg += '<img src="data:image/png;base64,%s" />' % im_base64
+                feedback.add_feedback(msg)
+
+                # Check accuracy
+                good = np.allclose(ref, out)
+                if not good:
+                  feedback.add_feedback("'%s' is inaccurate" % "out")
+                  np.set_printoptions(threshold=np.inf)
+                  msg = "<p>Your code returned:</p><pre>" + str(out) + "</pre>"
+                  msg += "<p>While the reference output was:</p><pre>" + str(ref) + "</pre>"
+                  feedback.add_feedback(msg)
+                  feedback.set_points(0)
+                  raise GradingComplete()
+
+                feedback.set_points(1)
+                raise GradingComplete
+
+    -
+            type: PythonCodeQuestionWithHumanTextFeedback
+            rubric: ""
+            human_feedback_percentage: 50
+            id: color_histogram
+            access_rules:
+                add_permissions:
+                   - change_answer
+            value: 1
+            timeout: 30
+            show_setup_code: True
+            prompt: |
+                # Color histogram
+                Your code will take as input a color image `im`
+                (a `np.ndarray` with dtype `np.uint8` and shape `(3, H, W)`) and an integer `nbin`.
+                It should compute a normalized color histogram of the image, quantized with `nbin` bins
+                on each color plane.
+
+                The output, `out`, should be a `np.ndarray` with shape `(3*nbin, )`,
+                containing the concatenation of the histograms computed on each color plane
+                (in the same order of the input tensor).
+
+                The output should be L1-normalized (i.e. all bins of the final histogram should sum up to 1).
+
+                Quantization strategy: a pixel should go in the bin with index `b` iif: `pixel*n_bin // 256 == b`
+
+            setup_code: |
+                import random
+                import numpy as np
+                from skimage import data
+
+                im = data.astronaut()
+                im = np.swapaxes(np.swapaxes(im, 0, 2), 1, 2)
+                nbin = random.randint(32,128)
+            names_for_user: [im, nbin]
+
+            names_from_user: [out]
+
+            test_code: |
+                import cv2
+                import base64
+                import matplotlib.pyplot as plt
+                import io
+                import random
+                import numpy as np
+
+                # Display inputs
+                msg = "<p>Using inputs:</p>"
+
+                msg += "<p><pre>im = </pre></p>"
+                im_to_show = np.swapaxes(np.swapaxes(im, 1, 2), 0, 2)
+                plt.imshow(im_to_show, cmap='gray', vmin=0, vmax=255)
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                im_base64 = base64.b64encode(buf.getvalue()).decode('ascii')
+                msg += '<img src="data:image/png;base64,%s" />' % im_base64
+
+                msg += "<p><pre>nbin = " + str(nbin) + "</pre></p>"
+                feedback.add_feedback(msg)
+
+                # Check correctness
+                import cv2
+                hists = []
+                for c in range(3):
+                    hists.append(cv2.calcHist([im[c]], [0], None, [nbin], [0, 256]).T[0])
+                ref = np.concatenate(hists) / im.size
+                feedback.check_numpy_array_features("out", ref, out)
+
+                # Check accuracy
+                good = np.allclose(ref, out)
+                if not good:
+                  feedback.add_feedback("'%s' is inaccurate" % "out")
+                  np.set_printoptions(threshold=np.inf)
+                  msg = "<p>Your code returned:</p><pre>" + str(out) + "</pre>"
+                  msg += "<p>While the reference output was:</p><pre>" + str(ref) + "</pre>"
+                  feedback.add_feedback(msg)
+                  feedback.set_points(0)
+                  raise GradingComplete()
+
+                feedback.set_points(1)
+                raise GradingComplete
