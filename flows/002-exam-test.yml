@@ -49,7 +49,7 @@ groups:
                 prompt: |
                   Quale tra questi non è un vantaggio che si può ottenere implementando un sistema di visione artificiale nel proprio processo di controllo qualità?
                 choices:
-                  - CORRECT Possibilità di aumentare la qualità del proprio prodotto a costo di un rallentamento dei tempi di produzione.
+                  - ~CORRECT~ Possibilità di aumentare la qualità del proprio prodotto a costo di un rallentamento dei tempi di produzione.
                   - Possibilità di effettuare diversi controlli con regole complesse.
                   - Possibilità di modifica delle regole di controllo in maniera rapida.
                   - Maggiore affidabilità di processo.
@@ -65,7 +65,7 @@ groups:
                 prompt: |
                   Indicare l'enunciato della legge di Snell dopo l'approssimazione Parassiale.
                 choices:
-                  - CORRECT $n_1 a_1 = n_2 a_2$
+                  - ~CORRECT~ $n_1 a_1 = n_2 a_2$
                   - $n_1 sina_1 = n_2 sina_2$
                   - $\frac{n_1}{a_1}=\frac{n_2}{a_2}$
                   - $a_1 = - a_2$
@@ -81,7 +81,7 @@ groups:
                 prompt: |
                   Quali delle seguenti affermazioni sulle lenti Macro è vera?
                 choices:
-                  - CORRECT La lente macro lavora ad una distanza di lavoro e con ingrandimento fissi.
+                  - ~CORRECT~ La lente macro lavora ad una distanza di lavoro e con ingrandimento fissi.
                   - La lente macro deve essere più grande dell'area da inquadrare.
                   - La lente macro ha un ingrandimento costante al variare della distanza di lavoro.
                   - La lente macro è sempre bitelecentrica.
@@ -97,7 +97,7 @@ groups:
                 prompt: |
                   Qual è la relazione tra l'F# e la risoluzione?
                 choices:
-                  - CORRECT All'aumentare dell'F# la risoluzione diminuisce.
+                  - ~CORRECT~ All'aumentare dell'F# la risoluzione diminuisce.
                   - All'aumentare dell'F# la risoluzione aumenta.
                   - F# e risoluzione non sono grandezze legate tra di loro.
                   - La relazione tra F# e risoluzione dipende anche dalla quantità di luce.
@@ -113,7 +113,7 @@ groups:
                 prompt: |
                   Quale delle seguenti affermazioni sulle modalità di utilizzo dei LED è falsa?
                 choices:
-                  - CORRECT La modalità strobe non è indicata per la gestione del calore, in quanto il LED tende a surriscaldarsi.
+                  - ~CORRECT~ La modalità strobe non è indicata per la gestione del calore, in quanto il LED tende a surriscaldarsi.
                   - La modalità continua crea un flusso costante di luce nel tempo.
                   - La modalità strobe prevede una sovra-alimentazione del LED nel rispetto del Duty Cycle e di un tempo di accensione massimo.
                   - La modalità Pulsed è utilizzabile dai LED per via della loro risposta veloce alla corrente.
@@ -129,7 +129,7 @@ groups:
                 prompt: |
                   Quale delle seguenti affermazioni sulle proprietà direzionali della luce è falsa?
                 choices:
-                  - CORRECT La luce diretta viene utilizzata quando si vuole illuminare in maniera omogenea un oggetto.
+                  - ~CORRECT~ La luce diretta viene utilizzata quando si vuole illuminare in maniera omogenea un oggetto.
                   - La luce diffusa fa sì che in qualsiasi punto della superficie osservata la quantità di luce sia indipendente dalla direzione da cui la si guarda.
                   - La luce telecentrica è molto direzionale, segue la direzione dell'asse ottico dell'illuminatore.
                   - La luce strutturata viene utilizzata per applicazioni di ricostruzione 3D.
@@ -145,7 +145,7 @@ groups:
                 prompt: |
                   Cosa succede se utilizzo una luce rossa per illuminare tre oggetti: uno rosso, uno blu e uno bianco e li guardo con una camera monocromatica?
                 choices:
-                  - CORRECT L'oggetto blu sarà nero nell'immagine, mentre quelli rosso e bianco saranno bianchi.
+                  - ~CORRECT~ L'oggetto blu sarà nero nell'immagine, mentre quelli rosso e bianco saranno bianchi.
                   - L'oggetto rosso sarà bianco nell'immagine, mentre gli oggetti blu e bianco saranno neri.
                   - Vedo tutti gli oggetti neri nell'immagine.
                   - L'oggetto bianco sarà bianco nell'immagine, mentre gli oggetti blu e rosso saranno neri.
@@ -161,7 +161,7 @@ groups:
                 prompt: |
                   Quale tra questi non è un modulo del GenICam?
                 choices:
-                  - CORRECT Device Discovery: in cui viene l'assegnazione di un indirizzo IP alla camera.
+                  - ~CORRECT~ Device Discovery: in cui viene l'assegnazione di un indirizzo IP alla camera.
                   - GenApi: si occupa della configurazione della camera traducendo le feature alle chiamate sui singoli registri.
                   - SFNC: fornisce uno standard per i nomi dei parametri delle camere.
                   - GenTL: si tratta di un'API a basso livello il cui obiettivo è creare un'interfaccia standard indipendentemente dal fatto che la camera sia USB3 o GigE.
@@ -177,7 +177,7 @@ groups:
                 prompt: |
                   Quali delle seguenti affermazioni sul rolling shutter è vera?
                 choices:
-                  - CORRECT L'utilizzo di un sensore rolling shutter è un problema in caso di oggetti in movimento, dato che introduce degli artefatti nell'immagine.
+                  - ~CORRECT~ L'utilizzo di un sensore rolling shutter è un problema in caso di oggetti in movimento, dato che introduce degli artefatti nell'immagine.
                   - Non c'è modo di correggere il comportamento di un sensore rolling shutter.
                   - I sensori rolling shutter solitamente sono più costosi rispetto ai sensori global shutter.
                   - Un sensore rolling shutter acquisce tutta la matrice del sensore nello stesso istante.
@@ -193,7 +193,7 @@ groups:
                 prompt: |
                   Quali tra i seguenti setup è il più indicato per misurare il diametro di un anello di metallo?
                 choices:
-                  - CORRECT Lente Telecentrica, Illuminatore Telecentrico Backlight.
+                  - ~CORRECT~ Lente Telecentrica, Illuminatore Telecentrico Backlight.
                   - Lente Focale Fissa, Illuminatore Frontlight Dark Field.
                   - Lente Pericentrica, Illuminatore Diffuso Backlight.
                   - Lente Telecentrica, Illuminatore Frontlight Bright Field.
