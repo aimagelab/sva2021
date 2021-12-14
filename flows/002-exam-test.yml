@@ -161,10 +161,10 @@ groups:
                 prompt: |
                   Quale tra questi non è un modulo del GenICam?
                 choices:
-                  - ~CORRECT~ Device Discovery: in cui viene l'assegnazione di un indirizzo IP alla camera.
-                  - GenApi: si occupa della configurazione della camera traducendo le feature alle chiamate sui singoli registri.
-                  - SFNC: fornisce uno standard per i nomi dei parametri delle camere.
-                  - GenTL: si tratta di un'API a basso livello il cui obiettivo è creare un'interfaccia standard indipendentemente dal fatto che la camera sia USB3 o GigE.
+                  - ~CORRECT~ Device Discovery - in cui viene l'assegnazione di un indirizzo IP alla camera.
+                  - GenApi - si occupa della configurazione della camera traducendo le feature alle chiamate sui singoli registri.
+                  - SFNC - fornisce uno standard per i nomi dei parametri delle camere.
+                  - GenTL - si tratta di un'API a basso livello il cui obiettivo è creare un'interfaccia standard indipendentemente dal fatto che la camera sia USB3 o GigE.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
