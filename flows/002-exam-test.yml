@@ -1,0 +1,361 @@
+title: "Fac-simile di prova d'esame"
+
+description: |
+
+    # Fac-simile di prova d'esame
+
+    ### Istruzioni
+    - Dopo aver dato una risposta, clicca su "**Submit answer**" per inviarla. Puoi sempre modificare una risposta.
+    - Dopo aver terminato la sessione e prima di abbandonare l'esame, ricorda di cliccare sulla **spunta verde** in
+      alto a destra per consegnare il compito. Altrimenti, non verrà corretto.
+
+notify_on_submit:
+  - lorenzo.baraldi@unimore.it
+
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, cannot_see_flow_result, change_answer, see_session_time]
+
+    grade_aggregation_strategy: use_latest
+
+    grade_identifier: simulazione_esame
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+
+    -   
+                type: ChoiceQuestion
+                id: intro_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi non è un vantaggio che si può ottenere implementando un sistema di visione artificiale nel proprio processo di controllo qualità?
+                choices:
+                  - CORRECT Possibilità di aumentare la qualità del proprio prodotto a costo di un rallentamento dei tempi di produzione.
+                  - Possibilità di effettuare diversi controlli con regole complesse.
+                  - Possibilità di modifica delle regole di controllo in maniera rapida.
+                  - Maggiore affidabilità di processo.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Indicare l'enunciato della legge di Snell dopo l'approssimazione Parassiale.
+                choices:
+                  - CORRECT $n_1 a_1 = n_2 a_2$
+                  - $n_1 sina_1 = n_2 sina_2$
+                  - $\frac{n_1}{a_1}=\frac{n_2}{a_2}$
+                  - $a_1 = - a_2$
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali delle seguenti affermazioni sulle lenti Macro è vera?
+                choices:
+                  - CORRECT La lente macro lavora ad una distanza di lavoro e con ingrandimento fissi.
+                  - La lente macro deve essere più grande dell'area da inquadrare.
+                  - La lente macro ha un ingrandimento costante al variare della distanza di lavoro.
+                  - La lente macro è sempre bitelecentrica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Qual è la relazione tra l'F# e la risoluzione?
+                choices:
+                  - CORRECT All'aumentare dell'F# la risoluzione diminuisce.
+                  - All'aumentare dell'F# la risoluzione aumenta.
+                  - F# e risoluzione non sono grandezze legate tra di loro.
+                  - La relazione tra F# e risoluzione dipende anche dalla quantità di luce.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale delle seguenti affermazioni sulle modalità di utilizzo dei LED è falsa?
+                choices:
+                  - CORRECT La modalità strobe non è indicata per la gestione del calore, in quanto il LED tende a surriscaldarsi.
+                  - La modalità continua crea un flusso costante di luce nel tempo.
+                  - La modalità strobe prevede una sovra-alimentazione del LED nel rispetto del Duty Cycle e di un tempo di accensione massimo.
+                  - La modalità Pulsed è utilizzabile dai LED per via della loro risposta veloce alla corrente.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale delle seguenti affermazioni sulle proprietà direzionali della luce è falsa?
+                choices:
+                  - CORRECT La luce diretta viene utilizzata quando si vuole illuminare in maniera omogenea un oggetto.
+                  - La luce diffusa fa sì che in qualsiasi punto della superficie osservata la quantità di luce sia indipendente dalla direzione da cui la si guarda.
+                  - La luce telecentrica è molto direzionale, segue la direzione dell'asse ottico dell'illuminatore.
+                  - La luce strutturata viene utilizzata per applicazioni di ricostruzione 3D.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Cosa succede se utilizzo una luce rossa per illuminare tre oggetti: uno rosso, uno blu e uno bianco e li guardo con una camera monocromatica?
+                choices:
+                  - CORRECT L'oggetto blu sarà nero nell'immagine, mentre quelli rosso e bianco saranno bianchi.
+                  - L'oggetto rosso sarà bianco nell'immagine, mentre gli oggetti blu e bianco saranno neri.
+                  - Vedo tutti gli oggetti neri nell'immagine.
+                  - L'oggetto bianco sarà bianco nell'immagine, mentre gli oggetti blu e rosso saranno neri.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi non è un modulo del GenICam?
+                choices:
+                  - CORRECT Device Discovery: in cui viene l'assegnazione di un indirizzo IP alla camera.
+                  - GenApi: si occupa della configurazione della camera traducendo le feature alle chiamate sui singoli registri.
+                  - SFNC: fornisce uno standard per i nomi dei parametri delle camere.
+                  - GenTL: si tratta di un'API a basso livello il cui obiettivo è creare un'interfaccia standard indipendentemente dal fatto che la camera sia USB3 o GigE.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali delle seguenti affermazioni sul rolling shutter è vera?
+                choices:
+                  - CORRECT L'utilizzo di un sensore rolling shutter è un problema in caso di oggetti in movimento, dato che introduce degli artefatti nell'immagine.
+                  - Non c'è modo di correggere il comportamento di un sensore rolling shutter.
+                  - I sensori rolling shutter solitamente sono più costosi rispetto ai sensori global shutter.
+                  - Un sensore rolling shutter acquisce tutta la matrice del sensore nello stesso istante.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: generale_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali tra i seguenti setup è il più indicato per misurare il diametro di un anello di metallo?
+                choices:
+                  - CORRECT Lente Telecentrica, Illuminatore Telecentrico Backlight.
+                  - Lente Focale Fissa, Illuminatore Frontlight Dark Field.
+                  - Lente Pericentrica, Illuminatore Diffuso Backlight.
+                  - Lente Telecentrica, Illuminatore Frontlight Bright Field.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -
+                type: ChoiceQuestion
+                id: domanda_11
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Indicare quale delle seguenti coppie di Numpy array è compatibile, secondo la definizione di compatibilità del broadcasting Numpy:
+                choices:
+                  - ~CORRECT~ a con shape (5, 2, 10, 1), b con shape (10, 1)
+                  - a con shape (2,1), b con shape (4,1)
+                  - a con shape (1, 2, 10), b con shape (5, 2, 10, 1)
+                  - a con shape (2, 1), b con shape (1, 4, 1)
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_12
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Con compressione lossy si intende:
+                choices:
+                  - ~CORRECT~ Una procedura di compressione che porta alla perdita di parte dell'informazione originale
+                  - Un tipo di compressione in cui è possibile ricostruire il dato non compresso
+                  - Una compressione di immagini che ne preserva l'aspetto estetico
+                  - Un tipo di compressione non identificabile attraverso l'ispezione dell'istogramma
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_13
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Costruendo un istogramma a 256 bin da un'immagine a 14 bit, la dimensione di ogni bin sarà pari a:
+                choices:
+                  - ~CORRECT~ $\frac{2^{14}}{256}$
+                  - $\frac{2^{14}}{255}$
+                  - $1$
+                  - I dati forniti non sono sufficienti.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_14
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Un'operatore puntuale:
+                choices:
+                  - ~CORRECT~ Può essere rappresentato dall'operazione di soglia globale
+                  - Modifica il valore di intensità di un pixel sulla base della sua posizione
+                  - Modifica il valore di intensità di un pixel sulla base delle intensità dei pixel vicini
+                  - Può essere rappresentato dall'operazione di convoluzione, e dall'operazione di inversione dell'immagine
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_15
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  L'Automatic Contrast Adjustment:
+                choices:
+                  - ~CORRECT~ È un operatore puntuale, che allarga (o restringe) il range di intensità dell'immagine attraverso un'operazione lineare
+                  - È un operatore puntuale, che allarga (o restringe) il range di intensità dell'immagine attraverso un'operazione non lineare
+                  - È un operatore non omogeneo
+                  - Non produce artefatti nell'istogramma
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_16
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Nell'implementare l'operatore convolutivo tra un'immagine e un filtro:
+                choices:
+                  - È possibile scrivere sull'immagine originale il risultato dell'applicazione del kernel durante il
+                    calcolo del risultato
+                  - Servono necessariamente quattro for loops, anche utilizzando Numpy
+                  - È sempre conveniente, dal punto di vista dell'efficienza, utilizzare la trasformata di Fourier
+                  - ~CORRECT~ È possibile considerare che l'applicazione del filtro in una data posizione dell'immagine equivale a un dot product
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_17
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Un rumore speckle è un tipo di rumore in cui:
+                choices:
+                  - ~CORRECT~ I valori dei pixel vengono moltiplicati per un rumore casuale
+                  - È un rumore addittivo proveniente da una distribuzione Gamma
+                  - È un rumore impulsivo, che produce pixel bianchi e neri
+                  - È un rumore periodico che può essere pulito solo nel dominio delle frequenze
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_18
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Il filtro di Sobel per il calcolo degli edge orizzontali:
+                choices:
+                  - ~CORRECT~ Ha valori negativi a sinistra e positivi a destra, e la sua riga centrale è [-2, 0, 2]
+                  - Ha valori negativi a sinistra e positivi a destra, e la sua riga centrale è [-1, 0, 1]
+                  - Ha valori positivi a sinistra e negativi a destra, e la sua riga centrale è [2, 0, -2]
+                  - Ha valori positivi a sinistra e negativi a destra, e la sua riga centrale è [1, 0, -1]
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_19
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  È possibile ottenere una buona detection degli edge di un'immagine:
+                choices:
+                  - ~CORRECT~ Calcolando la norma del gradiente e sogliandola
+                  - Calcolando la norma del gradiente e considerando la direzione del gradiente
+                  - Sogliando le derivate orizzontali e verticali, ottenute con un filtro di Sobel o Prewitt
+                  - Nessuna delle risposte è corretta
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+    -
+                type: ChoiceQuestion
+                id: domanda_20
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Per ottenere un filtro passa-alto agendo sullo spettro DFT centrato di un'immagine:
+                choices:
+                  - ~CORRECT~ Si maschera il centro dello spettro, che contiene le frequenze più basse
+                  - Si maschera tutto tranne il centro dello spettro, poiché la regione periferica dello spettro corrisponde alle frequenze più basse
+                  - Si maschera la parte destra dello spettro
+                  - Si maschera la parte sinistra dello spettro
+                  - Lascia questa domanda in bianco
+                shuffle: true
