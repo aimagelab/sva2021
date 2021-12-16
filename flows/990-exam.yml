@@ -77,7 +77,7 @@ rules:
 
   grade_aggregation_strategy: use_latest
 
-  grade_identifier: 994_exam
+  grade_identifier: 990_exam
   grading:
     - credit_percent: 100
 
