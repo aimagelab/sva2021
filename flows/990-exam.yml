@@ -1,0 +1,1639 @@
+title: "Prova d'esame"
+description: |
+
+  # Prova d'esame
+
+  ### Prima di iniziare
+  - Come prima cosa, **[abilita il sistema di proctoring](/courses/course/sva2020/proctor)**, aprendolo **in una nuova finestra**. Tienilo sempre attivo in una finestra a parte.
+  - Clicca su "Start" solo **dopo aver ricevuto l'autorizzazione dal docente**.
+
+  ### Durante l'esame
+  - Dopo aver dato una risposta, clicca su "**Submit answer**" per inviarla. Puoi sempre modificare una risposta.
+  - Dopo aver terminato la sessione e prima di abbandonare l'esame, ricorda di cliccare sulla **spunta verde** in
+    alto a destra per consegnare il compito. Altrimenti, non verrà corretto.
+
+notify_on_submit:
+  - lorenzo.baraldi@unimore.it
+
+
+rules:
+  start:
+    - if_has_role: [ instructor ]
+      may_start_new_session: True
+      may_list_existing_sessions: True
+    - if_has_role: [ student, ta, instructor ]
+      if_signed_in_with_matching_exam_ticket: True
+      if_has_fewer_sessions_than: 1
+      may_start_new_session: True
+      may_list_existing_sessions: True
+    - if_has_role: [ student, ta, instructor ]
+      if_signed_in_with_matching_exam_ticket: True
+      may_start_new_session: False
+      may_list_existing_sessions: True
+    - if_has_role: [ student, ta, instructor ]
+      if_after: 2021-06-21 # todo change
+      if_before: 2021-06-23 # todo change
+      may_start_new_session: False
+      may_list_existing_sessions: True
+    - may_start_new_session: False
+      may_list_existing_sessions: False
+
+  access:
+    - if_has_role: ['instructor']
+      permissions: [ view, submit_answer, change_answer, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      if_session_duration_shorter_than_minutes: 50
+      permissions: [ view, submit_answer, change_answer, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      if_has_participation_tags_any: [ dsa_18min, ]
+      if_session_duration_shorter_than_minutes: 68
+      permissions: [ view, submit_answer, change_answer, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      if_session_duration_shorter_than_minutes: 60
+      message: "Attenzione. Rimane poco tempo!"
+      permissions: [ view, submit_answer, change_answer, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      if_has_participation_tags_any: [ dsa_18min, ]
+      if_session_duration_shorter_than_minutes: 78
+      message: "Attenzione. Rimane poco tempo!"
+      permissions: [ view, submit_answer, change_answer, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      if_in_progress: True
+      message: "Il tempo è finito. Non puoi più cambiare le tue risposte. Per consegnare, clicca il bottone verde
+        in alto a destra."
+      permissions: [ view, end_session, cannot_see_flow_result, see_session_time,
+                     lock_down_as_exam_session ]
+    - if_signed_in_with_matching_exam_ticket: True
+      permissions: [ view, see_session_time ]
+    - if_after: 2021-06-21 # todo change
+      if_before: 2021-06-23 # todo change
+      permissions: [ view, see_correctness, see_answer_after_submission ]
+    - permissions: [ ]
+
+  grade_aggregation_strategy: use_latest
+
+  grade_identifier: 994_exam
+  grading:
+    - credit_percent: 100
+
+groups:
+
+
+  - id: introduzione
+    shuffle: True
+    max_page_count: 1
+    pages:
+
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali sono i principali vantaggi nell'utilizzo di un sistema di visione artificiale nei processi di controllo qualità?
+                choices:
+                  - ~CORRECT~ Una maggiore affidabilità di processo e la possibilità di inserire regole di controllo complesse.
+                  - Una maggiore affidabilità di processo, a discapito di una bassa flessibilità del sistema.
+                  - Far vedere agli operatori a bordo linea un'immagine su schermo.
+                  - Non ci sono vantaggi rispetto al controllo umano.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale di queste non è un'applicazione di cui si occupano i sistemi di visione?
+                choices:
+                  - ~CORRECT~ Object Positioning.
+                  - Object Recognition.
+                  - Completeness Check.
+                  - Dimension Check.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali sono i principali elementi che interagiscono tra di loro in un sistema di visione?
+                choices:
+                  - ~CORRECT~ Illuminatore, oggetto, ottica, camera (hardware), software.
+                  - Oggetto, camera (hardware), automazione, ambiente.
+                  - Illuminatore, oggetto, camera, ambiente, personale a bordo linea.
+                  - Illuminatore, ottica, camera (hardware), personale a bordo linea.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_03
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  In quali parti è suddivisa la progettazione di un sistema di visione?
+                choices:
+                  - ~CORRECT~ Definizione delle specifiche, Design del sistema, Calcolo dei Costi, Finalizzazione dello sviluppo e Installazione.
+                  - Design del sistema, Attrezzaggio della linea, Installazione del sistema, Training del personale dedicato.
+                  - Installazione del sistema, Modifiche al sistema per raggiungere le specifiche.
+                  - Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo e Installazione.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_04
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste non è una specifica fondamentale per il design del sistema di visione?
+                choices:
+                  - ~CORRECT~ Descrizione delle capacità del personale dedicato.
+                  - Descrizione dell'ambiente in cui opererà il sistema.
+                  - Descrizione del task richiesto al sistema di visione.
+                  - Descrizione dell'oggetto da ispezionare.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: introduzione_05
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi task rappresenta un'applicazione di misura?
+                choices:
+                  - ~CORRECT~ Controllare l'accoppiamento meccanico tra dado e vite.
+                  - Controllare le scritte presenti su una confezione di biscotti.
+                  - Leggere i codici a barre sulle etichette.
+                  - Verificare la presenza di ruggine su un pezzo metallico.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+  - id: ottica
+    shuffle: True
+    max_page_count: 3
+    pages:
+
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Come viene definito l'indice di rifrazione?
+                choices:
+                  - ~CORRECT~ Viene definito come il rapporto tra la velocità della luce nel vuoto e la velocità della luce nel mezzo stesso.
+                  - Viene definito come il rapporto tra la velocità della luce nel mezzo e l'intensità della luce nel vuoto.
+                  - Viene definito come la differenza tra la velocità della luce nel vuoto e la velocità della luce nel mezzo.
+                  - Viene definito come la velocità della luce nel mezzo moltiplicato per l'angolo di incidenza della luce.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Cosa dice l'approssimazione parassiale?
+                choices:
+                  - ~CORRECT~ Consideriamo solo la luce che arriva da una fonte lontana, per cui l'angolo di incidenza sarà piccolo.
+                  - Lo spessore della lente non ha effetto sul percorso ottico della luce.
+                  - Permette di togliere l'indice di rifrazione dalla legge di Snell.
+                  - Le ottiche in approssimazione parassiale catturano solo i raggi paralleli all'asse ottico.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Che grandezze lega tra di loro l'equazione della lente?
+                choices:
+                  - ~CORRECT~ Distanza di lavoro, Distanza di back focal e lunghezza focale.
+                  - Lunghezza focale, ingrandimento, Distanza di lavoro, Distanza di back focal.
+                  - Lunghezza focale, ingrandimento, Distanza di lavoro.
+                  - Profondità di Campo ed F-Number.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_03
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste è una definizione sbagliata per la distanza di lavoro?
+                choices:
+                  - ~CORRECT~ Distanza tra il sensore e il punto di messa a fuoco.
+                  - Distanza tra la fine dell'ottica e il piano di messa a fuoco.
+                  - In un sistema ottico formato da una sola lente è la distanza tra la lente e il piano di messa a fuoco.
+                  - Distanza tra la fine dell'ottica e il punto in cui viene messo l'oggetto da osservare.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_04
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste definizioni è sbagliata?
+                choices:
+                  - ~CORRECT~ Back Focal Distance: Distanza tra la lente e il piano oggetto.
+                  - Working Distance: Distanza tra la fine dell'ottica e il punto di messa a fuoco.
+                  - Magnification: Misura dell'ingrandimento del sistema.
+                  - Focal Length: Misura che cataloga l'angolo del cono di raggi di un'ottica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_05
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un sistema di visione in cui si utilizza un'ottica a focale fissa da 16mm, cosa succede se la sostituisco con un'ottica a focale fissa da 25mm?
+                choices:
+                  - ~CORRECT~ L'area inquadrata sarà minore.
+                  - L'area inquadrata sarà maggiore.
+                  - Avrò un errore prospettico maggiore dovuto all'angolo di apertura del cono di raggi che aumenta.
+                  - La risoluzione della camera aumenta.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_06
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un sensore di dimensioni 10x5mm, quanto sarà grande la Field of View se uso una lente con magnification 0.5x?
+                choices:
+                  - ~CORRECT~ 20x10mm.
+                  - 5x2,5mm.
+                  - 10x5mm.
+                  - Non è possibile rispondere non conoscendo la lunghezza focale dell'ottica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_07
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un sensore di dimensioni 10x5mm, di che magnification ho bisogno per vedere un'area inquadrata di 4x2,5mm?
+                choices:
+                  - ~CORRECT~ 2x.
+                  - 0.5x.
+                  - 2,5x.
+                  - 1x.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_08
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Cosa succede se modifico l'F-Number del mio sistema ottico?
+                choices:
+                  - ~CORRECT~ Se aumento l'F-Number avrò meno luce e più profondità di campo.
+                  - Se aumento l'F-Number avrò meno luce e più risoluzione.
+                  - Se diminuisco l'F-Number ho meno luce e meno risoluzione.
+                  - Se diminuisco l'F-Number ho meno profondità di campo e meno risoluzione.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_09
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Qual è il miglior parametro per descrivere la quantità di luce che entra nel sistema ottico?
+                choices:
+                  - ~CORRECT~ WF#.
+                  - F#.
+                  - Magnification.
+                  - Lunghezza Focale.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_10
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tipologia di aberrazione non si verifica se uso luce blu?
+                choices:
+                  - ~CORRECT~ Aberrazione cromatica.
+                  - Coma.
+                  - Astigmatismo.
+                  - Aberrazione Sferica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_11
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Cosa rappresenta il grafico della funzione di trasferimento?
+                choices:
+                  - ~CORRECT~ Sulle x ho la frequenza spaziale, mentre sulle y è rappresentato il contrasto.
+                  - Sulle x ho il contrasto, mentre sulle y è rappresentata la frequenza spaziale.
+                  - Sulle x ho la frequenza spaziale, mentre sulle y è rappresentata la risoluzione.
+                  - Sulle x ho il contrasto, mentre sulle y è rappresentata la lunghezza focale.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_12
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Per un'applicazione in cui devo andare ad osservare il colore di pastiglie che passano su un nastro trasportatore molto lontano da dove vado a mettere il sistema di visione, se il nostro cliente ha un budget molto limitato, che tipologia di ottica è meglio suggerire?
+                choices:
+                  - ~CORRECT~ Focale Fissa.
+                  - Telecentrico.
+                  - Pericentrico.
+                  - Macro.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_13
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tipologia di ottiche ha il cono di accettazione dei raggi che converge in un punto specifico?
+                choices:
+                  - ~CORRECT~ Ottiche pericentriche.
+                  - Ottiche telecentriche.
+                  - Ottiche entrocentriche.
+                  - Ottiche zoom.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_14
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Nelle ottiche a focale fissa che relazione c'è tra la lunghezza focale e l'errore prospettico?
+                choices:
+                  - ~CORRECT~ Se diminuisce la lunghezza focale aumenta l'errore prospettico.
+                  - Se aumenta la lunghezza focale aumenta l'errore prospettico.
+                  - L'errore prospettico aumenta con il quadrato della lunghezza focale.
+                  - Questa relazione dipende anche dalla magnification.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_15
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Con quale di queste configurazioni non riesco a vedere le pareti laterali e la faccia superiore di un cilindro?
+                choices:
+                  - ~CORRECT~ Mettendo due lenti telecentriche sopra e sotto al cilindro.
+                  - Utilizzando un'ottica pericentrica.
+                  - Utilizzando 4 camere con ottiche a focale fissa, una posta in alto e le altre tre intorno al cilindro spaziate di 120°.
+                  - Utilizzando 2 camere con ottiche a focale fissa, una da sopra e l'altra di lato mettendo il pezzo in rotazione.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_16
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali sono le caratteristiche di un'ottica telecentrica?
+                choices:
+                  - ~CORRECT~ L'ottica telecentrica accetta solo i raggi paralleli all'asse ottico e per questo ha un ingrandimento costante con la distanza di lavoro.
+                  - L'ottica telecentrica ha i raggi che convergono in un punto preciso, questo le permette di vedere, con una sola immagine, sia la parte superiore che le pareti laterali di un corpo cilindrico.
+                  - L'ottica telecentrica accetta solo i raggi paralleli all'asse ottico, questo le permette di essere sempre a fuoco a tutte le distanze di lavoro.
+                  - L'ottica telecentrica soffre molto di errore prospettico.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_17
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Come sono legati l'angolo di incidenza della luce e l'angolo di riflessione?
+                choices:
+                  - ~CORRECT~ $a_i = - a_r$
+                  - $a_i = a_r$
+                  - $a_i \cdot a_r = 1$
+                  - $a_i = \frac{1}{a_r}$
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_18
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  In quale di queste situazioni si può applicare il principio di Scheimpflug?
+                choices:
+                  - ~CORRECT~ Quando ho delle limitazioni nel posizionamento dell'ottica sulla linea di produzione e sono inclinato rispetto al piano da osservare.
+                  - Quando ho delle limitazioni nel posizionamento dell'ottica sulla linea di produzione e devo usare degli specchi.
+                  - Quando devo fare misura di un oggetto e sto utilizzando una lente entocentrica.
+                  - Quando vengono utilizzate delle ottiche pericentriche con oggetti esagonali.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_19
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Come è definito il contrasto?
+                choices:
+                  - ~CORRECT~ $C = \frac{I_{max} - I_{min}}{I_{max} + I_{min}}$
+                  - $C = \frac{I_{max} + I_{min}}{I_{max} + I_{min}}$
+                  - $C = \frac{I_{max} - I_{min}}{I_{max}}$
+                  - $C = \frac{I_{min}}{I_{max}}$
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+  - id: illuminazione
+    shuffle: True
+    max_page_count: 3
+    pages:
+
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi è l'ordine corretto delle porzioni dello spettro elettromagnetico? Dalla porzione con la lunghezza d'onda minore a quello con la lunghezza d'onda maggiore.
+                choices:
+                  - ~CORRECT~ UV, VIS, MWIR, LWIR.
+                  - VIS, UV, IR.
+                  - UV, VIS, MWIR, SWIR.
+                  - IR; VIS; UV.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quali sono le problematiche relative all'utilizzo di una luce laser?
+                choices:
+                  - ~CORRECT~ Rischi per la salute e lo speckle noise.
+                  - Impossibilità di creare diverse geometrie di illuminazione.
+                  - La luce laser presenta forti problematiche relative all'aging e al drift.
+                  - La luce laser impiega molto tempo a raggiungere la potenza di illuminazione massima.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste affermazioni sui LED è falsa?
+                choices:
+                  - ~CORRECT~ I led emettono luce monocromatica su una banda molto stretta, per questo non è possibile creare luce bianca con un singolo led.
+                  - I led hanno un tempo di vita di circa 100.000/200.000 ore lavorative a seconda del colore.
+                  - Una variazione sulla corrente di alimentazione ha un effetto minore sulla variazione di illuminazione rispetto alla variazione di tensione.
+                  - I led hanno tre modalità di funzionamento: Pulse, Strobe e Continua.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_03
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi non è un vantaggio dei LED?
+                choices:
+                  - ~CORRECT~ Resistenza alle variazioni di tensione.
+                  - Basso consumo elettrico.
+                  - Tripla modalità di utilizzo.
+                  - Possibilità di avere diverse geometrie di illuminazione.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_04
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale geometria di illuminazione è migliore per individuare dei graffi su una piastra di metallo?
+                choices:
+                  - ~CORRECT~ Darkfield Frontlight.
+                  - Darkfield Backlight.
+                  - Brightfield Backlight.
+                  - Brightfield Frontlight.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_05
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un pezzo di plastica con delle scritte in rilievo, se l'immagine che ottengo dal sistema è scura con i bordi delle scritte bianchi che tipologia di illuminazione sto utilizzando?
+                choices:
+                  - ~CORRECT~ Darkfield Frontlight.
+                  - Darkfield Backlight.
+                  - Brightfield Backlight.
+                  - Brightfield Frontlight.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_06
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale geometria di illuminazione è migliore per effettuare una misura di una pezzo cilindrico di metallo?
+                choices:
+                  - ~CORRECT~ Backlight Brightfield Telecentrico.
+                  - Backlight Brightfield Diffuso.
+                  - Backlight Darkfield	Telecentrico.
+                  - Frontlight Brightfield Telecentrico.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_07
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Cosa succede se illumino un foglio di carta bianco con una luce frontlight brightfield rossa e lo inquadro con una camera a colori? Cosa invece se lo inquadro con una camera monocromatica?
+                choices:
+                  - ~CORRECT~ Il foglio di carta sarà rosso nell'immagine a colori e bianco nell'immagine monocromatica.
+                  - Il foglio di carta sarà bianco in entrambe le immagini.
+                  - Il foglio di carta sarà rosso nell'immagine a colori e nero nell'immagine monocromatica.
+                  - Il foglio di carta sarà rosso in entrambe le immagini.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_08
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Per quale applicazione è più consigliabile usare luce bianca?
+                choices:
+                  - ~CORRECT~ Per applicazioni in cui ho oggetti di colori diversi.
+                  - Per applicazioni di misura in cui ho bisogno di molta precisione.
+                  - Per applicazioni di lettura codici.
+                  - Per applicazioni di ispezione estetica per difetti tipo graffi e botte.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_09
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi non è un vantaggio dell'utilizzo della luce IR?
+                choices:
+                  - ~CORRECT~ Permette di aumentare la resa cromatica dell'immagine.
+                  - Non è visibile all'occhio umano e quindi non stanca l'operatore.
+                  - Permette di penetrare meglio gli oggetti data la lunghezza d'onda maggiore.
+                  - Oscura alcune riflessioni o del rumore presente nel visibile con l'utilizzo dei filtri.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_10
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un oggetto rettangolare metà rosso e metà verde, lo illumino con luce verde. La camera monta un filtro passabanda blu, che immagine mi aspetto se la mia camera è monocromatica?
+                choices:
+                  - ~CORRECT~ Il pezzo sarà visto nero sia nella parte rossa che in quella verde.
+                  - Il pezzo sarà visto nero nella parte rossa e verde in quella verde.
+                  - Il pezzo sarà visto nero nella parte rossa e bianco in quella verde.
+                  - Il pezzo sarà visto completamente bianco nell'immagine risultante.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_11
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni relative ai filtri è falsa?
+                choices:
+                  - ~CORRECT~ È possibile applicare alle ottiche monocromatiche un filtro di Bayer per poter ottenere immagini a colori.
+                  - È possibile utilizzare un filtro che blocca l'UV anche come protezione davanti all'ottica.
+                  - Posso utilizzare un filtro IR suppression per aumentare la resa cromatica sulle camere a colori.
+                  - È possibile diminuire la luminosità dell'immagine utilizzando dei filtri neutral density.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_12
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni sulla luce strutturata è vera?
+                choices:
+                  - ~CORRECT~ Posso usare la luce strutturata per fare misura nella direzione dell'asse ottico.
+                  - La luce strutturata permette di effettuare misura con un'accuratezza maggiore rispetto alle lenti telecentriche.
+                  - La luce strutturata può essere utilizzata solo con illuminazione monocromatica.
+                  - Le tipologie di pattern di proiezione della luce strutturata sono molto limitate
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_13
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale dei seguenti non è un obiettivo dell'illuminazione in Machine Vision?
+                choices:
+                  - ~CORRECT~ Creare la maggior quantità di luce possibile in modo da avere l'immagine completamente bianca.
+                  - Massimizzare il contrasto delle feature di interesse che devono essere ispezionate o misurate.
+                  - Minimizzare il constrato delle feature che non sono di nostro interesse e che ai fini dell'analisi possono essere considerate come rumore.
+                  - Eliminare variazioni nell'immagine dovute alla luce ambiente e altri fattori esterni.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_14
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale dei seguenti parametri può non essere necessario non definire per la scelta di un illuminatore?
+                choices:
+                  - ~CORRECT~ Quantità degli oggetti da osservare.
+                  - Lunghezza d'onda della luce.
+                  - Forma dell'oggetto da osservare.
+                  - Budget a disposizione.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_15
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste leggi descrive il comportamento della luce quando passa ad un mezzo 1 ad un mezzo 2? Sia I = Luce Incidente; R = Luce Riflessa; T = Luce Trasmessa; A = Luce Assorbita.
+                choices:
+                  - ~CORRECT~ $I = R + T + A$
+                  - $A = R - T + I$
+                  - $T + R = I + A$
+                  - $T - A = R + I$
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_16
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Come si crea luce bianca utilizzando dei LED?
+                choices:
+                  - ~CORRECT~ Andando ad utilizzare una tripletta di led rosso, verde e blu.
+                  - Andando ad utilizzare un led con una lunghezza d'onda molto lunga e una copertura di fosforo giallo.
+                  - Andando ad alimentare il led in modalità strobe facendo overdrive.
+                  - Non è possibile creare luce bianca con i LED, per queste applicazioni si preferisce usare delle lampade alogene.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_17
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale delle seguenti affermazioni sulle geometrie di illuminazione è falsa?
+                choices:
+                  - ~CORRECT~ L'illuminazione di tipo darkfield frontlight diffusa/diretta permette di illuminare in maniera omogenea in campo inquadrato.
+                  - L'illuminazione di tipo brightfield frontlight diffusa/diretta creata utilizzando un illuminatore coassiale ha poca efficienza luminosa, dato che solo 1/4 della luce prodotta finisce sul sensore.
+                  - L'illuminazione di tipo brightfield backlight diffusa/diretta è utilizzata spesso in applicazioni di misura per vedere i contorni di un oggetto.
+                  - Uno degli obiettivi principali dell'illuminazione strutturata brightfield frontlight è quello di andare a ricostruire la morfologia dell'oggetto che si sta osservando.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: illuminazione_18
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere una lastra di vetro con un graffio, quale tra questi metodo di illuminazione non mi fa vedere il graffio?
+                choices:
+                  - ~CORRECT~ Luce diffusa frontale in brightfield.
+                  - Luce telecentrica frontale in brightfield.
+                  - Luce diretta frontale in darkfield.
+                  - Luce telecentrica in backlight brightfield.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+  - id: camere
+    shuffle: True
+    max_page_count: 2
+    pages:
+
+
+    -   
+                type: ChoiceQuestion
+                id: camere_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti non è una caratteristica fondamentale per le camere in Machine Vision?
+                choices:
+                  - ~CORRECT~ Ottica già integrata per abbattere i costi.
+                  - Connettori standardizzati ai più recenti standard industriali.
+                  - L'output deve essere un segnale digitale per permettere la memorizzazione dell'immagine.
+                  - Doppia modalità di utilizzo sia in continuo che trigger.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti informazioni sui sensori linescan è vera?
+                choices:
+                  - ~CORRECT~ I sensori linescan permettono un framerate più elevato per cui vengono solitamente utilizzati per applicazioni con oggetti in movimento.
+                  - I sensori linescan sono molto robusti agli ambienti industriali con vibrazioni e fonti di calore.
+                  - I sensori linescan non possono essere a colori.
+                  - I sensori linescan sono più semplici da implementare in linea per via del minor numero di pixel da gestire.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere due sensori della stessa dimensioni, il sensore A ha una risoluzione maggiore rispetto al sensore B, quale delle seguenti affermazioni è falsa?
+                choices:
+                  - ~CORRECT~ Il sensore A permette di avere un'immagine più luminosa.
+                  - Il sensore B non è consigliato se dobbiamo vedere oggetti molto piccoli nel nostro campo inquadrato.
+                  - Il sensore B avrà un frame rate maggiore.
+                  - Il sensore A è più sensibile al rumore.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_03
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni sui sensori rolling shutter è falsa?
+                choices:
+                  - ~CORRECT~ I sensori rolling shutter sono consigliati per l'utilizzo su linee di produzione.
+                  - Nei sensori rolling shutter l'immagine viene acquisita in istanti temporali diversi linea per linea.
+                  - Tramite l'utilizzo del global reset è possibile avvicinarsi alle performance di un sensore global shutter.
+                  - I sensori rolling shutter sono generalmente più economici della controparte global shutter.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_04
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi è un vantaggio dell'utilizzo di sensori CMOS rispetto ai CCD?
+                choices:
+                  - ~CORRECT~ I sensori CMOS riescono ad avere un maggior range dinamico.
+                  - I sensori CMOS riescono a catturare meglio la luce e creano quindi immagini più luminose.
+                  - I sensori CMOS riescono a leggere l'informazione sul colore senza l'utilizzo del filtro di Bayer.
+                  - I sensori CMOS producono immagini con una messa a fuoco migliore rispetto ai CCD.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_05
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi non è un artefatto che si può trovare utilizzando sensori CCD?
+                choices:
+                  - ~CORRECT~ Defocusing dei contorni, dovuto al processo di ricostruzione dell'immagine del sensore.
+                  - Blooming, dovuto dalla carica che non viene contenuta da un singolo pixel ma va ad influenzare anche quelli circostanti.
+                  - Smear, dovuto ad oggetti estremamente luminosi che causano un riga bianca nell'immagine.
+                  - Rumore Termico, in alcuni casi la carica nell'aria si libera e viene accumulata nel pixel, falsando la lettura del sensore.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_06
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale delle seguenti affermazioni sul filtro di Bayer è falsa?
+                choices:
+                  - ~CORRECT~ Il filtro di Bayer permette di acquisire la stessa quantità di informazione in tutti i colori.
+                  - Il filtro di Bayer effettua delle medie sui pixel vicini per ricostruire i valore mancanti nel pixel.
+                  - L'operazione di debayering può essere effettuata sia direttamente sulla camera che sul PC.
+                  - Il filtro di Bayer porta ad un peggioramento delle nitidezza dei bordi dell'oggetto.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_07
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni sulle camere a colori è vera?
+                choices:
+                  - ~CORRECT~ Le camere a colori hanno solitamente un frame rate minore rispetto a quelle monocromatiche.
+                  - Le camere a colori permettono sempre un'ottima resa cromatica senza bisogno di bilanciamenti.
+                  - Le camere a colori hanno una sensibilità spettrale identica a quella dell'occhio umano.
+                  - Le camere a colori sono più utilizzate per applicazioni di misura.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_08
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi tipi di rumore è dovuto al numero di fotoni che arrivano al sensore?
+                choices:
+                  - ~CORRECT~ Shot Noise.
+                  - Dark Current Noise.
+                  - Photo Response Non Uniformity.
+                  - Reset Noise.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_09
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra queste è la definizione corretta di Photo Response Non Uniformity?
+                choices:
+                  - ~CORRECT~ È un tipo di rumore dovuto alla non-uniformità nella conversione fotoni/elettroni tra i pixel del sensore.
+                  - È un tipo di rumore dovuto alla corrente che si libera nell'aria in seguito al surriscaldamento del sensore.
+                  - È un tipo di rumore dovuto al processo di scarica del singolo pixel che va a creare un livello di zero diverso ogni volta.
+                  - È un rumore che si vede come una riga di pixel bianca nell'immagine.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_10
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Con quale tipologia di ottiche non si usano i sensori con microlenti?
+                choices:
+                  - ~CORRECT~ Ottiche telecentriche lato immagine.
+                  - Ottiche pericentriche.
+                  - Ottiche a focale fissa.
+                  - Ottiche macro.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_11
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento di 0.5x. Se ho un campione che viaggia ad una velocità di 1 m/s, che tempo di esposizione devo tenere per avere un pixel blur di esattamente 10 pixel?
+                choices:
+                  - ~CORRECT~ 40µs.
+                  - 400µs.
+                  - 20µs.
+                  - 100µs.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_12
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento 0.5x. Per fare una buona immagine ho bisogno di un tempo di esposizione di 100µs ma posso accettare un pixel blur massimo di 5 pixel. Quale sarà la velocità massima a cui può viaggiare il campione?
+                choices:
+                  - ~CORRECT~ 0.2 m/s.
+                  - 1 m/s.
+                  - 0.5 m/s.
+                  - 0.1 m/s.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_13
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni sulle interfaccie GigE e USB3 è falsa?
+                choices:
+                  - ~CORRECT~ L'interfaccia USB3 è più resistente al rumore, per questo è possibile utilizzare dei cavi lunghi fino a 100 metri.
+                  - L'interfaccia GigE richiede l'assegnazione di un indirizzo IP alla camera.
+                  - L'interfaccia USB3 ha una velocità di trasferimento più elevata dello standard GigE ma meno dello standard 10GigE.
+                  - L'interfaccia GigE è preferita in ambito industriale dato che altre apparecchiature a bordo linea la utilizzano.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+  - id: applicazioni
+    shuffle: True
+    max_page_count: 1
+    pages:
+
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è il più consigliato per andare a contare delle pastiglie di vario colore che scorrono su un nastro nero?
+                choices:
+                  - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori global shutter.
+                  - Ottica a focale fissa, illuminatore frontlight brightfield verde, camera a colori global shutter.
+                  - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
+                  - Ottica a focale fissa, illuminatore frontlight darkfield bianco, camera a colori global shutter.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_01
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è il più consigliato per andare a misurare un pezzo di plastica rosso?
+                choices:
+                  - ~CORRECT~ Ottica telecentrica, illuminatore backlight telecentrico verde, camera monocromatica.
+                  - Ottica telecentrica, illuminatore backlight diffuso bianco, camera monocromatica.
+                  - Ottica telecentrica, illuminatore backlight telecentrico bianco, camera monocromatica.
+                  - Ottica a focale fissa, illuminatore backlight darkfield rosso, camera a colori.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_02
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è il più consigliato per vedere delle macchie di colore sui lati esterni di un tappo?
+                choices:
+                  - ~CORRECT~ Ottica pericentrica, illuminatore frontlight brightfield bianco, camera monocromatica.
+                  - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera monocromatica.
+                  - Ottica pericentrica, illuminatore frontlight brightfield verde, camera a colori.
+                  - Ottica a focale fissa, illuminatore frontlight darkfield rosso, camera monocromatica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_03
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è il più consigliato per contare il numero di componenti neri su una scheda elettronica verde? Le schede vengono posizionate sotto il sistema di visione da un operatore.
+                choices:
+                  - ~CORRECT~ Ottica macro, illuminatore frontlight brightfield verde, camera monocromatica rolling shutter.
+                  - Ottica a focale fissa, illuminatore frontlight brightfield blu, camera monocromatica global shutter.
+                  - Ottica macro, illuminatore frontlight darkfield bianco, camera a colori global shutter.
+                  - Ottica pericentrica, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_04
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è il più consigliato per leggere un codice a barre nero su pacchi marroni che viaggiano su un nastro trasportatore?
+                choices:
+                  - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight bianco, camera global shutter.
+                  - Ottica telecentrica, illuminatore backlight verde, camera global shutter.
+                  - Ottica telecentrica, illuminatore frontlight rosso, camera rolling shutter.
+                  - Ottica pericentrica, illuminatore darkfield blu, camera rolling shutter.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: applicazioni_05
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra questi setup è più consigliato per verificare l'allineamento di pin su un connettore?
+                choices:
+                  - ~CORRECT~ Ottica telecentrica, illuminatore frontlight monocromatico, camera monocromatica.
+                  - Ottica macro, illuminatore darkfield monocromatico, camera monocromatica.
+                  - Ottica a focale fissa, illuminatore backlight bianco, camera a colori.
+                  - Ottica macro, illuminatore frontlight bianco, camera monocromatica.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+  - id: numpy
+    shuffle: True
+    max_page_count: 2
+    pages:
+
+
+      - type: ChoiceQuestion
+        id: numpy_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'uso di Numpy array per la memorizzazione di array o tensori di oggetti è preferibile all'uso di liste e tuple:
+        choices:
+          - ~CORRECT~ In presenza di grandi quantità di oggetti numerici, grazie al fatto che l'allocazione dei Numpy array è contigua
+          - Indipendentemente dal tipo e dalla quantità degli oggetti
+          - In presenza di grandi quantità di oggetti numerici, nonostante l'allocazione di Numpy array sia non contigua
+          - Solo in presenza di grandi quantità di dati di tipo stringa, o comunque a lunghezza variabile
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: numpy_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Con tensore, rango e shape si indicano, rispettivamente:
+        choices:
+          - ~CORRECT~ Una struttura dati a n dimensioni, contenente elementi tutti dello stesso tipo; il numero di dimensioni (o assi) della struttura; una tupla di interi che indica la dimensione del tensore lungo ogni dimensione
+          - Una struttura dati a n dimensioni, contenente elementi eventualmente di tipi diversi; il numero di dimensioni della struttura; il numero di elementi contenuti nella struttura
+          - Un array n-dimensionale; il numero di elementi contenuti nell'array; il numero di assi dell'array
+          - Un array n-dimensionale; il numero di dimensioni dell'array; il numero di elementi presenti nell'array
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: numpy_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il boolean array indexing, quando applicato a un tensore:
+        choices:
+          - ~CORRECT~ Permette di indicizzare il tensore con una maschera booleana, e ritorna un tensore di rango 1
+          - Permette di indicizzare il tensore con una maschera booleana, e ritorna un tensore con rango pari a quello del tensore di partenza
+          - Può essere applicato solo a tensori di rango 1
+          - Può essere applicato a tensori di qualsiasi rango, purché di tipo np.float32
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: numpy_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali dei seguenti tensori sono compatibili, secondo le regole del broadcasting di Numpy?
+        choices:
+          - ~CORRECT~ Un tensore con shape (5, 1, 2) e un tensore con shape (2, 2)
+          - Un tensore con shape (5, 1, 1) e un tensore con shape (2, 2, 2)
+          - Un tensore con shape (10, 5, 1, 2) e un tensore con shape (10, 5, 1, 4)
+          - Un tensore con shape (10, 5, 1, 2) e un tensore con shape (10, 5)
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+      - type: ChoiceQuestion
+        id: numpy_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Iterare su un array Numpy è in generale più veloce che iterare su una lista, in quanto:
+        choices:
+          - ~CORRECT~ Gli elementi di un array Numpy sono allocati consecutivamente in memoria
+          - Le routine per l'accesso agli elementi di un array Numpy sono implementate in Python
+          - Le liste Python non possono essere n-dimensionali
+          - Nessuna delle altre risposte è vera
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+  - id: istogramma
+    shuffle: True
+    max_page_count: 1
+    pages:
+      - type: ChoiceQuestion
+        id: istogramma_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un istogramma immagine:
+        choices:
+          - ~CORRECT~ E' rappresentato da un array con un certo numero di bin. Contiene informazioni sulla distribuzione dei valori dei pixel, e non sulla loro distribuzione spaziale
+          - E' rappresentato da un array con un certo numero di bin. Contiene informazioni sulla distribuzione dei valori dei pixel, e sulla loro distribuzione spaziale
+          - E' rappresentato da un array di lunghezza pari al numero di livelli di intensità dell'immagine. Contiene informazioni sulla distribuzione dei valori dei pixel e sulla loro distribuzione spaziale
+          - E' rappresentato da un array di lunghezza pari al numero di livelli di intensità effettivamente utilizzati nell'immagine
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: istogramma_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Nel costruire un istogramma con $B$ bin da un'immagine avente $K$ livelli di intensità, il pixel $(u,v)$ avente valore $I(u,v)$ deve essere aggiunto al bin di indice:
+        choices:
+          - ~CORRECT~ $I(u,v)\cdot \frac{B}{K}$, dove la divisione è intera
+          - $I(u,v)\cdot \frac{K}{B}$, dove la divisione è intera
+          - $I(u,v)\cdot \frac{B-1}{K}$, dove la divisione è intera
+          - $I(u,v)\cdot \frac{B-1}{K-1}$, dove la divisione è intera
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: istogramma_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Dall'istogramma di un'immagine è possibile:
+        choices:
+          - ~CORRECT~ Calcolare la luminosità e, talvolta, identificare effetti di compressione
+          - Calcolare il contrasto, identificare problemi di saturazione ma non calcolare la luminosità
+          - Calcolare la luminosità, identificare problemi di saturazione ma non calcolare il contrasto
+          - Calcolare luminosità e contrasto, ma non identificare artefatti dovuti alla compressione o all'applicazione di altri algoritmi di image processing
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+  - id: operatori
+    shuffle: True
+    max_page_count: 2
+    pages:
+      - type: ChoiceQuestion
+        id: operatori_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un operatore puntuale:
+        choices:
+          - ~CORRECT~ Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente e della posizioe del pixel
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente e del valore di intensità dei pixel vicini
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente in modo esclusivamente non lineare
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un operatore non omogeneo:
+        choices:
+          - ~CORRECT~ Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente e della posizioe del pixel
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente e del valore di intensità dei pixel vicini
+          - Modifica il valore di intensità di un pixel sulla base del valore di intensità precedente e della posizione del pixel in modo esclusivamente lineare
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          La procedura di automatic contrast adjustment:
+        choices:
+          - ~CORRECT~ E' un operatore puntuale, che modifica l'istogramma di un'immagine allargandolo o stringendolo in base a un'operazione lineare
+          - E' un operatore puntuale, che modifica l'istogramma di un'immagine allargandolo in base a un'operazione lineare
+          - E' un operatore locale, che modifica l'istogramma di un'immagine allargandolo o stringendolo in base a un'operazione lineare
+          - E' un operatore non omogeneo, che modifica l'istogramma di un'immagine allargandolo o stringendolo in base a un'operazione lineare
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'effetto sull'istogramma dell'applicazione dell'automatic contrast adjustment:
+        choices:
+          - ~CORRECT~ E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin diversi
+          - E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
+          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin diversi
+          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'equalizzazione dell'istogramma:
+        choices:
+          - ~CORRECT~ E' un operatore puntuale che cerca di modificare l'istogramma di un'immagine per renderlo il più possibile vicino alla distribuzione uniforme
+          - E' un operatore puntuale che modifica l'istogramma di un'immagine rendendolo uguale alla distribuzione uniforme
+          - E' realizzato, solitamente, da un'operazione lineare
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+  - id: convoluzione
+    shuffle: True
+    max_page_count: 1
+    pages:
+      - type: ChoiceQuestion
+        id: convoluzione_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali dei seguenti operatori non può essere realizzato tramite convoluzione?
+        choices:
+          - ~CORRECT~ Soglia
+          - Media
+          - Filtro gaussiano
+          - Filtro laplaciano
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: convoluzione_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il risultato di una convoluzione (senza padding):
+        choices:
+          - ~CORRECT~ E' un'immagine più piccola dell'immagine originale, con un numero di righe e colonne in meno proporzionale alla dimensione del filtro
+          - E' un'immagine più piccola dell'immagine originale, con un numero di righe e colonne in meno proporzionale alla dimensione originale dell'immagine
+          - E' un'immagine delle stesse dimensioni dell'immagine originale
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: convoluzione_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali proprietà verifica la convoluzione?
+        choices:
+          - ~CORRECT~ Commutatività, linearità, associatività
+          - Commutatività, linearità ma non associatività
+          - Linearità, associatività ma non commutatività
+          - Linearità, ma non associatività e non commutatività
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: convoluzione_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali delle seguenti affermazioni non è vera?
+        choices:
+          - ~CORRECT~ Il rumore speckle si ottiene sommando ai pixel dell'immagine a un rumore
+          - Il rumore gaussiano si ottiene sommando ai pixel dell'immagine del rumore bianco
+          - Il rumore sale e pepe appare come puntini bianchi e neri
+          - Il rumore periodico è un tipo di rumore che si ripete spazialmente sull'immagine
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: convoluzione_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per la rimozione del rumore sale e pepe:
+        choices:
+          - ~CORRECT~ E' opportuno utilizzare un filtro mediano
+          - E' opportuno utilizzare un filtro gaussiano
+          - E' opportuno utilizzare un filtro di media
+          - E' opportuno utilizzare un filtro di minimo
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+      - type: ChoiceQuestion
+        id: convoluzione_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il filtro mediano si applica:
+        choices:
+          - ~CORRECT~ Considerando gli elementi contenuti in un intorno di un pixel, ordinandoli e resistuendo l'elemento centrale
+          - Applicando un operatore convolutivo
+          - Considerando gli elementi contenuti in un intorno di un pixel e calcolandone la media
+          - Considerando gli elementi contenuti in un intorno di un pixel e rimuovendo gli elementi vicini a 0 e a 255
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+      - type: ChoiceQuestion
+        id: convoluzione_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un filtro laplaciano:
+        choices:
+          - ~CORRECT~ E' un filtro lineare che contiene elementi positivi e negativi
+          - Non può essere applicato tramite un operatore convolutivo
+          - Produce uno smoothing dell'immagine
+          - E' un filtro lineare strettamente positivo, applicabile tramite convoluzione
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+  - id: edge
+    shuffle: True
+    max_page_count: 1
+    pages:
+
+
+      - type: ChoiceQuestion
+        id: edge_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il gradiente di una funzione $f(x,y)$:
+        choices:
+          - ~CORRECT~ E' un vettore che contiene le derivate parziali della funzione rispetto a $x$ e $y$, e che punta nella direzione in cui $f$ cresce
+          - E' un vettore che contiene le derivate parziali della funzione rispetto a $x$ e $y$, e che punta nella direzione in cui $f$ decresce
+          - E' un vettore che contiene le differenze parziali della funzione rispetto a $x$ e $y$
+          - E' rappresentato da uno scalare
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: edge_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il modulo e la direzione del gradiente di una funzione 2D:
+        choices:
+          - ~CORRECT~ Sono, rispettivamente, la norma euclidea del gradiente e l'arcotangente del rapporto tra il secondo e il primo elemento del gradiente
+          - Sono, rispettivamente, la norma euclidea del gradiente e l'arcotangente del rapporto tra il primo e il secondo elemento del gradiente
+          - Sono, rispettivamente, la norma euclidea del gradiente e la tangente del rapporto tra il secondo e il primo elemento del gradiente
+          - Sono, rispettivamente, la norma euclidea del gradiente e la tangente del rapporto tra il primo e il secondo elemento del gradiente
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: edge_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          E' possibile ottenere una buona detection degli edge di un'immagine:
+        choices:
+          - ~CORRECT~ Calcolando la norma del gradiente e sogliandola
+          - Calcolando la direzione del gradiente e sogliandola
+          - Sogliando le derivate orizzontali e verticali, ottenute con un filtro di Sobel o di Prewitt
+          - Nessuna delle risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+      - type: ChoiceQuestion
+        id: edge_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un edge ideale:
+        choices:
+          - ~CORRECT~ Produce un picco nella derivata prima dell'immagine e uno zero-crossing nella derivata seconda
+          - Produce un picco nella derivata prima dell'immagine e uno nella derivata seconda
+          - E' una funzione a gradino, che produce uno zero-crossing nella derivata prima dell'immagine
+          - Nessuna delle risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+      - type: ChoiceQuestion
+        id: edge_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per approssimare la derivata di una funzione discreta con le differenze finite, è meglio:
+        choices:
+          - ~CORRECT~ Utilizzare la differenza finita centrata
+          - Utilizzare la differenza finita in avanti
+          - Utilizzare la differenza finita all'indietro
+          - Nessuna delle altre risposte. Non è possibile approssimare la derivata di una funzione discreta con differenze finite
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+  - id: fourier
+    shuffle: True
+    max_page_count: 3
+    pages:
+
+
+      - type: ChoiceQuestion
+        id: fourier_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali delle seguenti è una procedura corretta per eseguire una convoluzione tramite la trasformata di Fourier?
+        choices:
+          - ~CORRECT~ Paddare il filtro per renderlo della stessa dimensione dell'immagine, calcolare la DFT del filtro e dell'immagine, moltiplicarle, e poi calcolare la trasformata inversa
+          - Paddare il filtro per renderlo della stessa dimensione dell'immagine, calcolare la DFT del filtro e dell'immagine, e moltiplicarle
+          - Calcolare la DFT del filtro e dell'immagine, moltiplicarle, e poi calcolare la trasformata inversa
+          - Calcolare la DFT del filtro e dell'immagine e moltiplicarle
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il componente DC della trasformata di Fourier di un'immagine:
+        choices:
+          - ~CORRECT~ E' pari alla somma dei pixel dell'immagine
+          - Si ottiene applicando un filtro cosinusoidale grande quanto l'immagine, e non è né la media né la somma
+          - Si ottiene applicando un filtro sinusoidale grande quanto l'immagine, e non è né la media né la somma
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per ottenere un filtro passa-basso agendo sullo spettro DFT centrato di un'immagine:
+        choices:
+          - ~CORRECT~ Si maschera la periferia dello spettro, che contiene le frequenze più alte
+          - Si maschera il centro dello spettro, che contiene le frequenze più alte
+          - Si applica un masking ad anello sullo spettro
+          - Si maschera per linee verticali e orizzontali
+          - Lascia questa domanda in bianco
+        shuffle: true
+    
+
+      - type: ChoiceQuestion
+        id: fourier_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti affermazioni, relative alla trasformata di Fourier discreta 2-dimensionale (2-D DFT) è corretta?
+        choices:
+          - ~CORRECT~ Può essere pensata come l'applicazione di un filtro lineare grande come l'immagine in input
+          - Non può essere implementata applicando separatamente due DFT 1-D
+          - La 2-D DFT della somma di due immagini non può essere espressa come la somma di due 2-D DFT
+          - Non può essere accelerata utilizzando la Fast Fourier Transform (FFT)
+          - Lascia questa domanda in bianco
+        shuffle: true                
+
+      - type: ChoiceQuestion
+        id: fourier_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per ottenere un filtro passa-alto Butterworth agendo sullo spettro DFT centrato di un'immagine:
+        choices:
+          - ~CORRECT~ Si maschera la parte centrale dello spettro, in maniera graduale man mano che ci si allontana dal centro
+          - Si maschera la parte centrale dello spettro con un taglio netto
+          - Si applica un masking ad anello sullo spettro
+          - Si maschera per linee verticali e orizzontali
+          - Lascia questa domanda in bianco
+        shuffle: true        
+
+      - type: ChoiceQuestion
+        id: fourier_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per rimuovere del rumore periodico da un'immagine è possibile:
+        choices:
+          - ~CORRECT~ Agire sullo spettro DFT dell'immagine, con un filtro Notch o Band reject
+          - Agire sullo spettro DFT dell'immagine, con un filtro Butterworth
+          - Agire sullo spettro DFT dell'immagine, con un filtro guassiano
+          - Agire sul dominio spaziale dell'immagine, applicando un filtro non lineare
+          - Lascia questa domanda in bianco
+        shuffle: true                
