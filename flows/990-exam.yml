@@ -624,7 +624,7 @@ groups:
                 choices:
                   - ~CORRECT~ Backlight Brightfield Telecentrico.
                   - Backlight Brightfield Diffuso.
-                  - Backlight Darkfield	Telecentrico.
+                  - Backlight Darkfield Telecentrico.
                   - Frontlight Brightfield Telecentrico.
                   - Lascia questa domanda in bianco
                 shuffle: true
