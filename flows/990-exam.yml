@@ -561,7 +561,7 @@ groups:
                   - ~CORRECT~ I led emettono luce monocromatica su una banda molto stretta, per questo non è possibile creare luce bianca con un singolo led.
                   - I led hanno un tempo di vita di circa 100.000/200.000 ore lavorative a seconda del colore.
                   - Una variazione sulla corrente di alimentazione ha un effetto minore sulla variazione di illuminazione rispetto alla variazione di tensione.
-                  - I led hanno tre modalità di funzionamento: Pulse, Strobe e Continua.
+                  - I led hanno tre modalità di funzionamento, ovvero Pulse, Strobe e Continua.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
