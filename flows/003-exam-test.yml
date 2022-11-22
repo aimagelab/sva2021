@@ -1,0 +1,111 @@
+title: "Fac-simile di prova d'esame"
+
+description: |
+
+    # Fac-simile di prova d'esame
+
+    ### Istruzioni
+    - Dopo aver dato una risposta, clicca su "**Submit answer**" per inviarla. Puoi sempre modificare una risposta.
+    - Dopo aver terminato la sessione e prima di abbandonare l'esame, ricorda di cliccare sulla **spunta verde** in
+      alto a destra per consegnare il compito. Altrimenti, non verrà corretto.
+
+notify_on_submit:
+  - lorenzo.baraldi@unimore.it
+
+
+rules:
+    start:
+    -
+        if_has_role: [student, ta, instructor]
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+    -
+        permissions: [view, submit_answer, end_session, cannot_see_flow_result, change_answer, see_session_time]
+
+    grade_aggregation_strategy: use_latest
+
+    grade_identifier: simulazione_esame
+    grading:
+    -
+        credit_percent: 100
+
+groups:
+-
+    id: quiz_start
+    shuffle: False
+    pages:
+
+    -   
+                type: ChoiceQuestion
+                id: ottica_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Immaginiamo di avere un sistema di visione in cui si utilizza un'ottica a focale fissa da 16mm, cosa succede se la sostituisco con un'ottica a focale fissa da 25mm?
+                choices:
+                  - ~CORRECT~ L'area inquadrata sarà minore.
+                  - L'area inquadrata sarà maggiore.
+                  - La risoluzione della camera aumenta.
+                  - Avrò un errore prospettico maggiore dovuto all'angolo di apertura del cono di raggi che aumenta.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+    -   
+                type: ChoiceQuestion
+                id: camere_00
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Quale tra le seguenti affermazioni sui sensori rolling shutter è falsa?
+                choices:
+                  - ~CORRECT~ I sensori rolling shutter sono consigliati per l'utilizzo su linee di produzione.
+                  - Nei sensori rolling shutter l'immagine viene acquisita in istanti temporali diversi linea per linea.
+                  - Tramite l'utilizzo del global reset è possibile avvicinarsi alle performance di un sensore global shutter.
+                  - I sensori rolling shutter sono generalmente più economici della controparte global shutter.
+                  - Lascia questa domanda in bianco
+                shuffle: true
+    
+
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_12
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Con compressione lossy si intende:
+                choices:
+                  - ~CORRECT~ Una procedura di compressione che porta alla perdita di parte dell'informazione originale
+                  - Un tipo di compressione in cui è possibile ricostruire il dato non compresso
+                  - Una compressione di immagini che ne preserva l'aspetto estetico
+                  - Un tipo di compressione non identificabile attraverso l'ispezione dell'istogramma
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+
+    -
+                type: ChoiceQuestion
+                id: domanda_17
+                is_optional_page: false
+                title: Domanda
+                prompt: |
+                  Un rumore speckle è un tipo di rumore in cui:
+                choices:
+                  - ~CORRECT~ I valori dei pixel vengono moltiplicati per un rumore casuale
+                  - È un rumore addittivo proveniente da una distribuzione Gamma
+                  - È un rumore impulsivo, che produce pixel bianchi e neri
+                  - È un rumore periodico che può essere pulito solo nel dominio delle frequenze
+                  - Lascia questa domanda in bianco
+                shuffle: true
+
+
+   
