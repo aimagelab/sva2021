@@ -30,7 +30,7 @@ rules:
 
     grade_aggregation_strategy: use_latest
 
-    grade_identifier: simulazione_esame
+    grade_identifier: simulazione_esame_2022
     grading:
     -
         credit_percent: 100
