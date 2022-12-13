@@ -639,7 +639,7 @@ groups:
                   Quale delle seguenti affermazioni sui LED è falsa?
                 choices:
                   - ~CORRECT~ Per poter usare i LED in modalità pulsed è necessario rispettare i valori di corrente massima , tempo di accensione massimo del LED e Duty Cycle.
-                  - I vantaggi dei LED sono: basso consumo elettrico, possibilità di avere diverse geometrie di illuminazione e facilità di controllo elettronico.
+                  - I vantaggi dei LED sono basso consumo elettrico, possibilità di avere diverse geometrie di illuminazione e facilità di controllo elettronico.
                   - Si preferisce controllare un LED in corrente dato che una piccola variazione sulla corrente corrisponde ad una piccola variazione sull'illuminazione.
                   - La modalità continua è quella meno indicata per la gestione del calore.
                   - Lascia questa domanda in bianco
