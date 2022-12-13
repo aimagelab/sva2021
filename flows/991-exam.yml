@@ -645,23 +645,7 @@ groups:
                   - Lascia questa domanda in bianco
                 shuffle: true
     
-
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_08
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali delle seguenti definizioni è corretta?
-                choices:
-                  - ~CORRECT~ Luce Diffusa: non vi è una direzione di emissione ben definita, la quantità di luce è indipendente dalla direzione da cui la si guarda.
-                  - Luce Diretta: la luce emessa è solamente direzionale e segue l'asse ottico dell'illuminatore.
-                  - Luce Telecentrica: la luce viene emessa con una direzione più o meno precisa, e crea una riflessione non omogenea nella camera.
-                  - Luce Strutturata: la luce viene emessa da un illuminatore con una forma ben definita, come ad esempio una ringlight.
-                  - Lascia questa domanda in bianco
-                shuffle: true
     
-
     -   
                 type: ChoiceQuestion
                 id: illuminazione_09
