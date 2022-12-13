@@ -217,9 +217,9 @@ groups:
                   Quale tra queste non è una legge fondamentale che viene definita nei sistemi ottici?
                 choices:
                   - ~CORRECT~ Legge di Bayer.
-				  - Legge di rifrazione.
-				  - Legge di riflessione.
-				  - Legge di Snell.
+                  - Legge di rifrazione.
+                  - Legge di riflessione.
+                  - Legge di Snell.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -233,9 +233,9 @@ groups:
                   Come sono legati l'angolo di incidenza della luce e l'angolo di riflessione?
                 choices:
                   - ~CORRECT~ $a_i = - a_r$
-				  - $a_i = a_r$
-				  - $a_i \cdot a_r = 1$
-				  - $a_i = \frac{1}{a_r}$
+                  - $a_i = a_r$
+                  - $a_i \cdot a_r = 1$
+                  - $a_i = \frac{1}{a_r}$
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -249,9 +249,9 @@ groups:
                   Secondo quale approssimazione possiamo semplificare il termine trigonometrico nella legge di Snell?
                 choices:
                   - ~CORRECT~ Approssimazione parassiale.
-				  - Approssimazione di lente sottile.
-				  - Approssimazione di Taylor.
-				  - Approssimazione per difetto.
+                  - Approssimazione di lente sottile.
+                  - Approssimazione di Taylor.
+                  - Approssimazione per difetto.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -265,9 +265,9 @@ groups:
                   Qual è la supposizione fondamentale su cui si basa l'approssimazione parassiale?
                 choices:
                   - ~CORRECT~ Dato che la fonte di luce è lontana, l'angolo di incidenza dei raggi tende ad essere perpendicolare alla superficie di incidenza della luce.
-				  - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
-				  - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
-				  - I raggi sono paralleli all'asse ottico.
+                  - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
+                  - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
+                  - I raggi sono paralleli all'asse ottico.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -281,9 +281,9 @@ groups:
                   Quali sono le grandezze legate tra di loro dall'equazione della lente?
                 choices:
                   - ~CORRECT~ Distanza di lavoro, distanza di back focal, lunghezza focale.
-				  - Distanza di lavoro, spessore della lente, F-Number.
-				  - Distanza di lavoro, distanza di back focal, F-Number.
-				  - Distanza di lavoro, distanza di back focal, Ingrandimento.
+                  - Distanza di lavoro, spessore della lente, F-Number.
+                  - Distanza di lavoro, distanza di back focal, F-Number.
+                  - Distanza di lavoro, distanza di back focal, Ingrandimento.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -297,9 +297,9 @@ groups:
                   Come viene definita la distanza di lavoro?
                 choices:
                   - ~CORRECT~ È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-				  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-				  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
-				  - È la distanza tra la lente e il piano in cui si forma l'immagine.
+                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+                  - È la distanza tra la lente e il piano in cui si forma l'immagine.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -313,9 +313,9 @@ groups:
                   Come viene definita la back focal distance?
                 choices:
                   - ~CORRECT~ È la distanza tra la lente e il piano in cui si forma l'immagine.
-				  - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-				  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-				  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+                  - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
+                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -329,9 +329,9 @@ groups:
                   Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 12mm la sostituisco con un'ottica a focale fissa da 16mm?
                 choices:
                   - ~CORRECT~ L'area inquadrata sarà inferiore.
-				  - Entra più luce nel sistema ottico.
-				  - Ho una profondità di campo inferiore.
-				  - L'area inquadrata sarà maggiore.
+                  - Entra più luce nel sistema ottico.
+                  - Ho una profondità di campo inferiore.
+                  - L'area inquadrata sarà maggiore.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -345,9 +345,9 @@ groups:
                   Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 25mm la sostituisco con un'ottica a focale fissa da 16mm?
                 choices:
                   - ~CORRECT~ L'area inquadrata sarà maggiore.
-				  - Entra meno luce nel sistema ottico.
-				  - Ho una profondità di campo maggiore.
-				  - L'area inquadrata sarà inferiore.
+                  - Entra meno luce nel sistema ottico.
+                  - Ho una profondità di campo maggiore.
+                  - L'area inquadrata sarà inferiore.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -361,9 +361,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un cerchio di diametro 2mm?
                 choices:
                   - ~CORRECT~ 0.250.
-				  - 0.500.
-				  - 2.000.
-				  - 4.000.
+                  - 0.500.
+                  - 2.000.
+                  - 4.000.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -377,9 +377,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un'area di 1x1 mm^2?
                 choices:
                   - ~CORRECT~ 0.500.
-				  - 1.000.
-				  - 2.000.
-				  - 0.250.
+                  - 1.000.
+                  - 2.000.
+                  - 0.250.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -393,9 +393,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, se utilizzo un'ottica con ingrandimento 0.100, quale sarà l'area inquadrata?
                 choices:
                   - ~CORRECT~ 10x5 mm^2.
-				  - 1x0.5 mm^2.
-				  - 0.1x0.05 mm^2.
-				  - 5x2.5 mm^2.
+                  - 1x0.5 mm^2.
+                  - 0.1x0.05 mm^2.
+                  - 5x2.5 mm^2.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -409,9 +409,9 @@ groups:
                   Cosa succede se cambio l'F-Number di un'ottica da F8 ad F16?
                 choices:
                   - ~CORRECT~ Aumenta la profondità di campo.
-				  - Aumenta la quantità di luce nel sistema.
-				  - Aumenta la risoluzione del sistema.
-				  - Aumenta l'area inquadrata.
+                  - Aumenta la quantità di luce nel sistema.
+                  - Aumenta la risoluzione del sistema.
+                  - Aumenta l'area inquadrata.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -425,9 +425,9 @@ groups:
                   Quale tra questi elementi non viene modificato se si cambia l'F-Number di un'ottica?
                 choices:
                   - ~CORRECT~ L'area inquadrata.
-				  - La profondità di campo.
-				  - La quantità di luce.
-				  - La risoluzione.
+                  - La profondità di campo.
+                  - La quantità di luce.
+                  - La risoluzione.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -441,9 +441,9 @@ groups:
                   Cosa succede se l'ottica soffre di aberrazione cromatica?
                 choices:
                   - ~CORRECT~ La luce va a fuoco in punti diversi a seconda della lunghezza d'onda creando un leggero defocusing nell'immagine.
-				  - Il piano di messa a fuoco lungo l'asse orizzontale è diverso da quello lungo l'asse verticale.
-				  - Il piano di messa a fuoco della lente non è un vero e proprio piano ma una porzione di sfera portando ad un defocusing nell'immagine.
-				  - La luminosità è diversa a seconda del colore della luce utilizzata.
+                  - Il piano di messa a fuoco lungo l'asse orizzontale è diverso da quello lungo l'asse verticale.
+                  - Il piano di messa a fuoco della lente non è un vero e proprio piano ma una porzione di sfera portando ad un defocusing nell'immagine.
+                  - La luminosità è diversa a seconda del colore della luce utilizzata.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -457,9 +457,9 @@ groups:
                   Quale di queste affermazione sulla MTF non è corretta?
                 choices:
                   - ~CORRECT~ Il grafico di MTF lega la distanza di lavoro al contrasto.
-				  - Il grafico di MTF ha sempre un andamento discendente, ovvero con l'aumentare della frequenza spaziale il contrasto diminuisce.
-				  - Il pattern utilizzato per generare il grafico di MTF è sinusoidale.
-				  - Il grafico rappresenta la frequenza spaziale sulle x e il contrasto sulle y, serve a misurare la risoluzione del sistema.
+                  - Il grafico di MTF ha sempre un andamento discendente, ovvero con l'aumentare della frequenza spaziale il contrasto diminuisce.
+                  - Il pattern utilizzato per generare il grafico di MTF è sinusoidale.
+                  - Il grafico rappresenta la frequenza spaziale sulle x e il contrasto sulle y, serve a misurare la risoluzione del sistema.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -473,9 +473,9 @@ groups:
                   Come viene definita una lente con i raggi convergenti rispetto all'asse ottico?
                 choices:
                   - ~CORRECT~ Ottica pericentrica.
-				  - Ottica entocentrica.
-				  - Ottica telecentrica.
-				  - Ottica zoom.
+                  - Ottica entocentrica.
+                  - Ottica telecentrica.
+                  - Ottica zoom.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -489,9 +489,9 @@ groups:
                   Quale tra le seguenti affermazioni sulle ottiche telecentriche è vera?
                 choices:
                   - ~CORRECT~ Grazie alle sue proprietà ottiche con una lente telecentrica viene eliminato l'errore prospettico.
-				  - L'ingrandimento varia a seconda della distanza di lavoro.
-				  - L'applicazione per cui vengono utilizzate più spesso le ottiche telencetriche è la lettura di codici a barre.
-				  - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilidrico.
+                  - L'ingrandimento varia a seconda della distanza di lavoro.
+                  - L'applicazione per cui vengono utilizzate più spesso le ottiche telencetriche è la lettura di codici a barre.
+                  - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilidrico.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -505,9 +505,9 @@ groups:
                   Quale tra queste associazioni tra applicazione e tipologia di ottica è errata?
                 choices:
                   - ~CORRECT~ Ispezione a 360° - Ottiche telecentriche.
-				  - Misura di componenti metallici - Ottiche telecentriche.
-				  - Lettura di qr code - Ottiche a focale fissa.
-				  - Ispezione di tappi - Ottiche pericentriche.
+                  - Misura di componenti metallici - Ottiche telecentriche.
+                  - Lettura di qr code - Ottiche a focale fissa.
+                  - Ispezione di tappi - Ottiche pericentriche.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -820,9 +820,9 @@ groups:
                   - Luce telecentrica in backlight brightfield.
                   - Lascia questa domanda in bianco
                 shuffle: true
-				
-				
-	-   
+                
+                
+    -   
                 type: ChoiceQuestion
                 id: illuminazione_19
                 is_optional_page: false
