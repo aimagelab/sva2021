@@ -1185,7 +1185,7 @@ groups:
         choices:
           - ~CORRECT~ array([1, 2])
           - array([True, True])
-          - True
+          - "True"
           - array([1, 2, 0, 0, 0])
           - Lascia questa domanda in bianco
         shuffle: true
