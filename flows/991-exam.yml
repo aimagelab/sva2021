@@ -90,100 +90,94 @@ groups:
     pages:
 
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_00
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali sono i vantaggi di un sistema di visione artificiale rispetto ai metodi tradizionali?
-                choices:
-                  - ~CORRECT~ Maggiore affidabilità di processo, possibilità di inserire regole di controllo complesse e di modificarle rapidamente, costi contenuti.
-                  - Maggiore affidabilità di processo, possibilità di usare regole semplici per i controlli, costi alti.
-                  - Possibilità di effettuare operazioni di controllo di qualità sui componenti con regole complesse.
-                  - L'unico vantaggio è la possibilità di far vedere l'immagine a schermo al personale a bordo macchina.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali sono i vantaggi di un sistema di visione artificiale rispetto ai metodi tradizionali?
+        choices:
+          - ~CORRECT~ Maggiore affidabilità di processo, possibilità di inserire regole di controllo complesse e di modificarle rapidamente, costi contenuti.
+          - Maggiore affidabilità di processo, possibilità di usare regole semplici per i controlli, costi alti.
+          - Possibilità di effettuare operazioni di controllo di qualità sui componenti con regole complesse.
+          - L'unico vantaggio è la possibilità di far vedere l'immagine a schermo al personale a bordo macchina.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_01
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste non è un'applicazione che si risolve solitamente con i sistemi di visione?
-                choices:
-                  - ~CORRECT~ Controllo della corrente massima che può passare all'interno di una resistenza.
-                  - Controllo di un codice a barre su una scatola.
-                  - Controllo del livello di un liquido all'interno di un contenitore di plastica bianca non trasparente.
-                  - Misura di un componente metallico con accuratezze nell'ordine del micrometro.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste non è un'applicazione che si risolve solitamente con i sistemi di visione?
+        choices:
+          - ~CORRECT~ Controllo della corrente massima che può passare all'interno di una resistenza.
+          - Controllo di un codice a barre su una scatola.
+          - Controllo del livello di un liquido all'interno di un contenitore di plastica bianca non trasparente.
+          - Misura di un componente metallico con accuratezze nell'ordine del micrometro.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_02
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali sono le principali tecnologie coinvolte nello sviluppo dei sistemi di visione?
-                choices:
-                  - ~CORRECT~ Ottica, Illuminazione, Elettronica, Meccanica, Sviluppo di software e algoritmi.
-                  - Ottica, Illuminazione, Elettronica, Chimica, Meccanica.
-                  - Ottica, Illuminazione, Sviluppo di software e algoritmi.
-                  - Meccanica, Chimica, Elettronica, Sviluppo di software e algoritmi.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali sono le principali tecnologie coinvolte nello sviluppo dei sistemi di visione?
+        choices:
+          - ~CORRECT~ Ottica, Illuminazione, Elettronica, Meccanica, Sviluppo di software e algoritmi.
+          - Ottica, Illuminazione, Elettronica, Chimica, Meccanica.
+          - Ottica, Illuminazione, Sviluppo di software e algoritmi.
+          - Meccanica, Chimica, Elettronica, Sviluppo di software e algoritmi.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_03
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali sono i gli step principali per lo sviluppo di un sistema di visione?
-                choices:
-                  - ~CORRECT~ Descrizione delle specifiche, Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo, Installazione.
-                  - Descrizione delle specifiche, Calcolo dei costi, Design del sistema, Finalizzazione dello sviluppo, Installazione.
-                  - Installazione del sistema, Modifiche al sistema per raggiungere le specifiche.
-                  - Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo e Installazione.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali sono i gli step principali per lo sviluppo di un sistema di visione?
+        choices:
+          - ~CORRECT~ Descrizione delle specifiche, Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo, Installazione.
+          - Descrizione delle specifiche, Calcolo dei costi, Design del sistema, Finalizzazione dello sviluppo, Installazione.
+          - Installazione del sistema, Modifiche al sistema per raggiungere le specifiche.
+          - Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo e Installazione.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_04
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Nella fase di descrizione delle specifiche di un sistema di visione, quali tra queste non è un'informazione strettamente necessaria per lo sviluppo?
-                choices:
-                  - ~CORRECT~ Descrizione delle funzionalità dell'oggetto da ispezionare.
-                  - Descrizione dell'oggetto da ispezionare.
-                  - Descrizione del task richiesto al sistema di visione.
-                  - Descrizione dell'ambiente in cui verrà installato il sistema di visione.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Nella fase di descrizione delle specifiche di un sistema di visione, quali tra queste non è un'informazione strettamente necessaria per lo sviluppo?
+        choices:
+          - ~CORRECT~ Descrizione delle funzionalità dell'oggetto da ispezionare.
+          - Descrizione dell'oggetto da ispezionare.
+          - Descrizione del task richiesto al sistema di visione.
+          - Descrizione dell'ambiente in cui verrà installato il sistema di visione.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: introduzione_05
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Un'applicazione in cui è necessario controllare i graffi presenti su una boccetta di vetro in quale macro categoria si può classificare?
-                choices:
-                  - ~CORRECT~ Surface inspection.
-                  - Completeness Check.
-                  - Code Recognition.
-                  - Position Recognition.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: introduzione_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un'applicazione in cui è necessario controllare i graffi presenti su una boccetta di vetro in quale macro categoria si può classificare?
+        choices:
+          - ~CORRECT~ Surface inspection.
+          - Completeness Check.
+          - Code Recognition.
+          - Position Recognition.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
   - id: ottica
@@ -192,324 +186,304 @@ groups:
     pages:
 
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_00
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Come viene definito l'indice di rifrazione?
-                choices:
-                  - ~CORRECT~ Viene definito come il rapporto tra la velocità della luce nel vuoto e la velocità della luce nel mezzo stesso.
-                  - Viene definito come il rapporto tra la velocità della luce nel mezzo e l'intensità della luce nel vuoto.
-                  - Viene definito come la differenza tra la velocità della luce nel vuoto e la velocità della luce nel mezzo.
-                  - Viene definito come la velocità della luce nel mezzo moltiplicato per l'angolo di incidenza della luce.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Come viene definito l'indice di rifrazione?
+        choices:
+          - ~CORRECT~ Viene definito come il rapporto tra la velocità della luce nel vuoto e la velocità della luce nel mezzo stesso.
+          - Viene definito come il rapporto tra la velocità della luce nel mezzo e l'intensità della luce nel vuoto.
+          - Viene definito come la differenza tra la velocità della luce nel vuoto e la velocità della luce nel mezzo.
+          - Viene definito come la velocità della luce nel mezzo moltiplicato per l'angolo di incidenza della luce.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_01
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste non è una legge fondamentale che viene definita nei sistemi ottici?
-                choices:
-                  - ~CORRECT~ Legge di Bayer.
-                  - Legge di rifrazione.
-                  - Legge di riflessione.
-                  - Legge di Snell.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste non è una legge fondamentale che viene definita nei sistemi ottici?
+        choices:
+          - ~CORRECT~ Legge di Bayer.
+          - Legge di rifrazione.
+          - Legge di riflessione.
+          - Legge di Snell.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_02
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Come sono legati l'angolo di incidenza della luce e l'angolo di riflessione?
-                choices:
-                  - ~CORRECT~ L'angolo di incidenza è uguale a meno il valore dell'angolo di riflessione.
-                  - L'angolo di incidenza è uguale all'angolo di riflessione.
-                  - L'angolo di incidenza moltiplicato per l'angolo di riflessione è uguale a 1.
-                  - La somma tra l'angolo di incidenza e l'angolo di riflessione è uguale a 1.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Come sono legati l'angolo di incidenza della luce e l'angolo di riflessione?
+        choices:
+          - ~CORRECT~ L'angolo di incidenza è uguale a meno il valore dell'angolo di riflessione.
+          - L'angolo di incidenza è uguale all'angolo di riflessione.
+          - L'angolo di incidenza moltiplicato per l'angolo di riflessione è uguale a 1.
+          - La somma tra l'angolo di incidenza e l'angolo di riflessione è uguale a 1.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_03
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Secondo quale approssimazione possiamo semplificare il termine trigonometrico nella legge di Snell?
-                choices:
-                  - ~CORRECT~ Approssimazione parassiale.
-                  - Approssimazione di lente sottile.
-                  - Approssimazione di Taylor.
-                  - Approssimazione per difetto.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Secondo quale approssimazione possiamo semplificare il termine trigonometrico nella legge di Snell?
+        choices:
+          - ~CORRECT~ Approssimazione parassiale.
+          - Approssimazione di lente sottile.
+          - Approssimazione di Taylor.
+          - Approssimazione per difetto.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_04
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Qual è la supposizione fondamentale su cui si basa l'approssimazione parassiale?
-                choices:
-                  - ~CORRECT~ Dato che la fonte di luce è lontana, l'angolo di incidenza dei raggi tende ad essere perpendicolare alla superficie di incidenza della luce.
-                  - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
-                  - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
-                  - I raggi sono paralleli all'asse ottico.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Qual è la supposizione fondamentale su cui si basa l'approssimazione parassiale?
+        choices:
+          - ~CORRECT~ Dato che la fonte di luce è lontana, l'angolo di incidenza dei raggi tende ad essere perpendicolare alla superficie di incidenza della luce.
+          - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
+          - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
+          - I raggi sono paralleli all'asse ottico.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_05
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali sono le grandezze legate tra di loro dall'equazione della lente?
-                choices:
-                  - ~CORRECT~ Distanza di lavoro, distanza di back focal, lunghezza focale.
-                  - Distanza di lavoro, spessore della lente, F-Number.
-                  - Distanza di lavoro, distanza di back focal, F-Number.
-                  - Distanza di lavoro, distanza di back focal, Ingrandimento.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali sono le grandezze legate tra di loro dall'equazione della lente?
+        choices:
+          - ~CORRECT~ Distanza di lavoro, distanza di back focal, lunghezza focale.
+          - Distanza di lavoro, spessore della lente, F-Number.
+          - Distanza di lavoro, distanza di back focal, F-Number.
+          - Distanza di lavoro, distanza di back focal, Ingrandimento.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_06
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Come viene definita la distanza di lavoro?
-                choices:
-                  - ~CORRECT~ È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
-                  - È la distanza tra la lente e il piano in cui si forma l'immagine.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Come viene definita la distanza di lavoro?
+        choices:
+          - ~CORRECT~ È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
+          - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+          - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+          - È la distanza tra la lente e il piano in cui si forma l'immagine.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_07
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Come viene definita la back focal distance?
-                choices:
-                  - ~CORRECT~ È la distanza tra la lente e il piano in cui si forma l'immagine.
-                  - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_07
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Come viene definita la back focal distance?
+        choices:
+          - ~CORRECT~ È la distanza tra la lente e il piano in cui si forma l'immagine.
+          - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
+          - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+          - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_08
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 12mm la sostituisco con un'ottica a focale fissa da 16mm?
-                choices:
-                  - ~CORRECT~ L'area inquadrata sarà inferiore.
-                  - Entra più luce nel sistema ottico.
-                  - Ho una profondità di campo inferiore.
-                  - L'area inquadrata sarà maggiore.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_08
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 12mm la sostituisco con un'ottica a focale fissa da 16mm?
+        choices:
+          - ~CORRECT~ L'area inquadrata sarà inferiore.
+          - Entra più luce nel sistema ottico.
+          - Ho una profondità di campo inferiore.
+          - L'area inquadrata sarà maggiore.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_09
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 25mm la sostituisco con un'ottica a focale fissa da 16mm?
-                choices:
-                  - ~CORRECT~ L'area inquadrata sarà maggiore.
-                  - Entra meno luce nel sistema ottico.
-                  - Ho una profondità di campo maggiore.
-                  - L'area inquadrata sarà inferiore.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_09
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 25mm la sostituisco con un'ottica a focale fissa da 16mm?
+        choices:
+          - ~CORRECT~ L'area inquadrata sarà maggiore.
+          - Entra meno luce nel sistema ottico.
+          - Ho una profondità di campo maggiore.
+          - L'area inquadrata sarà inferiore.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_10
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un cerchio di diametro 2mm?
-                choices:
-                  - ~CORRECT~ 0.250.
-                  - 0.500.
-                  - 2.000.
-                  - 4.000.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_10
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un cerchio di diametro 2mm?
+        choices:
+          - ~CORRECT~ 0.250.
+          - 0.500.
+          - 2.000.
+          - 4.000.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_11
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un'area di 1x1 mm^2?
-                choices:
-                  - ~CORRECT~ 0.500.
-                  - 1.000.
-                  - 2.000.
-                  - 0.250.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_11
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un'area di 1x1 mm^2?
+        choices:
+          - ~CORRECT~ 0.500.
+          - 1.000.
+          - 2.000.
+          - 0.250.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_12
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, se utilizzo un'ottica con ingrandimento 0.100, quale sarà l'area inquadrata?
-                choices:
-                  - ~CORRECT~ 10x5 mm^2.
-                  - 1x0.5 mm^2.
-                  - 0.1x0.05 mm^2.
-                  - 5x2.5 mm^2.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_12
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, se utilizzo un'ottica con ingrandimento 0.100, quale sarà l'area inquadrata?
+        choices:
+          - ~CORRECT~ 10x5 mm^2.
+          - 1x0.5 mm^2.
+          - 0.1x0.05 mm^2.
+          - 5x2.5 mm^2.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_13
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Cosa succede se cambio l'F-Number di un'ottica da F8 ad F16?
-                choices:
-                  - ~CORRECT~ Aumenta la profondità di campo.
-                  - Aumenta la quantità di luce nel sistema.
-                  - Aumenta la risoluzione del sistema.
-                  - Aumenta l'area inquadrata.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_13
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Cosa succede se cambio l'F-Number di un'ottica da F8 ad F16?
+        choices:
+          - ~CORRECT~ Aumenta la profondità di campo.
+          - Aumenta la quantità di luce nel sistema.
+          - Aumenta la risoluzione del sistema.
+          - Aumenta l'area inquadrata.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_14
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi elementi non viene modificato se si cambia l'F-Number di un'ottica?
-                choices:
-                  - ~CORRECT~ L'area inquadrata.
-                  - La profondità di campo.
-                  - La quantità di luce.
-                  - La risoluzione.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_14
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi elementi non viene modificato se si cambia l'F-Number di un'ottica?
+        choices:
+          - ~CORRECT~ L'area inquadrata.
+          - La profondità di campo.
+          - La quantità di luce.
+          - La risoluzione.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_15
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Cosa succede se l'ottica soffre di aberrazione cromatica?
-                choices:
-                  - ~CORRECT~ La luce va a fuoco in punti diversi a seconda della lunghezza d'onda creando un leggero defocusing nell'immagine.
-                  - Il piano di messa a fuoco lungo l'asse orizzontale è diverso da quello lungo l'asse verticale.
-                  - Il piano di messa a fuoco della lente non è un vero e proprio piano ma una porzione di sfera portando ad un defocusing nell'immagine.
-                  - La luminosità è diversa a seconda del colore della luce utilizzata.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_15
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Cosa succede se l'ottica soffre di aberrazione cromatica?
+        choices:
+          - ~CORRECT~ La luce va a fuoco in punti diversi a seconda della lunghezza d'onda creando un leggero defocusing nell'immagine.
+          - Il piano di messa a fuoco lungo l'asse orizzontale è diverso da quello lungo l'asse verticale.
+          - Il piano di messa a fuoco della lente non è un vero e proprio piano ma una porzione di sfera portando ad un defocusing nell'immagine.
+          - La luminosità è diversa a seconda del colore della luce utilizzata.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_16
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale di queste affermazione sulla MTF non è corretta?
-                choices:
-                  - ~CORRECT~ Il grafico di MTF lega la distanza di lavoro al contrasto.
-                  - Il grafico di MTF ha sempre un andamento discendente, ovvero con l'aumentare della frequenza spaziale il contrasto diminuisce.
-                  - Il pattern utilizzato per generare il grafico di MTF è sinusoidale.
-                  - Il grafico rappresenta la frequenza spaziale sulle x e il contrasto sulle y, serve a misurare la risoluzione del sistema.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_16
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale di queste affermazione sulla MTF non è corretta?
+        choices:
+          - ~CORRECT~ Il grafico di MTF lega la distanza di lavoro al contrasto.
+          - Il grafico di MTF ha sempre un andamento discendente, ovvero con l'aumentare della frequenza spaziale il contrasto diminuisce.
+          - Il pattern utilizzato per generare il grafico di MTF è sinusoidale.
+          - Il grafico rappresenta la frequenza spaziale sulle x e il contrasto sulle y, serve a misurare la risoluzione del sistema.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_17
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Come viene definita una lente con i raggi convergenti rispetto all'asse ottico?
-                choices:
-                  - ~CORRECT~ Ottica pericentrica.
-                  - Ottica entocentrica.
-                  - Ottica telecentrica.
-                  - Ottica zoom.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_17
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Come viene definita una lente con i raggi convergenti rispetto all'asse ottico?
+        choices:
+          - ~CORRECT~ Ottica pericentrica.
+          - Ottica entocentrica.
+          - Ottica telecentrica.
+          - Ottica zoom.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_18
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra le seguenti affermazioni sulle ottiche telecentriche è vera?
-                choices:
-                  - ~CORRECT~ Grazie alle sue proprietà ottiche con una lente telecentrica viene eliminato l'errore prospettico.
-                  - L'ingrandimento varia a seconda della distanza di lavoro.
-                  - L'applicazione per cui vengono utilizzate più spesso le ottiche telencetriche è la lettura di codici a barre.
-                  - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilidrico.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_18
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra le seguenti affermazioni sulle ottiche telecentriche è vera?
+        choices:
+          - ~CORRECT~ Grazie alle sue proprietà ottiche con una lente telecentrica viene eliminato l'errore prospettico.
+          - L'ingrandimento varia a seconda della distanza di lavoro.
+          - L'applicazione per cui vengono utilizzate più spesso le ottiche telencetriche è la lettura di codici a barre.
+          - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilidrico.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: ottica_19
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste associazioni tra applicazione e tipologia di ottica è errata?
-                choices:
-                  - ~CORRECT~ Ispezione a 360° - Ottiche telecentriche.
-                  - Misura di componenti metallici - Ottiche telecentriche.
-                  - Lettura di qr code - Ottiche a focale fissa.
-                  - Ispezione di tappi - Ottiche pericentriche.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: ottica_19
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste associazioni tra applicazione e tipologia di ottica è errata?
+        choices:
+          - ~CORRECT~ Ispezione a 360° - Ottiche telecentriche.
+          - Misura di componenti metallici - Ottiche telecentriche.
+          - Lettura di qr code - Ottiche a focale fissa.
+          - Ispezione di tappi - Ottiche pericentriche.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
   - id: illuminazione
@@ -518,322 +492,302 @@ groups:
     pages:
 
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_00
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi non è un parametro importante nella scelta di un illuminatore?
-                choices:
-                  - ~CORRECT~ Ambito di utilizzo dell'oggetto.
-                  - Lunghezza d'onda.
-                  - Forma dell'oggetto da ispezionare.
-                  - Budget a disposizione.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi non è un parametro importante nella scelta di un illuminatore?
+        choices:
+          - ~CORRECT~ Ambito di utilizzo dell'oggetto.
+          - Lunghezza d'onda.
+          - Forma dell'oggetto da ispezionare.
+          - Budget a disposizione.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_01
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi non è un obiettivo della scelta dell'illuminazione?
-                choices:
-                  - ~CORRECT~ Visualizzare l'area inquadrata corretta.
-                  - Massimizzare il contrasto delle feature di interesse che devono essere ispezionate.
-                  - Minimizzare il contrasto delle feature che non sono di nostro interesse.
-                  - Eliminare variazioni nell'immagine dovute alla luce ambiente e altri fattori esterni.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi non è un obiettivo della scelta dell'illuminazione?
+        choices:
+          - ~CORRECT~ Visualizzare l'area inquadrata corretta.
+          - Massimizzare il contrasto delle feature di interesse che devono essere ispezionate.
+          - Minimizzare il contrasto delle feature che non sono di nostro interesse.
+          - Eliminare variazioni nell'immagine dovute alla luce ambiente e altri fattori esterni.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_02
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Ordina correttamente i seguenti colori di luce secondo le lunghezze d'onda dalla più corta alla più lunga.
-                choices:
-                  - ~CORRECT~ UV, Blu, Rosso, SWIR, MWIR.
-                  - UV, Blu, Rosso, Verde, SWIR, MWIR, LWIR.
-                  - SWIR, MWIR, LWIR, Rosso, Verde, UV.
-                  - Blu, UV, Rosso, Verde, Giallo, MWIR.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Ordina correttamente i seguenti colori di luce secondo le lunghezze d'onda dalla più corta alla più lunga.
+        choices:
+          - ~CORRECT~ UV, Blu, Rosso, SWIR, MWIR.
+          - UV, Blu, Rosso, Verde, SWIR, MWIR, LWIR.
+          - SWIR, MWIR, LWIR, Rosso, Verde, UV.
+          - Blu, UV, Rosso, Verde, Giallo, MWIR.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_03
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale delle seguenti formule descrive il comportamento della luce nel passaggio tra due mezzi differenti?
-                choices:
-                  - ~CORRECT~ I = R + T + A
-                  - R = I + T + A
-                  - T = A + R + I
-                  - A = R + T + I
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti formule descrive il comportamento della luce nel passaggio tra due mezzi differenti?
+        choices:
+          - ~CORRECT~ I = R + T + A
+          - R = I + T + A
+          - T = A + R + I
+          - A = R + T + I
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_04
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale delle seguenti affermazioni sulla luce Laser è corretta?
-                choices:
-                  - ~CORRECT~ La luce Laser è nativamente monocromatica e permette di lavorare a basse potenze elettriche.
-                  - La luce laser crea una luce molto omogenea e uniforme.
-                  - Il laser emette luce non coerente.
-                  - Il laser è la sorgente di illuminazione più utilizzata nella Machine Vision.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti affermazioni sulla luce Laser è corretta?
+        choices:
+          - ~CORRECT~ La luce Laser è nativamente monocromatica e permette di lavorare a basse potenze elettriche.
+          - La luce laser crea una luce molto omogenea e uniforme.
+          - Il laser emette luce non coerente.
+          - Il laser è la sorgente di illuminazione più utilizzata nella Machine Vision.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_05
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale di queste affermazioni sulla luce LED è falsa?
-                choices:
-                  - ~CORRECT~ I LED emettono luce affetta dal rumore di speckle
-                  - I LED emettono luce quasi monocromatica, il loro spettro di emissione ha una larghezza di circa 30nm.
-                  - Per creare i LED bianchi viene usata una tripletta di LED rosso, verde e blu.
-                  - Per creare i LED bianchi viene usato un LED con una lunghezza d'onda corta e una copertura di fosforo giallo.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale di queste affermazioni sulla luce LED è falsa?
+        choices:
+          - ~CORRECT~ I LED emettono luce affetta dal rumore di speckle
+          - I LED emettono luce quasi monocromatica, il loro spettro di emissione ha una larghezza di circa 30nm.
+          - Per creare i LED bianchi viene usata una tripletta di LED rosso, verde e blu.
+          - Per creare i LED bianchi viene usato un LED con una lunghezza d'onda corta e una copertura di fosforo giallo.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_06
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste non è una modalità di utilizzo della luce LED?
-                choices:
-                  - ~CORRECT~ Modalità per temperatura.
-                  - Modalità continua.
-                  - Modalità strobe.
-                  - Modalità pulsata.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste non è una modalità di utilizzo della luce LED?
+        choices:
+          - ~CORRECT~ Modalità per temperatura.
+          - Modalità continua.
+          - Modalità strobe.
+          - Modalità pulsata.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_07
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale delle seguenti affermazioni sui LED è falsa?
-                choices:
-                  - ~CORRECT~ Per poter usare i LED in modalità pulsed è necessario rispettare i valori di corrente massima , tempo di accensione massimo del LED e Duty Cycle.
-                  - I vantaggi dei LED sono, basso consumo elettrico, possibilità di avere diverse geometrie di illuminazione e facilità di controllo elettronico.
-                  - Si preferisce controllare un LED in corrente dato che una piccola variazione sulla corrente corrisponde ad una piccola variazione sull'illuminazione.
-                  - La modalità continua è quella meno indicata per la gestione del calore.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_07
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti affermazioni sui LED è falsa?
+        choices:
+          - ~CORRECT~ Per poter usare i LED in modalità pulsed è necessario rispettare i valori di corrente massima , tempo di accensione massimo del LED e Duty Cycle.
+          - I vantaggi dei LED sono, basso consumo elettrico, possibilità di avere diverse geometrie di illuminazione e facilità di controllo elettronico.
+          - Si preferisce controllare un LED in corrente dato che una piccola variazione sulla corrente corrisponde ad una piccola variazione sull'illuminazione.
+          - La modalità continua è quella meno indicata per la gestione del calore.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_08
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quali delle seguenti definizioni è corretta?
-                choices:
-                  - ~CORRECT~ Luce Diffusa, non vi è una direzione di emissione ben definita, la quantità di luce è indipendente dalla direzione da cui la si guarda.
-                  - Luce Diretta, la luce emessa è solamente direzionale e segue l'asse ottico dell'illuminatore.
-                  - Luce Telecentrica, la luce viene emessa con una direzione più o meno precisa, e crea una riflessione non omogenea nella camera.
-                  - Luce Strutturata, la luce viene emessa da un illuminatore con una forma ben definita, come ad esempio una ringlight.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_08
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quali delle seguenti definizioni è corretta?
+        choices:
+          - ~CORRECT~ Luce Diffusa, non vi è una direzione di emissione ben definita, la quantità di luce è indipendente dalla direzione da cui la si guarda.
+          - Luce Diretta, la luce emessa è solamente direzionale e segue l'asse ottico dell'illuminatore.
+          - Luce Telecentrica, la luce viene emessa con una direzione più o meno precisa, e crea una riflessione non omogenea nella camera.
+          - Luce Strutturata, la luce viene emessa da un illuminatore con una forma ben definita, come ad esempio una ringlight.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_09
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Qual è la geometria di illuminazione migliore per vedere la presenza di una scritta incisa su un pezzo metallico?
-                choices:
-                  - ~CORRECT~ Front light, Dark Field.
-                  - Front light, Bright Field.
-                  - Back Light, Dark Field.
-                  - Back Light, Bright Field.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_09
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Qual è la geometria di illuminazione migliore per vedere la presenza di una scritta incisa su un pezzo metallico?
+        choices:
+          - ~CORRECT~ Front light, Dark Field.
+          - Front light, Bright Field.
+          - Back Light, Dark Field.
+          - Back Light, Bright Field.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_10
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Qual è la geometria di illuminazione migliore per vedere la presenza di una macchia colorata su un pezzo di plastica nero?
-                choices:
-                  - ~CORRECT~ Front Light, Bright Field.
-                  - Front Light, Dark Field.
-                  - Back Light, Bright Field.
-                  - Back Light, Dark Field.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_10
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Qual è la geometria di illuminazione migliore per vedere la presenza di una macchia colorata su un pezzo di plastica nero?
+        choices:
+          - ~CORRECT~ Front Light, Bright Field.
+          - Front Light, Dark Field.
+          - Back Light, Bright Field.
+          - Back Light, Dark Field.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_11
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  In quale di questi casi conviene utilizzare una backlight diffuso anzichè un backlight telecentrico?
-                choices:
-                  - ~CORRECT~ Per vedere delle macchie all'interno del corpo di una bottiglia di plastica trasparente.
-                  - Per fare misura del filetto di un tappo di una bottiglia di vetro.
-                  - Per effettuare misura di un cilindro metallico.
-                  - Per fare misura del passo dei filetti di una vite.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_11
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          In quale di questi casi conviene utilizzare una backlight diffuso anzichè un backlight telecentrico?
+        choices:
+          - ~CORRECT~ Per vedere delle macchie all'interno del corpo di una bottiglia di plastica trasparente.
+          - Per fare misura del filetto di un tappo di una bottiglia di vetro.
+          - Per effettuare misura di un cilindro metallico.
+          - Per fare misura del passo dei filetti di una vite.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_12
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra le seguenti affermazioni sull'illuminazione in Darkfield è corretta?
-                choices:
-                  - ~CORRECT~ La maggior parte della luce emessa da un illuminatore in dark field non viene catturato dall'ottica.
-                  - La darkfield non può essere usata in backlight ma solo in frontlight.
-                  - La luce darkfield mette in evidenza le zone piatte dell'immagine.
-                  - La luce darkfield viene utilizzata principalmente per applicazioni di misura.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_12
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra le seguenti affermazioni sull'illuminazione in Darkfield è corretta?
+        choices:
+          - ~CORRECT~ La maggior parte della luce emessa da un illuminatore in dark field non viene catturato dall'ottica.
+          - La darkfield non può essere usata in backlight ma solo in frontlight.
+          - La luce darkfield mette in evidenza le zone piatte dell'immagine.
+          - La luce darkfield viene utilizzata principalmente per applicazioni di misura.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_13
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale delle seguenti affermazioni sulle geometrie di illuminazione è corretta?
-                choices:
-                  - ~CORRECT~ La luce bright field, telecentrica in frontlight riflette solo in presenza di superfici piatte e perpendicolari all'asse ottico.
-                  - La luce in backlight può essere utilizzata solo con oggetti trasparenti.
-                  - Non è possibile combinare due o più geometrie di illuminazione tra di loro.
-                  - È possibile combinare più geometrie di illuminazione tra loro ma gli illuminatori devono emettere alla stessa lunghezza d'onda.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_13
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti affermazioni sulle geometrie di illuminazione è corretta?
+        choices:
+          - ~CORRECT~ La luce bright field, telecentrica in frontlight riflette solo in presenza di superfici piatte e perpendicolari all'asse ottico.
+          - La luce in backlight può essere utilizzata solo con oggetti trasparenti.
+          - Non è possibile combinare due o più geometrie di illuminazione tra di loro.
+          - È possibile combinare più geometrie di illuminazione tra loro ma gli illuminatori devono emettere alla stessa lunghezza d'onda.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_14
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale di queste affermazioni sulle riflessioni dei colori non è corretta?
-                choices:
-                  - ~CORRECT~ Se illumino un oggetto blu con una luce blu il nostro occhio lo vede bianco.
-                  - Se illumino un oggetto bianco con una luce rossa il nostro occhio lo vede rosso.
-                  - Se illumino un oggetto rosso con una luce bianca il nostro occhio lo vede rosso.
-                  - Se illumino un oggetto nero con una luce qualsiasi il nostro occhio lo vede comunque nero.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_14
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale di queste affermazioni sulle riflessioni dei colori non è corretta?
+        choices:
+          - ~CORRECT~ Se illumino un oggetto blu con una luce blu il nostro occhio lo vede bianco.
+          - Se illumino un oggetto bianco con una luce rossa il nostro occhio lo vede rosso.
+          - Se illumino un oggetto rosso con una luce bianca il nostro occhio lo vede rosso.
+          - Se illumino un oggetto nero con una luce qualsiasi il nostro occhio lo vede comunque nero.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_15
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste affermazioni sugli illuminatori è falsa?
-                choices:
-                  - ~CORRECT~ Gli illuminatori IR non vengono spesso utilizzati perchè sono dannosi per l'occhio umano e necessitano di misure protettive particolari.
-                  - Alcuni oggetti, soprattutto quelli di plastica bianca possono apparire trasparenti con la luce IR.
-                  - La luce UV viene utilizzata principalmente per oggetti che vanno in fluorescenza se eccitati da determinate lunghezze d'onda.
-                  - La luce bianca viene utilizzata principalmente per oggetti che possono avere diverse colorazioni.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_15
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste affermazioni sugli illuminatori è falsa?
+        choices:
+          - ~CORRECT~ Gli illuminatori IR non vengono spesso utilizzati perchè sono dannosi per l'occhio umano e necessitano di misure protettive particolari.
+          - Alcuni oggetti, soprattutto quelli di plastica bianca possono apparire trasparenti con la luce IR.
+          - La luce UV viene utilizzata principalmente per oggetti che vanno in fluorescenza se eccitati da determinate lunghezze d'onda.
+          - La luce bianca viene utilizzata principalmente per oggetti che possono avere diverse colorazioni.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_16
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale di queste definizioni legate ai filtri è corretta?
-                choices:
-                  - ~CORRECT~ La frequenza di cutoff/cuton indica la lunghezza d'onda a cui il filtro taglia il proprio contributo di luce.
-                  - L'Half Power Point indica la lunghezza d'onda centrale del filtro.
-                  - La larghezza di banda del filtro indica si calcola come media tra i punti di cutoff e di cuton.
-                  - Il grafico di trasmissione di un filtro indica il contrasto che si ottiene in un'immagine ad ogni lunghezza d'onda.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_16
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale di queste definizioni legate ai filtri è corretta?
+        choices:
+          - ~CORRECT~ La frequenza di cutoff/cuton indica la lunghezza d'onda a cui il filtro taglia il proprio contributo di luce.
+          - L'Half Power Point indica la lunghezza d'onda centrale del filtro.
+          - La larghezza di banda del filtro indica si calcola come media tra i punti di cutoff e di cuton.
+          - Il grafico di trasmissione di un filtro indica il contrasto che si ottiene in un'immagine ad ogni lunghezza d'onda.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_17
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Per quali applicazioni non viene utilizzata solitamente la luce strutturata?
-                choices:
-                  - ~CORRECT~ Lettura di codici a barre.
-                  - Misurare la rugosità di un campione.
-                  - Misurare l'altezza di un punto.
-                  - Creare una mappa morfologica del pezzo da osservare.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_17
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per quali applicazioni non viene utilizzata solitamente la luce strutturata?
+        choices:
+          - ~CORRECT~ Lettura di codici a barre.
+          - Misurare la rugosità di un campione.
+          - Misurare l'altezza di un punto.
+          - Creare una mappa morfologica del pezzo da osservare.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_18
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere una lastra di vetro con un graffio, quale tra questi metodo di illuminazione non mi fa vedere il graffio?
-                choices:
-                  - ~CORRECT~ Luce diffusa frontale in brightfield.
-                  - Luce telecentrica frontale in brightfield.
-                  - Luce diretta frontale in darkfield.
-                  - Luce telecentrica in backlight brightfield.
-                  - Lascia questa domanda in bianco
-                shuffle: true		
-    -   
-                type: ChoiceQuestion
-                id: illuminazione_19
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale delle seguenti frasi sull'alimentazione dei LED è vera?
-                choices:
-                  - ~CORRECT~ Si preferisce pilotare un LED in corrente dato che la quantità di luce generata ha una correlazione lineare con la corrente stessa.
-                  - I LED solitamente vengono pilotati in tensione dato che una leggera variazione di tensione corrisponde linearmente ad una leggera variazione dell'intensità di luce prodotta.
-                  - I LED non vengono mai pilotati in corrente, questa infatti ha una correlazione non lineare con la quantità di luce emessa, per cui il controllo è poco stabile.
-                  - Un LED può essere pilotato sia in corrente che in tensione senza particolari precauzioni. Indipendentemente da come lo si pilota infatti la quantità di luce è sempre costante, anche cambiando corrente o tensione.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: illuminazione_18
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere una lastra di vetro con un graffio, quale tra questi metodo di illuminazione non mi fa vedere il graffio?
+        choices:
+          - ~CORRECT~ Luce diffusa frontale in brightfield.
+          - Luce telecentrica frontale in brightfield.
+          - Luce diretta frontale in darkfield.
+          - Luce telecentrica in backlight brightfield.
+          - Lascia questa domanda in bianco
+        shuffle: true		
+      - type: ChoiceQuestion
+        id: illuminazione_19
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale delle seguenti frasi sull'alimentazione dei LED è vera?
+        choices:
+          - ~CORRECT~ Si preferisce pilotare un LED in corrente dato che la quantità di luce generata ha una correlazione lineare con la corrente stessa.
+          - I LED solitamente vengono pilotati in tensione dato che una leggera variazione di tensione corrisponde linearmente ad una leggera variazione dell'intensità di luce prodotta.
+          - I LED non vengono mai pilotati in corrente, questa infatti ha una correlazione non lineare con la quantità di luce emessa, per cui il controllo è poco stabile.
+          - Un LED può essere pilotato sia in corrente che in tensione senza particolari precauzioni. Indipendentemente da come lo si pilota infatti la quantità di luce è sempre costante, anche cambiando corrente o tensione.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
   - id: camere
@@ -842,228 +796,214 @@ groups:
     pages:
 
 
-    -   
-                type: ChoiceQuestion
-                id: camere_00
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra le seguenti non è una caratteristica fondamentale per le camere in Machine Vision?
-                choices:
-                  - ~CORRECT~ Avere un'ottica già integrata per abbattere i costi.
-                  - Connettori conformi ai più recenti standard industriali.
-                  - L'output deve essere un segnale digitale costante per permettere la memorizzazione dell'immagine.
-                  - Doppia modalità di utilizzo sia in continuo che trigger.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra le seguenti non è una caratteristica fondamentale per le camere in Machine Vision?
+        choices:
+          - ~CORRECT~ Avere un'ottica già integrata per abbattere i costi.
+          - Connettori conformi ai più recenti standard industriali.
+          - L'output deve essere un segnale digitale costante per permettere la memorizzazione dell'immagine.
+          - Doppia modalità di utilizzo sia in continuo che trigger.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_01
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Per quale di queste applicazione è più consigliato utilizzare una linescan anzichè un'area scan?
-                choices:
-                  - ~CORRECT~ Ispezione di tessuti che si muovono a velocità costante.
-                  - Ispezione a 360° di oggetti cilindrici con una singola immagine.
-                  - Lettura di codici a barre su pacchi fermi.
-                  - Misura di viti.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per quale di queste applicazione è più consigliato utilizzare una linescan anzichè un'area scan?
+        choices:
+          - ~CORRECT~ Ispezione di tessuti che si muovono a velocità costante.
+          - Ispezione a 360° di oggetti cilindrici con una singola immagine.
+          - Lettura di codici a barre su pacchi fermi.
+          - Misura di viti.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_02
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere due sensori della stessa dimensioni, il sensore A ha una risoluzione maggiore rispetto al sensore B, quale delle seguenti affermazioni è vera?
-                choices:
-                  - ~CORRECT~ Il sensore B permette di avere un'immagine più luminosa.
-                  - Il sensore A non è consigliato se dobbiamo vedere oggetti molto piccoli nel nostro campo inquadrato.
-                  - Il sensore A avrà un frame rate maggiore.
-                  - Il sensore B è più sensibile al rumore.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere due sensori della stessa dimensioni, il sensore A ha una risoluzione maggiore rispetto al sensore B, quale delle seguenti affermazioni è vera?
+        choices:
+          - ~CORRECT~ Il sensore B permette di avere un'immagine più luminosa.
+          - Il sensore A non è consigliato se dobbiamo vedere oggetti molto piccoli nel nostro campo inquadrato.
+          - Il sensore A avrà un frame rate maggiore.
+          - Il sensore B è più sensibile al rumore.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_03
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Qual è la principale differenza tra un sensore CCD e un sensore CMOS?
-                choices:
-                  - ~CORRECT~ Nei sensori CMOS la conversione da corrente a tensione avviene direttamente nel pixel, mentre nei CCD avviene esternamente al sensore.
-                  - I sensori CCD possono essere sia monodimensionali che bidimensionali, mentre i sensori CMOS sono solo bidimensionali.
-                  - I sensori CCD riescono ad ottenere frame rate più alti rispetto ai CMOS per via della loro architettura.
-                  - Nei sensori CCD vengono utilizzati dei diodi logaritmici che garantiscono un range dinamico maggiore rispetto ai CMOS.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Qual è la principale differenza tra un sensore CCD e un sensore CMOS?
+        choices:
+          - ~CORRECT~ Nei sensori CMOS la conversione da corrente a tensione avviene direttamente nel pixel, mentre nei CCD avviene esternamente al sensore.
+          - I sensori CCD possono essere sia monodimensionali che bidimensionali, mentre i sensori CMOS sono solo bidimensionali.
+          - I sensori CCD riescono ad ottenere frame rate più alti rispetto ai CMOS per via della loro architettura.
+          - Nei sensori CCD vengono utilizzati dei diodi logaritmici che garantiscono un range dinamico maggiore rispetto ai CMOS.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_04
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi è un vantaggio dell'utilizzo di sensori CMOS rispetto ai CCD?
-                choices:
-                  - ~CORRECT~ I sensori CMOS riescono ad avere un maggior range dinamico.
-                  - I sensori CMOS riescono a catturare meglio la luce e creano quindi immagini più luminose.
-                  - I sensori CMOS riescono a leggere l'informazione sul colore senza l'utilizzo del filtro di Bayer.
-                  - I sensori CMOS producono immagini con una messa a fuoco migliore rispetto ai CCD.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi è un vantaggio dell'utilizzo di sensori CMOS rispetto ai CCD?
+        choices:
+          - ~CORRECT~ I sensori CMOS riescono ad avere un maggior range dinamico.
+          - I sensori CMOS riescono a catturare meglio la luce e creano quindi immagini più luminose.
+          - I sensori CMOS riescono a leggere l'informazione sul colore senza l'utilizzo del filtro di Bayer.
+          - I sensori CMOS producono immagini con una messa a fuoco migliore rispetto ai CCD.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_05
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste affermazioni relative ai sensori CCD è corretta?
-                choices:
-                  - ~CORRECT~ I CCD Interline Transfer hanno un fattore di fill molto basso per via della loro architettura, ci sono quindi zone d'ombra tra i pixel. 
-                  - I CCD Frame Transfer hanno una singola linea di registri che si occupa del readout.
-                  - I CCD Full Frame possono essere usati sia in modalità continua che trigger.
-                  - I CCD possono acquisire immagini a colori senza l'utilizzo del filtro di Bayer.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste affermazioni relative ai sensori CCD è corretta?
+        choices:
+          - ~CORRECT~ I CCD Interline Transfer hanno un fattore di fill molto basso per via della loro architettura, ci sono quindi zone d'ombra tra i pixel. 
+          - I CCD Frame Transfer hanno una singola linea di registri che si occupa del readout.
+          - I CCD Full Frame possono essere usati sia in modalità continua che trigger.
+          - I CCD possono acquisire immagini a colori senza l'utilizzo del filtro di Bayer.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_06
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  In quale tipologia di applicazioni è preferibile l'utilizzo di un sensore rolling shutter rispetto ad un global shutter?
-                choices:
-                  - ~CORRECT~ Misura di oggetti metallici che vengono posizionati da un operatore sotto il sistema di visione.
-                  - Lettura di codici a barre che scorrono su un nastro trasportatore.
-                  - Ispezione a 360° di oggetti cilindrici che si muovono ad una velocità di 3 m/s.
-                  - Ispezione di filamenti plastici che galleggiano all'interno di un liquido.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          In quale tipologia di applicazioni è preferibile l'utilizzo di un sensore rolling shutter rispetto ad un global shutter?
+        choices:
+          - ~CORRECT~ Misura di oggetti metallici che vengono posizionati da un operatore sotto il sistema di visione.
+          - Lettura di codici a barre che scorrono su un nastro trasportatore.
+          - Ispezione a 360° di oggetti cilindrici che si muovono ad una velocità di 3 m/s.
+          - Ispezione di filamenti plastici che galleggiano all'interno di un liquido.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_07
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale affermazione sulle camere a colori è falsa?
-                choices:
-                  - ~CORRECT~ Viene effettuata una ricostruzione dell'informazione del colore sommando i contributi dei pixel adiacenti.
-                  - Se la ricostruzione del colore è fatta direttamente sulla camera la velocità di acquisizione sarà inferiore dato che passa un dato più pesante.
-                  - Solitamente il filtro di Bayer utilizza più pixel verdi per simulare l'occhio umano.
-                  - Le camere a colori solitamente producono dei contorni più sfuocati per via dell'operazione di debayering.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_07
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale affermazione sulle camere a colori è falsa?
+        choices:
+          - ~CORRECT~ Viene effettuata una ricostruzione dell'informazione del colore sommando i contributi dei pixel adiacenti.
+          - Se la ricostruzione del colore è fatta direttamente sulla camera la velocità di acquisizione sarà inferiore dato che passa un dato più pesante.
+          - Solitamente il filtro di Bayer utilizza più pixel verdi per simulare l'occhio umano.
+          - Le camere a colori solitamente producono dei contorni più sfuocati per via dell'operazione di debayering.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_08
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi tipi di rumore è dovuto al numero di fotoni che arrivano al sensore?
-                choices:
-                  - ~CORRECT~ Shot Noise.
-                  - Dark Current Noise.
-                  - Photo Response Non Uniformity.
-                  - Reset Noise.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_08
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi tipi di rumore è dovuto al numero di fotoni che arrivano al sensore?
+        choices:
+          - ~CORRECT~ Shot Noise.
+          - Dark Current Noise.
+          - Photo Response Non Uniformity.
+          - Reset Noise.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_09
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra queste è la definizione corretta di Photo Response Non Uniformity?
-                choices:
-                  - ~CORRECT~ È un tipo di rumore dovuto alla non-uniformità nella conversione fotoni/elettroni tra i pixel del sensore.
-                  - È un tipo di rumore dovuto alla corrente che si libera nell'aria in seguito al surriscaldamento del sensore.
-                  - È un tipo di rumore dovuto al processo di scarica del singolo pixel che va a creare un livello di zero diverso ogni volta.
-                  - È un rumore che si vede come una riga di pixel bianca nell'immagine.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_09
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra queste è la definizione corretta di Photo Response Non Uniformity?
+        choices:
+          - ~CORRECT~ È un tipo di rumore dovuto alla non-uniformità nella conversione fotoni/elettroni tra i pixel del sensore.
+          - È un tipo di rumore dovuto alla corrente che si libera nell'aria in seguito al surriscaldamento del sensore.
+          - È un tipo di rumore dovuto al processo di scarica del singolo pixel che va a creare un livello di zero diverso ogni volta.
+          - È un rumore che si vede come una riga di pixel bianca nell'immagine.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_10
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Con quale tipologia di ottiche non si usano i sensori con microlenti?
-                choices:
-                  - ~CORRECT~ Ottiche telecentriche lato immagine.
-                  - Ottiche pericentriche.
-                  - Ottiche a focale fissa.
-                  - Ottiche macro.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_10
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Con quale tipologia di ottiche non si usano i sensori con microlenti?
+        choices:
+          - ~CORRECT~ Ottiche telecentriche lato immagine.
+          - Ottiche pericentriche.
+          - Ottiche a focale fissa.
+          - Ottiche macro.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_11
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento di 0.5x. Se ho un campione che viaggia ad una velocità di 1 m/s, che tempo di esposizione devo tenere per avere un pixel blur di esattamente 10 pixel?
-                choices:
-                  - ~CORRECT~ 40µs.
-                  - 400µs.
-                  - 20µs.
-                  - 100µs.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_11
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento di 0.5x. Se ho un campione che viaggia ad una velocità di 1 m/s, che tempo di esposizione devo tenere per avere un pixel blur di esattamente 10 pixel?
+        choices:
+          - ~CORRECT~ 40µs.
+          - 400µs.
+          - 20µs.
+          - 100µs.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_12
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento 0.5x. Per fare una buona immagine ho bisogno di un tempo di esposizione di 100µs ma posso accettare un pixel blur massimo di 5 pixel. Quale sarà la velocità massima a cui può viaggiare il campione?
-                choices:
-                  - ~CORRECT~ 0.2 m/s.
-                  - 1 m/s.
-                  - 0.5 m/s.
-                  - 0.1 m/s.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_12
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Immaginiamo di avere una camera con un pixel da 2µm e una lente con ingrandimento 0.5x. Per fare una buona immagine ho bisogno di un tempo di esposizione di 100µs ma posso accettare un pixel blur massimo di 5 pixel. Quale sarà la velocità massima a cui può viaggiare il campione?
+        choices:
+          - ~CORRECT~ 0.2 m/s.
+          - 1 m/s.
+          - 0.5 m/s.
+          - 0.1 m/s.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: camere_13
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra le seguenti affermazioni sulle interfaccie GigE e USB3 è falsa?
-                choices:
-                  - ~CORRECT~ L'interfaccia USB3 è più resistente al rumore, per questo è possibile utilizzare dei cavi lunghi fino a 100 metri.
-                  - L'interfaccia GigE richiede l'assegnazione di un indirizzo IP alla camera.
-                  - L'interfaccia USB3 ha una velocità di trasferimento più elevata dello standard GigE ma meno dello standard 10GigE.
-                  - L'interfaccia GigE è preferita in ambito industriale dato che altre apparecchiature a bordo linea la utilizzano.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: camere_13
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra le seguenti affermazioni sulle interfaccie GigE e USB3 è falsa?
+        choices:
+          - ~CORRECT~ L'interfaccia USB3 è più resistente al rumore, per questo è possibile utilizzare dei cavi lunghi fino a 100 metri.
+          - L'interfaccia GigE richiede l'assegnazione di un indirizzo IP alla camera.
+          - L'interfaccia USB3 ha una velocità di trasferimento più elevata dello standard GigE ma meno dello standard 10GigE.
+          - L'interfaccia GigE è preferita in ambito industriale dato che altre apparecchiature a bordo linea la utilizzano.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
   - id: applicazioni
@@ -1072,100 +1012,94 @@ groups:
     pages:
 
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_00
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è il più consigliato per andare a contare delle pastiglie di vario colore che scorrono su un nastro nero?
-                choices:
-                  - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori global shutter.
-                  - Ottica a focale fissa, illuminatore frontlight brightfield verde, camera a colori global shutter.
-                  - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
-                  - Ottica a focale fissa, illuminatore frontlight darkfield bianco, camera a colori global shutter.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è il più consigliato per andare a contare delle pastiglie di vario colore che scorrono su un nastro nero?
+        choices:
+          - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori global shutter.
+          - Ottica a focale fissa, illuminatore frontlight brightfield verde, camera a colori global shutter.
+          - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
+          - Ottica a focale fissa, illuminatore frontlight darkfield bianco, camera a colori global shutter.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_01
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è il più consigliato per andare a misurare un pezzo di plastica rosso?
-                choices:
-                  - ~CORRECT~ Ottica telecentrica, illuminatore backlight telecentrico verde, camera monocromatica.
-                  - Ottica telecentrica, illuminatore backlight diffuso bianco, camera monocromatica.
-                  - Ottica telecentrica, illuminatore backlight telecentrico bianco, camera monocromatica.
-                  - Ottica a focale fissa, illuminatore backlight darkfield rosso, camera a colori.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è il più consigliato per andare a misurare un pezzo di plastica rosso?
+        choices:
+          - ~CORRECT~ Ottica telecentrica, illuminatore backlight telecentrico verde, camera monocromatica.
+          - Ottica telecentrica, illuminatore backlight diffuso bianco, camera monocromatica.
+          - Ottica telecentrica, illuminatore backlight telecentrico bianco, camera monocromatica.
+          - Ottica a focale fissa, illuminatore backlight darkfield rosso, camera a colori.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_02
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è il più consigliato per vedere delle macchie di colore sui lati esterni di un tappo?
-                choices:
-                  - ~CORRECT~ Ottica pericentrica, illuminatore frontlight brightfield bianco, camera monocromatica.
-                  - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera monocromatica.
-                  - Ottica pericentrica, illuminatore frontlight brightfield verde, camera a colori.
-                  - Ottica a focale fissa, illuminatore frontlight darkfield rosso, camera monocromatica.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è il più consigliato per vedere delle macchie di colore sui lati esterni di un tappo?
+        choices:
+          - ~CORRECT~ Ottica pericentrica, illuminatore frontlight brightfield bianco, camera monocromatica.
+          - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera monocromatica.
+          - Ottica pericentrica, illuminatore frontlight brightfield verde, camera a colori.
+          - Ottica a focale fissa, illuminatore frontlight darkfield rosso, camera monocromatica.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_03
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è il più consigliato per contare il numero di componenti neri su una scheda elettronica verde? Le schede vengono posizionate sotto il sistema di visione da un operatore.
-                choices:
-                  - ~CORRECT~ Ottica macro, illuminatore frontlight brightfield verde, camera monocromatica rolling shutter.
-                  - Ottica a focale fissa, illuminatore frontlight brightfield blu, camera monocromatica global shutter.
-                  - Ottica macro, illuminatore frontlight darkfield bianco, camera a colori global shutter.
-                  - Ottica pericentrica, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è il più consigliato per contare il numero di componenti neri su una scheda elettronica verde? Le schede vengono posizionate sotto il sistema di visione da un operatore.
+        choices:
+          - ~CORRECT~ Ottica macro, illuminatore frontlight brightfield verde, camera monocromatica rolling shutter.
+          - Ottica a focale fissa, illuminatore frontlight brightfield blu, camera monocromatica global shutter.
+          - Ottica macro, illuminatore frontlight darkfield bianco, camera a colori global shutter.
+          - Ottica pericentrica, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_04
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è il più consigliato per leggere un codice a barre nero su pacchi marroni che viaggiano su un nastro trasportatore?
-                choices:
-                  - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight bianco, camera global shutter.
-                  - Ottica telecentrica, illuminatore backlight verde, camera global shutter.
-                  - Ottica telecentrica, illuminatore frontlight rosso, camera rolling shutter.
-                  - Ottica pericentrica, illuminatore darkfield blu, camera rolling shutter.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è il più consigliato per leggere un codice a barre nero su pacchi marroni che viaggiano su un nastro trasportatore?
+        choices:
+          - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight bianco, camera global shutter.
+          - Ottica telecentrica, illuminatore backlight verde, camera global shutter.
+          - Ottica telecentrica, illuminatore frontlight rosso, camera rolling shutter.
+          - Ottica pericentrica, illuminatore darkfield blu, camera rolling shutter.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
-    -   
-                type: ChoiceQuestion
-                id: applicazioni_05
-                is_optional_page: false
-                title: Domanda
-                prompt: |
-                  Quale tra questi setup è più consigliato per verificare l'allineamento di pin su un connettore?
-                choices:
-                  - ~CORRECT~ Ottica telecentrica, illuminatore frontlight monocromatico, camera monocromatica.
-                  - Ottica macro, illuminatore darkfield monocromatico, camera monocromatica.
-                  - Ottica a focale fissa, illuminatore backlight bianco, camera a colori.
-                  - Ottica macro, illuminatore frontlight bianco, camera monocromatica.
-                  - Lascia questa domanda in bianco
-                shuffle: true
+      - type: ChoiceQuestion
+        id: applicazioni_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Quale tra questi setup è più consigliato per verificare l'allineamento di pin su un connettore?
+        choices:
+          - ~CORRECT~ Ottica telecentrica, illuminatore frontlight monocromatico, camera monocromatica.
+          - Ottica macro, illuminatore darkfield monocromatico, camera monocromatica.
+          - Ottica a focale fissa, illuminatore backlight bianco, camera a colori.
+          - Ottica macro, illuminatore frontlight bianco, camera monocromatica.
+          - Lascia questa domanda in bianco
+        shuffle: true
     
 
   - id: numpy
