@@ -218,8 +218,8 @@ groups:
                 choices:
                   - ~CORRECT~ Legge di Bayer.
                   - Legge di rifrazione.
-		  - Legge di riflessione.
-		  - Legge di Snell.
+                  - Legge di riflessione.
+                  - Legge di Snell.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -233,9 +233,9 @@ groups:
                   Come sono legati l'angolo di incidenza della luce e l'angolo di riflessione?
                 choices:
                   - ~CORRECT~ L'angolo di incidenza è uguale a meno il valore dell'angolo di riflessione.
-		  - L'angolo di incidenza è uguale all'angolo di riflessione.
-		  - L'angolo di incidenza moltiplicato per l'angolo di riflessione è uguale a 1.
-		  - La somma tra l'angolo di incidenza e l'angolo di riflessione è uguale a 1.
+                  - L'angolo di incidenza è uguale all'angolo di riflessione.
+                  - L'angolo di incidenza moltiplicato per l'angolo di riflessione è uguale a 1.
+                  - La somma tra l'angolo di incidenza e l'angolo di riflessione è uguale a 1.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -249,9 +249,9 @@ groups:
                   Secondo quale approssimazione possiamo semplificare il termine trigonometrico nella legge di Snell?
                 choices:
                   - ~CORRECT~ Approssimazione parassiale.
-		  - Approssimazione di lente sottile.
-		  - Approssimazione di Taylor.
-		  - Approssimazione per difetto.
+                  - Approssimazione di lente sottile.
+                  - Approssimazione di Taylor.
+                  - Approssimazione per difetto.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -265,9 +265,9 @@ groups:
                   Qual è la supposizione fondamentale su cui si basa l'approssimazione parassiale?
                 choices:
                   - ~CORRECT~ Dato che la fonte di luce è lontana, l'angolo di incidenza dei raggi tende ad essere perpendicolare alla superficie di incidenza della luce.
-		  - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
-		  - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
-		  - I raggi sono paralleli all'asse ottico.
+                  - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
+                  - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
+                  - I raggi sono paralleli all'asse ottico.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -281,9 +281,9 @@ groups:
                   Quali sono le grandezze legate tra di loro dall'equazione della lente?
                 choices:
                   - ~CORRECT~ Distanza di lavoro, distanza di back focal, lunghezza focale.
-		  - Distanza di lavoro, spessore della lente, F-Number.
-		  - Distanza di lavoro, distanza di back focal, F-Number.
-		  - Distanza di lavoro, distanza di back focal, Ingrandimento.
+                  - Distanza di lavoro, spessore della lente, F-Number.
+                  - Distanza di lavoro, distanza di back focal, F-Number.
+                  - Distanza di lavoro, distanza di back focal, Ingrandimento.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -297,9 +297,9 @@ groups:
                   Come viene definita la distanza di lavoro?
                 choices:
                   - ~CORRECT~ È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-		  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-		  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
-		  - È la distanza tra la lente e il piano in cui si forma l'immagine.
+                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+                  - È la distanza tra la lente e il piano in cui si forma l'immagine.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -313,9 +313,9 @@ groups:
                   Come viene definita la back focal distance?
                 choices:
                   - ~CORRECT~ È la distanza tra la lente e il piano in cui si forma l'immagine.
-		  - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
-		  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
-		  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
+                  - È la distanza tra la fine dell'ottica e il punto di messa a fuoco.
+                  - È la distanza tra l'ultima lente nel sistema ottico e il punto di messa a fuoco.
+                  - È la distanza tra il sensore e il punto in cui si posiziona l'oggetto.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -329,9 +329,9 @@ groups:
                   Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 12mm la sostituisco con un'ottica a focale fissa da 16mm?
                 choices:
                   - ~CORRECT~ L'area inquadrata sarà inferiore.
-		  - Entra più luce nel sistema ottico.
-		  - Ho una profondità di campo inferiore.
-		  - L'area inquadrata sarà maggiore.
+                  - Entra più luce nel sistema ottico.
+                  - Ho una profondità di campo inferiore.
+                  - L'area inquadrata sarà maggiore.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -345,9 +345,9 @@ groups:
                   Cosa succede se in un sistema in cui sto usando un'ottica a focale fissa da 25mm la sostituisco con un'ottica a focale fissa da 16mm?
                 choices:
                   - ~CORRECT~ L'area inquadrata sarà maggiore.
-		  - Entra meno luce nel sistema ottico.
-		  - Ho una profondità di campo maggiore.
-		  - L'area inquadrata sarà inferiore.
+                  - Entra meno luce nel sistema ottico.
+                  - Ho una profondità di campo maggiore.
+                  - L'area inquadrata sarà inferiore.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -361,9 +361,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un cerchio di diametro 2mm?
                 choices:
                   - ~CORRECT~ 0.250.
-		  - 0.500.
-		  - 2.000.
-		  - 4.000.
+                  - 0.500.
+                  - 2.000.
+                  - 4.000.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -377,9 +377,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, che ingrandimento deve avere l'ottica per vedere correttamente un'area di 1x1 mm^2?
                 choices:
                   - ~CORRECT~ 0.500.
-		  - 1.000.
-		  - 2.000.
-		  - 0.250.
+                  - 1.000.
+                  - 2.000.
+                  - 0.250.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
@@ -393,9 +393,9 @@ groups:
                   Immaginiamo di avere un sensore con una risoluzione di 100x50 pixel e dimensione del pixel 10um, se utilizzo un'ottica con ingrandimento 0.100, quale sarà l'area inquadrata?
                 choices:
                   - ~CORRECT~ 10x5 mm^2.
-		  - 1x0.5 mm^2.
-		  - 0.1x0.05 mm^2.
-		  - 5x2.5 mm^2.
+                  - 1x0.5 mm^2.
+                  - 0.1x0.05 mm^2.
+                  - 5x2.5 mm^2.
                   - Lascia questa domanda in bianco
                 shuffle: true
     
