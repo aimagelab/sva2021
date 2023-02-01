@@ -1137,20 +1137,6 @@ groups:
           - Lascia questa domanda in bianco
         shuffle: true
 
- 
-      - type: ChoiceQuestion
-        id: numpy_02
-        is_optional_page: false
-        title: Domanda
-        prompt: |
-          Supponendo d'aver creato un array Numpy in questo modo: "a= numpy.array([1,2,3,4,5])", se successivamente eseguo la seguente istruzione: "a[a >= 3]", cosa ottengo in output?
-        choices:
-          - ~CORRECT~ array([3, 4, 5])
-          - array([True, True, True])
-          - "True"
-          - array([0, 0, 3, 4, 5])
-          - Lascia questa domanda in bianco
-        shuffle: true
 
 
      - type: ChoiceQuestion
