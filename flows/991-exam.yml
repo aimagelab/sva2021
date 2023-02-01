@@ -1158,8 +1158,8 @@ groups:
           Un array Numpy:
         choices:
           - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
-          - array([True, True, True])
-          - "True"
+          - Può contenere solo elementi numerici
+          - Può contenere qualsiasi tipo di dato fuorchè le stringhe
           - array([0, 0, 3, 4, 5])
           - Lascia questa domanda in bianco
         shuffle: true
