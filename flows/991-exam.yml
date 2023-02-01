@@ -1160,6 +1160,6 @@ groups:
           - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
           - Può contenere solo elementi numerici
           - Può contenere qualsiasi tipo di dato fuorchè le stringhe
-          - array([0, 0, 3, 4, 5])
+          - Non può contenere dati booleani perchè creano conflitti col meccanismo di indicizzazione
           - Lascia questa domanda in bianco
         shuffle: true
