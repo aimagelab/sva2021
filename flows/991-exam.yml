@@ -1184,3 +1184,17 @@ groups:
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
+
+      - type: ChoiceQuestion
+        id: colore_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Spazio di colore HSL:
+        choices:
+          - ~CORRECT~ La tinta ("Hue") viene misurata in angoli  
+          - E' uno spazio sottrattivo
+          - Può essere ottenuto dallo spazio RGB ruotandone le coordinate 
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
