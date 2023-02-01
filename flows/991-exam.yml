@@ -1150,18 +1150,16 @@ groups:
           - Lascia questa domanda in bianco
         shuffle: true
 
-     - type: ChoiceQuestion
+      - type: ChoiceQuestion
         id: numpy_03
         is_optional_page: false
         title: Domanda
         prompt: |
           Un array Numpy:
         choices:
-          - ~CORRECT~ Lascia questa domanda in bianco 
-          - Lascia questa domanda in bianco
-          - Lascia questa domanda in bianco
-          - Lascia questa domanda in bianco
+          - ~CORRECT~ array([3, 4, 5])
+          - array([True, True, True])
+          - "True"
+          - array([0, 0, 3, 4, 5])
           - Lascia questa domanda in bianco
         shuffle: true
- 
- 
