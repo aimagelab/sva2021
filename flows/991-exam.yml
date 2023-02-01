@@ -1157,7 +1157,7 @@ groups:
         prompt: |
           Un array Numpy:
         choices:
-          - ~CORRECT~ array([3, 4, 5])
+          - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
           - array([True, True, True])
           - "True"
           - array([0, 0, 3, 4, 5])
