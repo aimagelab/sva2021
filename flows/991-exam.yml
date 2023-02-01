@@ -1198,3 +1198,17 @@ groups:
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
+
+      - type: ChoiceQuestion
+        id: colore_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          La teoria tristimolo:
+        choices:
+          - ~Si basa sul fatto che l'occhio umano ha tre categorie di Coni, ognuna delle quali è principalmente sensibile ad un determinato spettro di lunghezze d'onda 
+          - E' uno spazio sottrattivo
+          - Può essere ottenuto dallo spazio RGB ruotandone le coordinate 
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
