@@ -1157,10 +1157,10 @@ groups:
         prompt: |
           Un array Numpy:
         choices:
-          - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
-          - Può contenere solo elementi numerici
-          - Può contenere qualsiasi tipo di dato fuorchè le stringhe
-          - Non può contenere dati booleani perchè creano conflitti col meccanismo di indicizzazione
+          - ~CORRECT~ Lascia questa domanda in bianco 
+          - Lascia questa domanda in bianco
+          - Lascia questa domanda in bianco
+          - Lascia questa domanda in bianco
           - Lascia questa domanda in bianco
         shuffle: true
  
