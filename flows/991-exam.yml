@@ -1006,101 +1006,72 @@ groups:
         shuffle: true
     
 
-  - id: applicazioni
+
+  - id: numpy
     shuffle: True
     max_page_count: 1
     pages:
 
 
       - type: ChoiceQuestion
-        id: applicazioni_00
+        id: numpy_00
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale tra questi setup è il più consigliato per andare a contare delle pastiglie di vario colore che scorrono su un nastro nero?
+          Se A è un Numpy array ed L una lista Python, quali delle seguenti affermazioni è sempre vera?
         choices:
-          - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori global shutter.
-          - Ottica a focale fissa, illuminatore frontlight brightfield verde, camera a colori global shutter.
-          - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
-          - Ottica a focale fissa, illuminatore frontlight darkfield bianco, camera a colori global shutter.
+          - ~CORRECT~ Posso leggere un elemento di A in tempo costante
+          - Posso aggiungere (tramite append()) un elemento ad A in tempo costante
+          - Posso leggere un elemento di L in tempo costante
+          - Posso rimuovere sia da A che da L un elemento in tempo costante
           - Lascia questa domanda in bianco
         shuffle: true
-    
+
 
       - type: ChoiceQuestion
-        id: applicazioni_01
+        id: numpy_01
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale tra questi setup è il più consigliato per andare a misurare un pezzo di plastica rosso?
+          L'uso di array Numpy per la memorizzazione di matrici o tensori di oggetti è più efficiente rispetto all'uso di liste:
         choices:
-          - ~CORRECT~ Ottica telecentrica, illuminatore backlight telecentrico verde, camera monocromatica.
-          - Ottica telecentrica, illuminatore backlight diffuso bianco, camera monocromatica.
-          - Ottica telecentrica, illuminatore backlight telecentrico bianco, camera monocromatica.
-          - Ottica a focale fissa, illuminatore backlight darkfield rosso, camera a colori.
+          - ~CORRECT~ Perchè un array Numpy è allocato in maniera contigua in memoria, per cui l'accesso a un singolo elemento avviene in tempo costante
+          - Perchè un array Numpy è una struttura la cui dimensione è variabile a run-time, per cui non c'è bisogno di ricopiare gli elelemnti quando viene espanso
+          - Perchè un array Numpy ha un'allocazione dei dati non contigua, per cui la scrittura di un blocco di dati avviene in tempo costante
+          - Perchè un array Numpy ha un'allocazione dei dati dinamica, per cui un generico accesso in lettura o scrittura avviene in tempo logaritmico rispetto alle sue dimensioni
           - Lascia questa domanda in bianco
         shuffle: true
-    
 
+ 
       - type: ChoiceQuestion
-        id: applicazioni_02
+        id: numpy_02
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale tra questi setup è il più consigliato per vedere delle macchie di colore sui lati esterni di un tappo?
+          Supponendo d'aver creato un array Numpy in questo modo: "a= numpy.array([1,2,3,4,5])", se successivamente eseguo la seguente istruzione: "a[a >= 3]", cosa ottengo in output?
         choices:
-          - ~CORRECT~ Ottica pericentrica, illuminatore frontlight brightfield bianco, camera monocromatica.
-          - Ottica a focale fissa, illuminatore frontlight brightfield bianco, camera monocromatica.
-          - Ottica pericentrica, illuminatore frontlight brightfield verde, camera a colori.
-          - Ottica a focale fissa, illuminatore frontlight darkfield rosso, camera monocromatica.
+          - ~CORRECT~ array([3, 4, 5])
+          - array([True, True, True])
+          - "True"
+          - array([0, 0, 3, 4, 5])
           - Lascia questa domanda in bianco
         shuffle: true
-    
 
-      - type: ChoiceQuestion
-        id: applicazioni_03
-        is_optional_page: false
-        title: Domanda
-        prompt: |
-          Quale tra questi setup è il più consigliato per contare il numero di componenti neri su una scheda elettronica verde? Le schede vengono posizionate sotto il sistema di visione da un operatore.
-        choices:
-          - ~CORRECT~ Ottica macro, illuminatore frontlight brightfield verde, camera monocromatica rolling shutter.
-          - Ottica a focale fissa, illuminatore frontlight brightfield blu, camera monocromatica global shutter.
-          - Ottica macro, illuminatore frontlight darkfield bianco, camera a colori global shutter.
-          - Ottica pericentrica, illuminatore frontlight brightfield bianco, camera a colori rolling shutter.
-          - Lascia questa domanda in bianco
-        shuffle: true
-    
 
-      - type: ChoiceQuestion
-        id: applicazioni_04
+     - type: ChoiceQuestion
+        id: numpy_03
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale tra questi setup è il più consigliato per leggere un codice a barre nero su pacchi marroni che viaggiano su un nastro trasportatore?
+          Un array Numpy:
         choices:
-          - ~CORRECT~ Ottica a focale fissa, illuminatore frontlight bianco, camera global shutter.
-          - Ottica telecentrica, illuminatore backlight verde, camera global shutter.
-          - Ottica telecentrica, illuminatore frontlight rosso, camera rolling shutter.
-          - Ottica pericentrica, illuminatore darkfield blu, camera rolling shutter.
+          - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
+          - Può contenere solo elementi numerici
+          - Può contenere qualsiasi tipo di dato fuorchè le stringhe
+          - Non può contenere dati booleani perchè creano conflitti col meccanismo di indicizzazione
           - Lascia questa domanda in bianco
         shuffle: true
-    
-
-      - type: ChoiceQuestion
-        id: applicazioni_05
-        is_optional_page: false
-        title: Domanda
-        prompt: |
-          Quale tra questi setup è più consigliato per verificare l'allineamento di pin su un connettore?
-        choices:
-          - ~CORRECT~ Ottica telecentrica, illuminatore frontlight monocromatico, camera monocromatica.
-          - Ottica macro, illuminatore darkfield monocromatico, camera monocromatica.
-          - Ottica a focale fissa, illuminatore backlight bianco, camera a colori.
-          - Ottica macro, illuminatore frontlight bianco, camera monocromatica.
-          - Lascia questa domanda in bianco
-        shuffle: true
-    
+ 
 
   - id: colore
     shuffle: True
