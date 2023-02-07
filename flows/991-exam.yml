@@ -1212,3 +1212,68 @@ groups:
           - Si basa sulla divisione della retina in 3 zone specializzate per assorbire le 3 principali frequenze dello spettro visibile
           - Lascia questa domanda in bianco
         shuffle: true
+
+  - id: istogramma
+    shuffle: True
+    max_page_count: 1
+    pages:
+      - type: ChoiceQuestion
+        id: istogramma_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un istogramma di un'immagine:
+        choices:
+          - ~CORRECT~ Contiene informazioni sulla distribuzione dei valori dei pixel ma non sulla loro distribuzione spaziale
+          - Contiene informazioni sulla distribuzione dei valori dei pixel e sulla loro distribuzione spaziale
+          - Contiene informazioni che permettono una completa ricostruzione dell'immagine originaria a partire dal solo istogramma
+          - Contiene informazioni che permettono una completa ricostruzione dell'immagine originaria a partire dall'istogramma e dalla conoscenza del suo valore di intensità media
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: istogramma_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          La procedura di Binning, nella costruzione di un istogramma:
+        choices:
+          - ~CORRECT~ Consente di scegliere un numero di bin inferiore al numero di livelli di intensità utilizzati per rappresentare i pixel dell'immagine
+          - E' l'unico modo con cui è possibile costruire istogrammi di colore
+          - Consiste nell'associare i bin dell'istogramma ad ogni coordinata bidimensionale dei pixel dell'immagine
+          - Consiste nel creare 3 distinti istogrammi di colore, uno per ogni canale RGB
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: istogramma_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Dall'istogramma di un'immagine è possibile:
+        choices:
+          - ~CORRECT~ Calcolare la luminosità totale dell'immagine di partenza e, talvolta, identificare effetti di compressione
+          - Calcolare il contrasto, identificare problemi di saturazione ma non calcolare la luminosità totale dell'immagine di partenza
+          - Calcolare la luminosità totale dell'immagine di partenza, ma non i suoi valori di intensità massimo e minimo
+          - Calcolare il suo contrasto, ma non la luminosità totale dell'immagine di partenza
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+
+    - type: ChoiceQuestion
+        id: istogramma_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          In un istogramma normalizzato di un'immagine:
+        choices:
+          - ~CORRECT~ Ogni bin esprime un valore di probabilità
+          - Ogni bin assume un valore normalizzato tra -1 e +1
+          - Il bin k-esimo contiene la probabilità che, nell'immagine di partenza, ci siano valori di intensità compresi tra 0 e k 
+          - Il bin k-esimo contiene il valore normalizzato del k-esimo pixel dell'immagine
+          - Lascia questa domanda in bianco
+        shuffle: true
+
