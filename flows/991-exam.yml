@@ -1433,3 +1433,69 @@ groups:
           - E' un filtro lineare strettamente positivo, applicabile tramite convoluzione
           - Lascia questa domanda in bianco
         shuffle: true
+
+
+  - id: edge
+    shuffle: True
+    max_page_count: 1
+    pages:
+
+
+      - type: ChoiceQuestion
+        id: edge_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il gradiente di una funzione f(x,y):
+        choices:
+          - ~CORRECT~ E' un vettore che contiene le derivate parziali della funzione rispetto a x e ad y
+          - E' un vettore che punta nella direzione in cui f decresce maggiormente
+          - E' un valore scalare che rappresenta il coefficiente angolare della retta passante per il massimo globale di f 
+          - E' un valore scalare che rappresenta la differenza tra il valore del pixel di coordinate (x,y) e il minimo globale di f
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: edge_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per calcolare gli edge di un'immagine:
+        choices:
+          - ~CORRECT~ Ho bisogno di un operatore locale, perchè devo confrontare il valore di un pixel con quello dei suoi vicini
+          - Ho bisogno di un operatore puntuale, perchè devo sogliare il valore di intensità di un pixel selezionando i pixel di luminosità massima 
+          - Posso farlo solo nello spazio delle frequenze
+          - Ho bisogno dell'istogramma dell'immagine, perchè devo calcolare la differenza tra bin adiacenti
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: edge_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          E' possibile ottenere una buona detection degli edge di un'immagine:
+        choices:
+          - ~CORRECT~ Calcolando il modulo del gradiente e poi selezionando i valori maggiori di una data soglia
+          - Calcolando la direzione del gradiente e poi selezionando i valori maggiori di una data soglia
+          - Sogliando separatamente le derivate orizzontali e verticali, ottenute con un filtro di Sobel o di Prewitt
+          - Nessuna delle risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: edge_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per approssimare la derivata di una funzione discreta con le differenze finite, è meglio:
+        choices:
+          - ~CORRECT~ Utilizzare la differenza finita centrata
+          - Utilizzare la differenza finita in avanti
+          - Utilizzare la differenza finita all'indietro
+          - Nessuna delle altre risposte. Non è possibile approssimare la derivata di una funzione discreta con differenze finite
+          - Lascia questa domanda in bianco
+        shuffle: true
