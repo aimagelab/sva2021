@@ -1275,3 +1275,67 @@ groups:
           - Il bin k-esimo contiene il valore normalizzato del k-esimo pixel dell'immagine
           - Lascia questa domanda in bianco
         shuffle: true
+
+  - id: operatori
+    shuffle: True
+    max_page_count: 2
+    pages:
+      - type: ChoiceQuestion
+        id: operatori_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un operatore puntuale omogeneo:
+        choices:
+          - ~CORRECT~ Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente
+          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente e della posizione del pixel
+          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente e del valore di intensità dei pixel vicini
+          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente in modo esclusivamente non lineare
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+
+      - type: ChoiceQuestion
+        id: operatori_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          La procedura di automatic contrast adjustment:
+        choices:
+          - ~CORRECT~ E' un operatore puntuale, che modifica l'istogramma di un'immagine cambiando l'intervallo dei valori di intensità su cui si basa
+          - E' un operatore puntuale, che modifica l'istogramma di un'immagine rendendolo il più possibile simile ad una distribuzione uniforme
+          - E' un operatore locale, che modifica l'istogramma di un'immagine allargandolo o stringendolo in base a un'operazione di combinazione lineare di pixel tra loro adiacenti
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'effetto sull'istogramma dell'applicazione dell'automatic contrast adjustment:
+        choices:
+          - ~CORRECT~ E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin diversi
+          - E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
+          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin diversi
+          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: operatori_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'equalizzazione dell'istogramma:
+        choices:
+          - ~CORRECT~ E' un operatore puntuale che cerca di modificare l'istogramma di un'immagine per renderlo il più possibile vicino alla distribuzione uniforme
+          - E' un operatore puntuale che modifica l'istogramma di un'immagine rendendolo esattamente uguale alla distribuzione uniforme
+          - E' un operatore puntuale realizzato tramite un'operazione di distribuzione uniforme del valore dei pixel medi dell'immagine
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
