@@ -1207,8 +1207,8 @@ groups:
           La teoria tristimolo:
         choices:
           - ~CORRECT~ Si basa sul fatto che l'occhio umano ha tre categorie di Coni, ognuna delle quali è principalmente sensibile ad un determinato spettro di lunghezze d'onda 
-          - E' uno spazio sottrattivo
-          - Può essere ottenuto dallo spazio RGB ruotandone le coordinate 
-          - Nessuna delle altre risposte è corretta
+          - Si basa sul fatto che l'occhio umano percepisce i colori attraverso una combinazione convessa delle risposte dei Coni e dei Bastoncelli
+          - Si basa sul fatto che il cervello umano stimola attivamente i ricettori sulla retina inviando impulsi mediante 3 categorie distinte di nervi
+          - Si basa sulla divisione della retina in 3 zone specializzate per assorbire le 3 principali frequenze dello spettro visibile
           - Lascia questa domanda in bianco
         shuffle: true
