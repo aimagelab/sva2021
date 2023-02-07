@@ -1499,3 +1499,114 @@ groups:
           - Nessuna delle altre risposte. Non è possibile approssimare la derivata di una funzione discreta con differenze finite
           - Lascia questa domanda in bianco
         shuffle: true
+
+
+  - id: fourier
+    shuffle: True
+    max_page_count: 3
+    pages:
+
+
+      - type: ChoiceQuestion
+        id: fourier_00
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Se applico la trasformata discreta di Fourier (DFT) ad un segnale monodimensionale rappresentato da N campioni discreti, i coefficienti di Fourier che ottengo saranno:
+        choices:
+          - ~CORRECT~ N valori complessi
+          - N valori positivi
+          - N quadro valori scalari
+          - N-1 valori compresi tra 0 ed 1 
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_01
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Il componente DC della trasformata di Fourier di un'immagine:
+        choices:
+          - ~CORRECT~ E' pari alla somma del valore dei pixel dell'immagine
+          - E' pari alla media del valore dei pixel dell'immagine
+          - E' pari alla media pesata del valore dei pixel dell'immagine, dove i pesi sono i coefficienti di Fourier
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          L'inversa della DFT di un'immagine:
+        choices:
+          - ~CORRECT~ Permette di ricostruire esattamente l'immagine di partenza
+          - Permette di ricostruire approssimativamente l'immagine di partenza perdendo parte dell'informazione originaria
+          - Può essere usata solo se la DFT ha prodotto coefficienti tutti reali
+          - Utlizza solo la parte reale dei coefficienti complessi
+          - Lascia questa domanda in bianco
+        shuffle: true
+    
+
+      - type: ChoiceQuestion
+        id: fourier_03
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Un filtro passa-basso e un filtro passa-alto nel dominio delle frequenze:
+        choices:
+          - ~CORRECT~ Sono definiti come uno il complementare dell'altro 
+          - Vengono sottratti l'uno all'altro per poter selezionare determinate frequenze
+          - Sono usati in cascata per ottenere un effetto di sharpening dell'immagine originaria
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_04
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Lo spettro della 2D DFT:
+        choices:
+          - ~CORRECT~ Contiene il modulo dei valori complessi calcolati con la DFT 
+          - Contiene la fase dei valori complessi calcolati con la DFT
+          - Contiene informazione sufficiente per ricostruire l'immagine attraverso la Inverse 2D DFT
+          - Nessuna delle altre risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
+        id: fourier_05
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per ottenere un filtro passa-alto Butterworth agendo su F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine:
+        choices:
+          - ~CORRECT~ Si maschera la parte centrale di F, in maniera graduale man mano che ci si allontana dal centro
+          - Si maschera la parte centrale di F con un taglio netto
+          - Si applica un masking ad anello sullo spettro di F
+          - Si mascherano le linee verticali e orizzontali di F
+          - Lascia questa domanda in bianco
+        shuffle: true        
+
+
+      - type: ChoiceQuestion
+        id: fourier_06
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          Per rimuovere del rumore periodico da un'immagine è possibile:
+        choices:
+          - ~CORRECT~ Agire sui coefficienti DFT dell'immagine, con un filtro Notch o Band reject
+          - Agire sui coefficienti DFT dell'immagine, con un filtro Butterworth
+          - Agire sui coefficienti DFT dell'immagine, con un filtro guassiano
+          - Agire sul dominio spaziale dell'immagine, applicando un filtro Butterworth
+          - Lascia questa domanda in bianco
+        shuffle: true        
