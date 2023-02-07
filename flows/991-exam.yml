@@ -1262,8 +1262,7 @@ groups:
         shuffle: true
 
 
-
-    - type: ChoiceQuestion
+      - type: ChoiceQuestion
         id: istogramma_03
         is_optional_page: false
         title: Domanda
@@ -1272,8 +1271,7 @@ groups:
         choices:
           - ~CORRECT~ Ogni bin esprime un valore di probabilità
           - Ogni bin assume un valore normalizzato tra -1 e +1
-          - Il bin k-esimo contiene la probabilità che, nell'immagine di partenza, ci siano valori di intensità compresi tra 0 e k 
+          - Il bin k-esimo contiene la probabilità che, nell'immagine di partenza, ci siano valori di intensità compresi tra 0 e k
           - Il bin k-esimo contiene il valore normalizzato del k-esimo pixel dell'immagine
           - Lascia questa domanda in bianco
         shuffle: true
-
