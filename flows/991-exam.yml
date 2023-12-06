@@ -1,17 +1,13 @@
 title: "Prova d'esame"
 description: |
-
   # Prova d'esame
-
   ### Prima di iniziare
   - Come prima cosa, **[abilita il sistema di proctoring](/courses/course/sva2020/proctor)**, aprendolo **in una nuova finestra**. Tienilo sempre attivo in una finestra a parte.
   - Clicca su "Start" solo **dopo aver ricevuto l'autorizzazione dal docente**.
-
   ### Durante l'esame
   - Dopo aver dato una risposta, clicca su "**Submit answer**" per inviarla. Puoi sempre modificare una risposta.
   - Dopo aver terminato la sessione e prima di abbandonare l'esame, ricorda di cliccare sulla **spunta verde** in
     alto a destra per consegnare il compito. Altrimenti, non verrà corretto.
-
 notify_on_submit:
   - lorenzo.baraldi@unimore.it
 
@@ -140,7 +136,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quali sono i gli step principali per lo sviluppo di un sistema di visione?
+          Quali sono gli step principali per lo sviluppo di un sistema di visione?
         choices:
           - ~CORRECT~ Descrizione delle specifiche, Design del sistema, Calcolo dei costi, Finalizzazione dello sviluppo, Installazione.
           - Descrizione delle specifiche, Calcolo dei costi, Design del sistema, Finalizzazione dello sviluppo, Installazione.
@@ -170,7 +166,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Un'applicazione in cui è necessario controllare i graffi presenti su una boccetta di vetro in quale macro categoria si può classificare?
+          Un'applicazione in cui è necessario controllare i graffi presenti su una boccetta di vetro in quale macrocategoria si può classificare?
         choices:
           - ~CORRECT~ Surface inspection.
           - Completeness Check.
@@ -255,7 +251,7 @@ groups:
         choices:
           - ~CORRECT~ Dato che la fonte di luce è lontana, l'angolo di incidenza dei raggi tende ad essere perpendicolare alla superficie di incidenza della luce.
           - Lo spessore della lente è molto inferiore al raggio di curvatura della lente stessa.
-          - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente la stesse proprietà.
+          - È possibile approssimare un sistema ottico composto da multiple lenti con una singola avente le stesse proprietà.
           - I raggi sono paralleli all'asse ottico.
           - Lascia questa domanda in bianco
         shuffle: true
@@ -431,7 +427,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale di queste affermazione sulla MTF non è corretta?
+          Quale di queste affermazioni sul grafico di MTF non è corretta?
         choices:
           - ~CORRECT~ Il grafico di MTF lega la distanza di lavoro al contrasto.
           - Il grafico di MTF ha sempre un andamento discendente, ovvero con l'aumentare della frequenza spaziale il contrasto diminuisce.
@@ -465,8 +461,8 @@ groups:
         choices:
           - ~CORRECT~ Grazie alle sue proprietà ottiche con una lente telecentrica viene eliminato l'errore prospettico.
           - L'ingrandimento varia a seconda della distanza di lavoro.
-          - L'applicazione per cui vengono utilizzate più spesso le ottiche telencetriche è la lettura di codici a barre.
-          - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilidrico.
+          - L'applicazione per cui vengono utilizzate più spesso le ottiche telecetriche è la lettura di codici a barre.
+          - Con le ottiche telecentriche è possibile vedere sia la parte superiore che la parete laterale di un oggetto cilindrico.
           - Lascia questa domanda in bianco
         shuffle: true
     
@@ -604,7 +600,7 @@ groups:
         prompt: |
           Quale delle seguenti affermazioni sui LED è falsa?
         choices:
-          - ~CORRECT~ Per poter usare i LED in modalità pulsed è necessario rispettare i valori di corrente massima , tempo di accensione massimo del LED e Duty Cycle.
+          - ~CORRECT~ Per poter usare i LED in modalità pulsed è necessario rispettare i valori di corrente massima, tempo di accensione massimo del LED e Duty Cycle.
           - I vantaggi dei LED sono, basso consumo elettrico, possibilità di avere diverse geometrie di illuminazione e facilità di controllo elettronico.
           - Si preferisce controllare un LED in corrente dato che una piccola variazione sulla corrente corrisponde ad una piccola variazione sull'illuminazione.
           - La modalità continua è quella meno indicata per la gestione del calore.
@@ -767,7 +763,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Immaginiamo di avere una lastra di vetro con un graffio, quale tra questi metodo di illuminazione non mi fa vedere il graffio?
+          Immaginiamo di avere una lastra di vetro con un graffio, quale tra questi metodi di illuminazione non mi fa vedere il graffio?
         choices:
           - ~CORRECT~ Luce diffusa frontale in brightfield.
           - Luce telecentrica frontale in brightfield.
@@ -816,7 +812,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Per quale di queste applicazione è più consigliato utilizzare una linescan anzichè un'area scan?
+          Per quale di queste applicazioni è più consigliato utilizzare una linescan anzichè un'area scan?
         choices:
           - ~CORRECT~ Ispezione di tessuti che si muovono a velocità costante.
           - Ispezione a 360° di oggetti cilindrici con una singola immagine.
@@ -831,7 +827,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Immaginiamo di avere due sensori della stessa dimensioni, il sensore A ha una risoluzione maggiore rispetto al sensore B, quale delle seguenti affermazioni è vera?
+          Immaginiamo di avere due sensori della stessa dimensione, il sensore A ha una risoluzione maggiore rispetto al sensore B, quale delle seguenti affermazioni è vera?
         choices:
           - ~CORRECT~ Il sensore B permette di avere un'immagine più luminosa.
           - Il sensore A non è consigliato se dobbiamo vedere oggetti molto piccoli nel nostro campo inquadrato.
@@ -996,7 +992,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quale tra le seguenti affermazioni sulle interfaccie GigE e USB3 è falsa?
+          Quale tra le seguenti affermazioni sulle interfacce GigE e USB3 è falsa?
         choices:
           - ~CORRECT~ L'interfaccia USB3 è più resistente al rumore, per questo è possibile utilizzare dei cavi lunghi fino a 100 metri.
           - L'interfaccia GigE richiede l'assegnazione di un indirizzo IP alla camera.
@@ -1102,65 +1098,64 @@ groups:
         shuffle: true
     
 
-  - id: numpy
+  - id: miscellanea
     shuffle: True
     max_page_count: 1
     pages:
 
 
       - type: ChoiceQuestion
-        id: numpy_00
+        id: miscellanea_00
         is_optional_page: false
         title: Domanda
         prompt: |
-          Se A è un Numpy array ed L una lista Python, quali delle seguenti affermazioni è sempre vera?
+          Le bande principali dello spettro elettromagnetico sono, ordinate dalle frequenze più alte a quelle più basse:
         choices:
-          - ~CORRECT~ Posso leggere un elemento di A in tempo costante
-          - Posso aggiungere (tramite append()) un elemento ad A in tempo costante
-          - Posso leggere un elemento di L in tempo costante
-          - Posso rimuovere sia da A che da L un elemento in tempo costante
+          - ~CORRECT~ Raggi Gamma, Raggi X, Ultravioletto, Spettro Visibile, Infrarosso, Microonde, Onde Radio
+          - Raggi X, Raggi Gamma, Ultravioletto, Spettro Visibile, Infrarosso, Onde Radio, Microonde
+          - Raggi X, Raggi Gamma, Infrarosso, Spettro Visibile, Ultravioletto, Onde Radio, Microonde
+          - Onde Radio, Raggi X, Infrarosso, Spettro Visibile, Ultravioletto, Microonde, Raggi Gamma
           - Lascia questa domanda in bianco
         shuffle: true
 
       - type: ChoiceQuestion
-        id: numpy_01
+        id: miscellanea_01
         is_optional_page: false
         title: Domanda
         prompt: |
-          L'uso di array Numpy per la memorizzazione di matrici o tensori di oggetti è più efficiente rispetto all'uso di liste:
+          Lo Spettro Visibile:
         choices:
-          - ~CORRECT~ Perchè un array Numpy è allocato in maniera contigua in memoria, per cui l'accesso a un singolo elemento avviene in tempo costante
-          - Perchè un array Numpy è una struttura la cui dimensione è variabile a run-time, per cui non c'è bisogno di ricopiare gli elelemnti quando viene espanso
-          - Perchè un array Numpy ha un'allocazione dei dati non contigua, per cui la scrittura di un blocco di dati avviene in tempo costante
-          - Perchè un array Numpy ha un'allocazione dei dati dinamica, per cui un generico accesso in lettura o scrittura avviene in tempo logaritmico rispetto alle sue dimensioni
+          - ~CORRECT~ Contiene solo un sottoinsieme delle lunghezze d'onda dello spettro elettromagnetico ma è possibile acquisire immagini basate su lunghezze d'onda ad esso esterne 
+          - Contiene solo un sottoinsieme delle lunghezze d'onda dello spettro elettromagnetico e non è possibile acquisire immagini digitali basate su lunghezze d'onda ad esso esterne
+          - Contiene le lunghezze d'onda dello spettro elettromagnetico a frequenza più alta
+          - Contiene le lunghezze d'onda dello spettro elettromagnetico a frequenza più bassa
           - Lascia questa domanda in bianco
         shuffle: true
 
       - type: ChoiceQuestion
-        id: numpy_02
+        id: miscellanea_02
         is_optional_page: false
         title: Domanda
         prompt: |
-          Supponendo d'aver creato un array Numpy in questo modo: "a= numpy.array([1,2,3,4,5])", se successivamente eseguo la seguente istruzione: "a[a >= 3]", cosa ottengo in output?
-        choices:
-          - ~CORRECT~ array([3, 4, 5])
-          - array([True, True, True])
-          - "True"
-          - array([0, 0, 3, 4, 5])
+          Il processo di Quantizzazione:
+          - ~CORRECT~ Converte i valori continui di un segnale analogico nei valori discreti di un insieme finito di elementi 
+          - Converte i valori discretri in un segnale analogico continuo dipendente dai valori reali che può esprimere il sensore
+          - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
+          - Quantifica il numero di campioni del segnale in funzione del numero di sensori adottati per acquisirlo
           - Lascia questa domanda in bianco
         shuffle: true
 
       - type: ChoiceQuestion
-        id: numpy_03
+        id: miscellanea_03
         is_optional_page: false
         title: Domanda
         prompt: |
-          Un array Numpy:
+          Quali delle seguenti relazioni è vera per un segnale periodico?
         choices:
-          - ~CORRECT~ Non può contenere tipi di dati eterogeneri 
-          - Può contenere solo elementi numerici
-          - Può contenere qualsiasi tipo di dato fuorchè le stringhe
-          - Non può contenere dati booleani perchè creano conflitti col meccanismo di indicizzazione
+          - ~CORRECT~ La frequenza è inversamente proporzionale al periodo e indipendente dall'ampiezza
+          - La frequenza è uguale al rapporto tra la lunghezza d'onda fratto la velocità del suono
+          - Il periodo è proporzionale alla lunghezza d'onda moltiplicata per la sua ampiezza
+          - L'ampiezza d'onda è inversamente proporzionale alla frequenza e direttamente proporzionale al periodo
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1252,12 +1247,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Dall'istogramma di un'immagine è possibile:
+          Siano I1 ed I2 due immagini, entrambe di NXM pixel, e siano h1, h2 gli istogrammi corrispondenti, entrambi di K bin:
         choices:
-          - ~CORRECT~ Calcolare la luminosità totale dell'immagine di partenza e, talvolta, identificare effetti di compressione
-          - Calcolare il contrasto, identificare problemi di saturazione ma non calcolare la luminosità totale dell'immagine di partenza
-          - Calcolare la luminosità totale dell'immagine di partenza, ma non i suoi valori di intensità massimo e minimo
-          - Calcolare il suo contrasto, ma non la luminosità totale dell'immagine di partenza
+          - ~CORRECT~ E' possibile che h1 sia uguale ad h2 pur essendo I1 diversa da I2
+          - Se sommo pixel a pixel I1 e I2 ottengo un'immagine I3 = I1 + I2 il cui istogramma (h3) soddisfa h3 = h1 + h2 
+          - K deve essere necessariamente maggiore di NXM 
+          - Sia h1 che h2 sono rappresentati da due matrici (distinte), entrambe di dimensioni NXM
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1278,7 +1273,7 @@ groups:
 
   - id: operatori
     shuffle: True
-    max_page_count: 2
+    max_page_count: 1
     pages:
       - type: ChoiceQuestion
         id: operatori_00
@@ -1287,10 +1282,10 @@ groups:
         prompt: |
           Un operatore puntuale omogeneo:
         choices:
-          - ~CORRECT~ Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente
-          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente e della posizione del pixel
-          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente e del valore di intensità dei pixel vicini
-          - Modifica il valore di intensità di un pixel sulla base del suo valore di intensità precedente in modo esclusivamente non lineare
+          - ~CORRECT~ Nessuna delle altre risposte è corretta
+          - Si basa su una funzione necessariamente lineare e applicata al valore di intensità di un unico pixel
+          - Si basa su una funzione necessariamente non lineare e applicata al valore di intensità di un unico pixel
+          - Si basa su una funzione che ha come argomento le coordinate di un pixel specifico
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1303,9 +1298,9 @@ groups:
         prompt: |
           La procedura di automatic contrast adjustment:
         choices:
-          - ~CORRECT~ E' un operatore puntuale, che modifica l'istogramma di un'immagine cambiando l'intervallo dei valori di intensità su cui si basa
-          - E' un operatore puntuale, che modifica l'istogramma di un'immagine rendendolo il più possibile simile ad una distribuzione uniforme
-          - E' un operatore locale, che modifica l'istogramma di un'immagine allargandolo o stringendolo in base a un'operazione di combinazione lineare di pixel tra loro adiacenti
+          - ~CORRECT~ Modifica il valore d'intensità dei pixel di un'immagine in modo da ottenere una nuova immagine con un diverso un intervallo di valori 
+          - E' un operatore puntuale applicato al valore di ogni singolo bin dell'istogramma di un'immagine
+          - Contrasta gli effetti della saturazione dell'immagine sottraendo ad ogni pixel il valore della media di tutti i pixel 
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1316,12 +1311,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          L'effetto sull'istogramma dell'applicazione dell'automatic contrast adjustment:
+          Se ad una data immagine I applico il processo di histogram equalization ottenendo l'istogramma h:
         choices:
-          - ~CORRECT~ E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin diversi
-          - E' uno stiramento o una compressione dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
-          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin diversi
-          - E' uno stiramento dell'istogramma, che si ottiene spostando i pixel tra bin sempre adiacenti
+          - ~CORRECT~ Nessuna delle altre risposte è corretta
+          - I K bin che compongono h avranno un valore monotonicamente non-decrescente 
+          - h avrà una forma (distribuzione) Gaussiana
+          - I K bin che compongono h avranno tutti un valore uguale alla somma dei valori dei pixel in I
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1342,27 +1337,27 @@ groups:
 
 
 
-  - id: convoluzione
+  - id: filtri
     shuffle: True
-    max_page_count: 1
+    max_page_count: 2
     pages:
       - type: ChoiceQuestion
-        id: convoluzione_00
+        id: filtri_00
         is_optional_page: false
         title: Domanda
         prompt: |
-          Quali dei seguenti operatori non può essere realizzato tramite convoluzione?
+          Un filtro (nel dominio spaziale) si basa su:
         choices:
-          - ~CORRECT~ Soglia
-          - Media
-          - Filtro gaussiano
-          - Filtro laplaciano
+          - ~CORRECT~ L'applicazione di una funzione ad una finestra dei pixel dell'immagine, facendo scorrere tale finestra su tutta l'immagine
+          - Nessuna delle altre risposte è corretta
+          - L'applicazione di una funzione che prende in input tutti i pixel dell'immagine
+          - L'applicazione di una funzione definita da una matrice kernel grande quanto l'intera immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
 
       - type: ChoiceQuestion
-        id: convoluzione_01
+        id: filtri_01
         is_optional_page: false
         title: Domanda
         prompt: |
@@ -1377,7 +1372,7 @@ groups:
 
 
       - type: ChoiceQuestion
-        id: convoluzione_02
+        id: filtri_02
         is_optional_page: false
         title: Domanda
         prompt: |
@@ -1392,45 +1387,45 @@ groups:
 
 
       - type: ChoiceQuestion
-        id: convoluzione_03
+        id: filtri_03
         is_optional_page: false
         title: Domanda
         prompt: |
-          Per la rimozione del rumore sale e pepe:
+          Per la rimozione del rumore sale e pepe tipicamente è più efficace utilizare:
         choices:
-          - ~CORRECT~ E' opportuno utilizzare un filtro mediano
-          - E' opportuno utilizzare un filtro gaussiano
-          - E' opportuno utilizzare un filtro di media
-          - E' opportuno utilizzare un filtro di minimo
+          - ~CORRECT~ Un filtro mediano
+          - Un filtro gaussiano
+          - Un filtro di media
+          - Un filtro di minimo
           - Lascia questa domanda in bianco
         shuffle: true
 
       - type: ChoiceQuestion
-        id: convoluzione_04
+        id: filtri_04
         is_optional_page: false
         title: Domanda
         prompt: |
           Il filtro mediano si applica:
         choices:
           - ~CORRECT~ Considerando il valore dei pixel contenuti in un intorno di un pixel, ordinandoli e restituendo l'elemento centrale
-          - Applicando un operatore convolutivo che calcola la mediana di una regione dell'immagine
+          - Applicando un'operazione lineare che calcola la mediana di una regione dell'immagine
           - Considerando gli elementi contenuti in un intorno di un pixel e calcolandone la media
-          - Considerando gli elementi contenuti in un intorno di un pixel e rimuovendo gli elementi vicini a 0 e a 255
+          - Eliminando i pixel il cui valore si discosta dalla mediana calcolata su tutta l'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
 
       - type: ChoiceQuestion
-        id: convoluzione_05
+        id: filtri_05
         is_optional_page: false
         title: Domanda
         prompt: |
-          Un filtro laplaciano:
+          Il kernel di un filtro:
         choices:
-          - ~CORRECT~ E' un filtro lineare che contiene coefficienti sia positivi che negativi
-          - Non può essere applicato tramite un operatore convolutivo
-          - Produce uno smoothing dell'immagine
-          - E' un filtro lineare strettamente positivo, applicabile tramite convoluzione
+          - ~CORRECT~ Può contenere coefficienti sia positivi che negativi
+          - Può contenere solo coefficienti positivi
+          - Produce sempre uno smoothing dell'immagine
+          - Produce sempre uno sharpening dell'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1446,12 +1441,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Il gradiente di una funzione f(x,y):
+          Nell'edge detection si usa il gradiente di un'immagine perchè:
         choices:
-          - ~CORRECT~ E' un vettore che contiene le derivate parziali della funzione rispetto a x e ad y
-          - E' un vettore che punta nella direzione in cui f decresce maggiormente
-          - E' un valore scalare che rappresenta il coefficiente angolare della retta passante per il massimo globale di f 
-          - E' un valore scalare che rappresenta la differenza tra il valore del pixel di coordinate (x,y) e il minimo globale di f
+          - ~CORRECT~ Contiene le derivate parziali dell'immagine e queste indicano delle differenze locali dell'intensità dei pixel
+          - Indica la direzione dei minimi locali dell'immagine
+          - Contiene la direzione relativa al picco di intensità massima di tutta l'immagine 
+          - Contiene le derivate seconde dell'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1476,11 +1471,11 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          E' possibile ottenere una buona detection degli edge di un'immagine:
+          E' possibile calcolare l'edge detection di un'immagine:
         choices:
           - ~CORRECT~ Calcolando il modulo del gradiente e poi selezionando i valori maggiori di una data soglia
           - Calcolando la direzione del gradiente e poi selezionando i valori maggiori di una data soglia
-          - Sogliando separatamente le derivate orizzontali e verticali, ottenute con un filtro di Sobel o di Prewitt
+          - Sogliando separatamente le derivate orizzontali e verticali e poi combinandole con un AND logico
           - Nessuna delle risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1512,12 +1507,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Se applico la trasformata discreta di Fourier (DFT) ad un segnale monodimensionale rappresentato da N campioni discreti, i coefficienti di Fourier che ottengo saranno:
+          Se applico la trasformata discreta di Fourier ad un'immagine, i coefficienti di Fourier che ottengo saranno:
         choices:
-          - ~CORRECT~ N valori complessi
-          - N valori positivi
-          - N quadro valori scalari
-          - N-1 valori compresi tra 0 ed 1 
+          - ~CORRECT~ Tanti quanti il numero di pixel dell'immagine di partenza 
+          - Tanti quanti il numero di livelli di grigio dell'immagine di partenza
+          - Tutti valori positivi
+          - Tutti valori compresi tra 0 ed 1 
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1557,11 +1552,11 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Un filtro passa-basso e un filtro passa-alto nel dominio delle frequenze:
+          La compressione lossy nel dominio delle frequenze:
         choices:
-          - ~CORRECT~ Sono definiti come uno il complementare dell'altro 
-          - Vengono sottratti l'uno all'altro per poter selezionare determinate frequenze
-          - Sono usati in cascata per ottenere un effetto di sharpening dell'immagine originaria
+          - ~CORRECT~ Elimina le frequenze più alte perchè rappresentano dettagli spesso non percettibili  
+          - Permette di ricostruire esattamente il segnale originario
+          - Elimina i valori d'intensità dei pixel che compaiono con minore frequenza nell'immagine 
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1589,10 +1584,10 @@ groups:
         prompt: |
           Per ottenere un filtro passa-alto Butterworth agendo su F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine:
         choices:
-          - ~CORRECT~ Si maschera la parte centrale di F, in maniera graduale man mano che ci si allontana dal centro
+          - ~CORRECT~ Si maschera la parte centrale di F, in maniera gradualmente minore man mano che ci si allontana dal centro
           - Si maschera la parte centrale di F con un taglio netto
-          - Si applica un masking ad anello sullo spettro di F
-          - Si mascherano le linee verticali e orizzontali di F
+          - Si mascherano tutte le frequenze disposte ad anello su una distanza fissa dal centro di F
+          - Si mascherano delle determinate linee verticali e orizzontali di F
           - Lascia questa domanda in bianco
         shuffle: true        
 
