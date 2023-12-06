@@ -1138,6 +1138,7 @@ groups:
         title: Domanda
         prompt: |
           Il processo di Quantizzazione:
+        choices:
           - ~CORRECT~ Converte i valori continui di un segnale analogico nei valori discreti di un insieme finito di elementi 
           - Converte i valori discretri in un segnale analogico continuo dipendente dai valori reali che può esprimere il sensore
           - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
