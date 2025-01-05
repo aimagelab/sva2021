@@ -1472,12 +1472,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          E' possibile calcolare l'edge detection di un'immagine:
+          Gli operatori di Sobel nell'edge detection:
         choices:
-          - ~CORRECT~ Calcolando il modulo del gradiente e poi selezionando i valori maggiori di una data soglia
-          - Calcolando la direzione del gradiente e poi selezionando i valori maggiori di una data soglia
-          - Sogliando separatamente le derivate orizzontali e verticali e poi combinandole con un AND logico
-          - Nessuna delle risposte è corretta
+          - ~CORRECT~ Calcolano le derivate dell'immagine tramite differenze finite e usando dei kernel 3 X 3
+          - Calcolano le derivate dell'immagine tramite differenze finite e sono operatori non lineari che non possono essere implementati tramite l'algoritmo di convoluzione
+          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 3 X 1
+          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 1 X 3
           - Lascia questa domanda in bianco
         shuffle: true
 
