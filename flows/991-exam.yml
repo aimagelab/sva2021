@@ -1468,6 +1468,21 @@ groups:
 
 
       - type: ChoiceQuestion
+        id: edge_02
+        is_optional_page: false
+        title: Domanda
+        prompt: |
+          E' possibile calcolare l'edge detection di un'immagine:
+        choices:
+          - ~CORRECT~ Calcolando il modulo del gradiente e poi selezionando i valori maggiori di una data soglia
+          - Calcolando la direzione del gradiente e poi selezionando i valori maggiori di una data soglia
+          - Sogliando separatamente le derivate orizzontali e verticali e poi combinandole con un AND logico
+          - Nessuna delle risposte è corretta
+          - Lascia questa domanda in bianco
+        shuffle: true
+
+
+      - type: ChoiceQuestion
         id: edge_03
         is_optional_page: false
         title: Domanda
