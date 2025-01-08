@@ -1475,9 +1475,9 @@ groups:
           Gli operatori di Sobel nell'edge detection:
         choices:
           - ~CORRECT~ Calcolano le derivate dell'immagine tramite differenze finite e usando dei kernel 3X3
-          - Calcolano le derivate dell'immagine tramite differenze finite e sono operatori non lineari che non possono essere implementati tramite l'algoritmo di convoluzione
-          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 3X1
-          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 1X3
+          - ...
+          - ...
+          - ...
           - Lascia questa domanda in bianco
         shuffle: true
 
