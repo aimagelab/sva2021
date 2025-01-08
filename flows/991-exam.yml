@@ -1123,12 +1123,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Lo Spettro Visibile:
+          Un'immagine digitale a colori può essere rappresentata:
         choices:
-          - ~CORRECT~ Contiene solo un sottoinsieme delle lunghezze d'onda dello spettro elettromagnetico ma è possibile acquisire immagini basate su lunghezze d'onda ad esso esterne 
-          - Contiene solo un sottoinsieme delle lunghezze d'onda dello spettro elettromagnetico e non è possibile acquisire immagini digitali basate su lunghezze d'onda ad esso esterne
-          - Contiene le lunghezze d'onda dello spettro elettromagnetico a frequenza più alta
-          - Contiene le lunghezze d'onda dello spettro elettromagnetico a frequenza più bassa
+          - ~CORRECT~ Con un tensore composto da 3 matrici, una per ogni colore primario 
+          - Con una sola matrice di valori scalari, detta "canale"
+          - Con un vettore che associa ad ogni pixel l'indice del canale corrispondente
+          - Con una matrice che associa ad ogni pixel l'indice del canale corrispondente
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1138,9 +1138,8 @@ groups:
         title: Domanda
         prompt: |
           Il processo di Quantizzazione:
-        choices:
-          - ~CORRECT~ Converte i valori continui di un segnale analogico nei valori discreti di un insieme finito di elementi 
-          - Converte i valori discretri in un segnale analogico continuo dipendente dai valori reali che può esprimere il sensore
+          - ~CORRECT~ Converte un valore reale di un segnale analogico in un valore discreto scelto in un insieme finito di elementi 
+          - Converte un valore discreto in un valore reale proporzionale all'intensità del segnale acquisita dal sensore
           - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
           - Quantifica il numero di campioni del segnale in funzione del numero di sensori adottati per acquisirlo
           - Lascia questa domanda in bianco
@@ -1153,10 +1152,10 @@ groups:
         prompt: |
           Quali delle seguenti relazioni è vera per un segnale periodico?
         choices:
-          - ~CORRECT~ La frequenza è inversamente proporzionale al periodo e indipendente dall'ampiezza
-          - La frequenza è uguale al rapporto tra la lunghezza d'onda fratto la velocità del suono
-          - Il periodo è proporzionale alla lunghezza d'onda moltiplicata per la sua ampiezza
-          - L'ampiezza d'onda è inversamente proporzionale alla frequenza e direttamente proporzionale al periodo
+          - ~CORRECT~ La lunghezza dell'onda è inversamente proporzionale alla sua frequenza
+          - La frequenza dell'onda è data dal prodotto tra la sua lunghezza e la sua ampiezza
+          - Il periodo dell'onda è inversamente proporzionale alla sua ampiezza
+          - L'ampiezza dell'onda è inversamente proporzionale alla sua frequenza
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1175,8 +1174,8 @@ groups:
           Con "spazio di colore uniformemente percettivo" si intende:
         choices:
           - ~CORRECT~ Uno spazio in cui la distanza tra due punti A e B è proporzionale alla differenza percepita dal cervello umano tra i corrispondenti colori rappresentatati da A e B 
-          - Uno spazio in cui la distanza  tra due punti A e B è percepita dal cervello umano come uniforme al variare di B
-          - Uno spazio in cui la distanza tra due punti A e B è ottenuta in maniera additiva (lineare) 
+          - Uno spazio in cui tutti i suoi punti corrispondono a colori percepiti in maniera uniforme dal cervello umano   
+          - Uno spazio in cui i colori hanno una distribuzione di probabilità uniforme e la somma delle distanza tra tre punti A, B e C è proporzionale alla somma delle corrispondenti lunghezze d'onda 
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1202,7 +1201,7 @@ groups:
         prompt: |
           La teoria tristimolo:
         choices:
-          - ~CORRECT~ Si basa sul fatto che l'occhio umano ha tre categorie di Coni, ognuna delle quali è principalmente sensibile ad un determinato spettro di lunghezze d'onda 
+          - ~CORRECT~ Si basa sul fatto che l'occhio umano ha tre categorie di Coni, ognuna delle quali è principalmente sensibile ad una determinata banda di lunghezze d'onda 
           - Si basa sul fatto che l'occhio umano percepisce i colori attraverso una combinazione convessa delle risposte dei Coni e dei Bastoncelli
           - Si basa sul fatto che il cervello umano stimola attivamente i ricettori sulla retina inviando impulsi mediante 3 categorie distinte di nervi
           - Si basa sulla divisione della retina in 3 zone specializzate per assorbire le 3 principali frequenze dello spettro visibile
@@ -1220,10 +1219,10 @@ groups:
         prompt: |
           Un istogramma di un'immagine:
         choices:
-          - ~CORRECT~ Contiene informazioni sulla distribuzione dei valori dei pixel ma non sulla loro distribuzione spaziale
-          - Contiene informazioni sulla distribuzione dei valori dei pixel e sulla loro distribuzione spaziale
-          - Contiene informazioni che permettono una completa ricostruzione dell'immagine originaria a partire dal solo istogramma
-          - Contiene informazioni che permettono una completa ricostruzione dell'immagine originaria a partire dall'istogramma e dalla conoscenza del suo valore di intensità media
+          - ~CORRECT~ Contiene informazioni sulla distribuzione dei valori d'intensità dei pixel ma non sulla loro distribuzione spaziale
+          - Contiene informazioni sulla distribuzione dei valori d'intensità dei pixel e sulla loro distribuzione spaziale
+          - Contiene informazioni che permettono una ricostruzione esatta dell'immagine originaria a partire dal solo istogramma
+          - Contiene informazioni che permettono una ricostruzione esatta dell'immagine originaria a partire dall'istogramma e dalla conoscenza del suo valore d'intensità media
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1237,7 +1236,7 @@ groups:
         choices:
           - ~CORRECT~ Consente di scegliere un numero di bin inferiore al numero di livelli di intensità utilizzati per rappresentare i pixel dell'immagine
           - E' l'unico modo con cui è possibile costruire istogrammi di colore
-          - Consiste nell'associare i bin dell'istogramma ad ogni coordinata bidimensionale dei pixel dell'immagine
+          - Consiste nell'associare ogni bin dell'istogramma con un intervallo di valori delle coordinate bidimensionali dei pixel dell'immagine
           - Consiste nel creare 3 distinti istogrammi di colore, uno per ogni canale RGB
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1248,12 +1247,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Siano I1 ed I2 due immagini, entrambe di NXM pixel, e siano h1, h2 gli istogrammi corrispondenti, entrambi di K bin:
+          In un'istogramma cumulativo di un'immagine, il valore del bin n-esimo:
         choices:
-          - ~CORRECT~ E' possibile che h1 sia uguale ad h2 pur essendo I1 diversa da I2
-          - Se sommo pixel a pixel I1 e I2 ottengo un'immagine I3 = I1 + I2 il cui istogramma (h3) soddisfa h3 = h1 + h2 
-          - K deve essere necessariamente maggiore di NXM 
-          - Sia h1 che h2 sono rappresentati da due matrici (distinte), entrambe di dimensioni NXM
+          - ~CORRECT~ E' il numero di pixel con valori d'intensità minori o uguali ad n
+          - E' la somma dei valori d'intensità dei primi n pixel dell'immagine  
+          - E' la probabilità che ci siano pixel d'intensità n  
+          - E' il valore cumulativo dei tre colori primari corrispondenti al pixel n-esimo
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1268,7 +1267,7 @@ groups:
           - ~CORRECT~ Ogni bin esprime un valore di probabilità
           - Ogni bin assume un valore normalizzato tra -1 e +1
           - Il bin k-esimo contiene la probabilità che, nell'immagine di partenza, ci siano valori di intensità compresi tra 0 e k
-          - Il bin k-esimo contiene il valore normalizzato del k-esimo pixel dell'immagine
+          - Il bin k-esimo contiene la probabilità che, nell'immagine di partenza, ci siano valori di intensità compresi tra 1 e k
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1283,8 +1282,8 @@ groups:
         prompt: |
           Un operatore puntuale omogeneo:
         choices:
-          - ~CORRECT~ Nessuna delle altre risposte è corretta
-          - Si basa su una funzione necessariamente lineare e applicata al valore di intensità di un unico pixel
+          - ~CORRECT~ Viene tipicamente applicato a tutti i pixel dell'immagine, prendendo in input un valore d'intensità e restituendone un altro  
+          - Viene tipicamente applicato a tutti i pixel dell'immagine, producendo un output che dipende in maniera omogenea dal pixel attuale e dai suoi vicini
           - Si basa su una funzione necessariamente non lineare e applicata al valore di intensità di un unico pixel
           - Si basa su una funzione che ha come argomento le coordinate di un pixel specifico
           - Lascia questa domanda in bianco
@@ -1299,9 +1298,9 @@ groups:
         prompt: |
           La procedura di automatic contrast adjustment:
         choices:
-          - ~CORRECT~ Modifica il valore d'intensità dei pixel di un'immagine in modo da ottenere una nuova immagine con un diverso un intervallo di valori 
-          - E' un operatore puntuale applicato al valore di ogni singolo bin dell'istogramma di un'immagine
-          - Contrasta gli effetti della saturazione dell'immagine sottraendo ad ogni pixel il valore della media di tutti i pixel 
+          - ~CORRECT~ Modifica i valori dei pixel di un'immagine scalandoli ed eventualmente traslandoli in modo da ottenere dei nuovi valori definiti in un intervallo diverso da quello di partenza 
+          - Modifica i valori d'intensità dei pixel di un'immagine moltiplicandoli tra di loro in modo da ottenere un contrasto più netto rispetto al contrasto dell'immagine originaria
+          - Migliora il contrasto dell'immagine normalizzando ogni pixel sottraendogli il valore della media e dividendolo per la deviazione standard, entrambe calcolate usando tutti i valori dei pixel dell'immagine originaria 
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1317,7 +1316,7 @@ groups:
           - ~CORRECT~ Nessuna delle altre risposte è corretta
           - I K bin che compongono h avranno un valore monotonicamente non-decrescente 
           - h avrà una forma (distribuzione) Gaussiana
-          - I K bin che compongono h avranno tutti un valore uguale alla somma dei valori dei pixel in I
+          - I K bin che compongono h corrispondono a K zone di I tutte della stessa area 
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1351,8 +1350,8 @@ groups:
         choices:
           - ~CORRECT~ L'applicazione di una funzione ad una finestra dei pixel dell'immagine, facendo scorrere tale finestra su tutta l'immagine
           - Nessuna delle altre risposte è corretta
-          - L'applicazione di una funzione che prende in input tutti i pixel dell'immagine
-          - L'applicazione di una funzione definita da una matrice kernel grande quanto l'intera immagine
+          - L'applicazione di una funzione che prende in input tutti i pixel dell'immagine e ne calcola la somma pesata
+          - L'applicazione di una funzione che filtra i valori dei pixel di una specifica finestra dell'immagine centrata sulla parte centrale di quest'ultima
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1366,7 +1365,7 @@ groups:
         choices:
           - ~CORRECT~ E' un'immagine più piccola dell'immagine originale, con una differenza nel numero di righe e colonne proporzionale alla dimensione del filtro
           - E' un'immagine più piccola dell'immagine originale, con un numero di righe e colonne in meno proporzionale alla dimensione originale dell'immagine
-          - E' un'immagine delle stesse dimensioni dell'immagine originale
+          - E' un'immagine delle stesse dimensioni dell'immagine originale ma avente un bordo di soli zero
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1377,12 +1376,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          I coefficienti di un filtro convolutivo:
+          Nella convoluzione di un'immagine X con un filtro definito dal kernel K:
         choices:
-          - ~CORRECT~ Sono moltiplicati, elemento per elemento, col valore dei pixel della finestra dell'immagine che corrisponde alla posizione del filtro durante il suo scorrimento
-          - Sono sommati, elemento per elemento, al valore dei pixel della finestra dell'immagine che corrisponde alla posizione del filtro durante il suo scorrimento
-          - Sono sommati al valore medio dei pixel della finestra dell'immagine che corrisponde alla posizione del filtro durante il suo scorrimento
-          - Sono moltiplicati col valore medio dei pixel della finestra dell'immagine che corrisponde alla posizione del filtro durante il suo scorrimento
+          - ~CORRECT~ Per ogni finestra di X, moltiplico i valori dei pixel della finestra con i corrispondenti elementi di K e sommo il risultato di tutte le moltiplicazioni
+          - Per ogni finestra di X, sommo i valori dei pixel della finestra con i corrispondenti elementi di K e moltiplico il risultato di tutte le somme
+          - Sommo il valore dei pixel di X con i corrispondenti elementi di K traslati in modo che l'hot spot coincida con l'origine di X 
+          - Moltiplico elemento per elemento i pixel di X con gli elementi di K traslati in modo che l'hot spot corrisponda all'elemento centrale di K
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1392,7 +1391,7 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Per la rimozione del rumore sale e pepe tipicamente è più efficace utilizare:
+          Per la rimozione del rumore sale e pepe tipicamente è più efficace utilizzare:
         choices:
           - ~CORRECT~ Un filtro mediano
           - Un filtro gaussiano
@@ -1408,10 +1407,10 @@ groups:
         prompt: |
           Il filtro mediano si applica:
         choices:
-          - ~CORRECT~ Considerando il valore dei pixel contenuti in un intorno di un pixel, ordinandoli e restituendo l'elemento centrale
+          - ~CORRECT~ Considerando il valore dei pixel contenuti nella finestra dell'immagine, ordinandoli e restituendo l'elemento centrale
           - Applicando un'operazione lineare che calcola la mediana di una regione dell'immagine
-          - Considerando gli elementi contenuti in un intorno di un pixel e calcolandone la media
-          - Eliminando i pixel il cui valore si discosta dalla mediana calcolata su tutta l'immagine
+          - Considerando gli elementi contenuti nella finestra dell'immagine e calcolandone la media
+          - Eliminando i pixel della finestra dell'immagine il cui valore è diverso dalla mediana calcolata su tutta l'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1421,12 +1420,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Il kernel di un filtro:
+          Il kernel di un filtro nel dominio  spaziale:
         choices:
           - ~CORRECT~ Può contenere coefficienti sia positivi che negativi
           - Può contenere solo coefficienti positivi
-          - Produce sempre uno smoothing dell'immagine
-          - Produce sempre uno sharpening dell'immagine
+          - Può contenere solo coefficienti interi
+          - Può contenere solo coefficienti compresi tra 0 ed 1
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1444,10 +1443,10 @@ groups:
         prompt: |
           Nell'edge detection si usa il gradiente di un'immagine perchè:
         choices:
-          - ~CORRECT~ Contiene le derivate parziali dell'immagine e queste indicano delle differenze locali dell'intensità dei pixel
-          - Indica la direzione dei minimi locali dell'immagine
+          - ~CORRECT~ E' composto dalle derivate parziali dell'immagine e queste indicano delle differenze locali dell'intensità dei pixel
+          - I punti di edge corrispondono ai punti in cui il gradiente si annulla (minimi e massimi locali dell'intensità dell'immagine)
           - Contiene la direzione relativa al picco di intensità massima di tutta l'immagine 
-          - Contiene le derivate seconde dell'immagine
+          - Contiene le derivate seconde dell'immagine e queste possono essere usate per calcolarne il cambio di convessità
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1459,10 +1458,10 @@ groups:
         prompt: |
           Per calcolare gli edge di un'immagine:
         choices:
-          - ~CORRECT~ Ho bisogno di un operatore locale, perchè devo confrontare il valore di un pixel con quello dei suoi vicini
-          - Ho bisogno di un operatore puntuale, perchè devo sogliare il valore di intensità di un pixel selezionando i pixel di luminosità massima 
-          - Posso farlo solo nello spazio delle frequenze
-          - Ho bisogno dell'istogramma dell'immagine, perchè devo calcolare la differenza tra bin adiacenti
+          - ~CORRECT~ Ho bisogno di un operatore locale perchè devo confrontare il valore di un pixel con quello dei suoi vicini
+          - Ho bisogno di un operatore puntuale perchè devo sogliare il valore di intensità di un pixel selezionando i pixel di luminosità massima 
+          - Ho bisogno che l'immagine sia una funzione continua perché devo calcolarmi le sue derivate orizzontali e verticali
+          - Ho bisogno che le derivate orizzontali e verticali dell'immagine siano definite tra 0 ed 1 
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1472,12 +1471,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          E' possibile calcolare l'edge detection di un'immagine:
+          Gli operatori di Sobel nell'edge detection:
         choices:
-          - ~CORRECT~ Calcolando il modulo del gradiente e poi selezionando i valori maggiori di una data soglia
-          - Calcolando la direzione del gradiente e poi selezionando i valori maggiori di una data soglia
-          - Sogliando separatamente le derivate orizzontali e verticali e poi combinandole con un AND logico
-          - Nessuna delle risposte è corretta
+          - ~CORRECT~ Calcolano le derivate dell'immagine tramite differenze finite e usando dei kernel 3 X 3
+          - Calcolano le derivate dell'immagine tramite differenze finite e sono operatori non lineari che non possono essere implementati tramite l'algoritmo di convoluzione
+          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 3 X 1
+          - Calcolano le derivate dell'immagine risolvendo il limite continuo della definizione di derivata mediante dei kernel 1 X 3
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1487,12 +1486,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Per approssimare la derivata di una funzione discreta con le differenze finite, è meglio:
+          Posso calcolare l'edge detection di un'immagine:
         choices:
-          - ~CORRECT~ Utilizzare la differenza finita centrata
-          - Utilizzare la differenza finita in avanti
-          - Utilizzare la differenza finita all'indietro
-          - Nessuna delle altre risposte. Non è possibile approssimare la derivata di una funzione discreta con differenze finite
+          - ~CORRECT~ Usando la convoluzione e due kernel specifici, uno per derivata
+          - Usando la convoluzione e un kernel specifico    
+          - Usando la convoluzione e due kernel specifici, uno per il modulo e uno per la direzione del gradiente
+          - Non posso usare la convoluzione
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1523,12 +1522,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Il componente DC della trasformata di Fourier di un'immagine:
+          Il DFT Centering:
         choices:
-          - ~CORRECT~ E' pari alla somma del valore dei pixel dell'immagine
-          - E' pari alla media del valore dei pixel dell'immagine
-          - E' pari alla media pesata del valore dei pixel dell'immagine, dove i pesi sono i coefficienti di Fourier
-          - Nessuna delle altre risposte è corretta
+          - ~CORRECT~ Ha l'effetto di spostare i coefficienti della matrice risultante dalla DFT in modo che le frequenze più basse si trovino al centro 
+          - Serve per centrare (normalizzare) i coefficienti della DFT in modo tale che la loro media faccia 0 
+          - Centra il DC coefficient ma non ha nessun effetto su tutti gli altri coefficienti della DFT che rimangono invariati rispetto alla versione senza centering
+          - E' un'operazione che viene fatta dopo il calcolo della DFT e si ottiene moltiplicando la matrice risultante dalla DFT per una costante complessa 
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1543,7 +1542,7 @@ groups:
           - ~CORRECT~ Permette di ricostruire esattamente l'immagine di partenza
           - Permette di ricostruire approssimativamente l'immagine di partenza perdendo parte dell'informazione originaria
           - Può essere usata solo se la DFT ha prodotto coefficienti tutti reali
-          - Utlizza solo la parte reale dei coefficienti complessi
+          - Utilizza solo la parte reale dei coefficienti complessi
           - Lascia questa domanda in bianco
         shuffle: true
     
@@ -1555,7 +1554,7 @@ groups:
         prompt: |
           La compressione lossy nel dominio delle frequenze:
         choices:
-          - ~CORRECT~ Elimina le frequenze più alte perchè rappresentano dettagli spesso non percettibili  
+          - ~CORRECT~ Elimina le frequenze più alte perchè rappresentano dettagli normalmente non percettibili  
           - Permette di ricostruire esattamente il segnale originario
           - Elimina i valori d'intensità dei pixel che compaiono con minore frequenza nell'immagine 
           - Nessuna delle altre risposte è corretta
@@ -1583,12 +1582,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          Per ottenere un filtro passa-alto Butterworth agendo su F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine:
+          Se applico un filtro Gaussiano "passa basso" ad F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine, vuol dire che:
         choices:
-          - ~CORRECT~ Si maschera la parte centrale di F, in maniera gradualmente minore man mano che ci si allontana dal centro
-          - Si maschera la parte centrale di F con un taglio netto
-          - Si mascherano tutte le frequenze disposte ad anello su una distanza fissa dal centro di F
-          - Si mascherano delle determinate linee verticali e orizzontali di F
+          - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al cento di F e diminuisce man mano che ci si allontana dal centro
+          - Sommo i coefficienti in F per un valore variabile, che è proporzionale alla loro distanza rispetto al centro di F
+          - Modifico i coefficienti di F trasformandoli nei valori reali di una Gaussiana bidimensionale, centrata sul cento di F
+          - Calcolo la funzione esponenziale (elemento per elemento) di F, usando "e" (numero di Nepero) come base ed i coefficienti di F come esponente
           - Lascia questa domanda in bianco
         shuffle: true        
 
@@ -1602,7 +1601,7 @@ groups:
         choices:
           - ~CORRECT~ Agire sui coefficienti DFT dell'immagine, con un filtro Notch o Band reject
           - Agire sui coefficienti DFT dell'immagine, con un filtro Butterworth
-          - Agire sui coefficienti DFT dell'immagine, con un filtro guassiano
+          - Agire sui coefficienti DFT dell'immagine, con un filtro Guassiano
           - Agire sul dominio spaziale dell'immagine, applicando un filtro Butterworth
           - Lascia questa domanda in bianco
         shuffle: true        
