@@ -1468,21 +1468,6 @@ groups:
 
 
       - type: ChoiceQuestion
-        id: edge_02
-        is_optional_page: false
-        title: Domanda
-        prompt: |
-          ...
-        choices:
-          - ~CORRECT~ ...
-          - ...
-          - ...
-          - ...
-          - ...
-        shuffle: true
-
-
-      - type: ChoiceQuestion
         id: edge_03
         is_optional_page: false
         title: Domanda
