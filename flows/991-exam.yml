@@ -1138,6 +1138,7 @@ groups:
         title: Domanda
         prompt: |
           Il processo di Quantizzazione:
+        choices:
           - ~CORRECT~ Converte un valore reale di un segnale analogico in un valore discreto scelto in un insieme finito di elementi 
           - Converte un valore discreto in un valore reale proporzionale all'intensità del segnale acquisita dal sensore
           - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
