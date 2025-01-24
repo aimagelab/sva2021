@@ -1138,7 +1138,6 @@ groups:
         title: Domanda
         prompt: |
           Il processo di Quantizzazione:
-        choices:
           - ~CORRECT~ Converte un valore reale di un segnale analogico in un valore discreto scelto in un insieme finito di elementi 
           - Converte un valore discreto in un valore reale proporzionale all'intensità del segnale acquisita dal sensore
           - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
@@ -1299,7 +1298,7 @@ groups:
         prompt: |
           La procedura di automatic contrast adjustment:
         choices:
-          - ~CORRECT~ Modifica i valori dei pixel di un'immagine scalandoli ed eventualmente traslandoli in modo da ottenere dei nuovi valori definiti in un intervallo diverso da quello di partenza 
+          - ~CORRECT~ Modifica i valori dei pixel di un'immagine scalandoli ed aggiungendo un offset in modo da ottenere dei nuovi valori definiti in un intervallo diverso da quello di partenza 
           - Modifica i valori d'intensità dei pixel di un'immagine moltiplicandoli tra di loro in modo da ottenere un contrasto più netto rispetto al contrasto dell'immagine originaria
           - Migliora il contrasto dell'immagine normalizzando ogni pixel sottraendogli il valore della media e dividendolo per la deviazione standard, entrambe calcolate usando tutti i valori dei pixel dell'immagine originaria 
           - Nessuna delle altre risposte è corretta
@@ -1459,7 +1458,7 @@ groups:
         prompt: |
           Per calcolare gli edge di un'immagine:
         choices:
-          - ~CORRECT~ Ho bisogno di un operatore locale perchè devo confrontare il valore di un pixel con quello dei suoi vicini
+          - ~CORRECT~ Ho bisogno di un filtro perchè devo confrontare il valore di un pixel con quello dei suoi vicini
           - Ho bisogno di un operatore puntuale perchè devo sogliare il valore di intensità di un pixel selezionando i pixel di luminosità massima 
           - Ho bisogno che l'immagine sia una funzione continua perché devo calcolarmi le sue derivate orizzontali e verticali
           - Ho bisogno che le derivate orizzontali e verticali dell'immagine siano definite tra 0 ed 1 
@@ -1490,7 +1489,7 @@ groups:
           Posso calcolare l'edge detection di un'immagine:
         choices:
           - ~CORRECT~ Usando la convoluzione e due kernel specifici, uno per derivata
-          - Usando la convoluzione e un kernel specifico    
+          - Usando la convoluzione e un kernel specifico che calcola il modulo del gradiente    
           - Usando la convoluzione e due kernel specifici, uno per il modulo e uno per la direzione del gradiente
           - Non posso usare la convoluzione
           - Lascia questa domanda in bianco
@@ -1586,7 +1585,7 @@ groups:
           Se applico un filtro Gaussiano "passa basso" ad F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine, vuol dire che:
         choices:
           - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al cento di F e diminuisce man mano che ci si allontana dal centro
-          - Sommo i coefficienti in F per un valore variabile, che è proporzionale alla loro distanza rispetto al centro di F
+          - Sommo ai coefficienti in F un valore variabile, che è proporzionale alla loro distanza rispetto al centro di F
           - Modifico i coefficienti di F trasformandoli nei valori reali di una Gaussiana bidimensionale, centrata sul cento di F
           - Calcolo la funzione esponenziale (elemento per elemento) di F, usando "e" (numero di Nepero) come base ed i coefficienti di F come esponente
           - Lascia questa domanda in bianco
