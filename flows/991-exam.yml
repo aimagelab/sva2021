@@ -1112,8 +1112,8 @@ groups:
           Le bande principali dello spettro elettromagnetico sono, ordinate dalle frequenze più alte a quelle più basse:
         choices:
           - ~CORRECT~ Raggi Gamma, Raggi X, Ultravioletto, Spettro Visibile, Infrarosso, Microonde, Onde Radio
-          - Raggi X, Raggi Gamma, Ultravioletto, Spettro Visibile, Infrarosso, Onde Radio, Microonde
-          - Raggi X, Raggi Gamma, Infrarosso, Spettro Visibile, Ultravioletto, Onde Radio, Microonde
+          - Spettro Visibile, Raggi X, Raggi Gamma, Ultravioletto, Infrarosso, Onde Radio, Microonde
+          - Spettro Visibile, Raggi X, Raggi Gamma, Infrarosso, Ultravioletto, Onde Radio, Microonde
           - Onde Radio, Raggi X, Infrarosso, Spettro Visibile, Ultravioletto, Microonde, Raggi Gamma
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1138,9 +1138,9 @@ groups:
         title: Domanda
         prompt: |
           Il processo di Quantizzazione:
-        choices:          
-          - ~CORRECT~ Converte un valore reale di un segnale analogico in un valore discreto scelto in un insieme finito di elementi 
-          - Converte un valore discreto in un valore reale proporzionale all'intensità del segnale acquisita dal sensore
+        choices:
+          - ~CORRECT~ Converte un valore reale di un segnale continuo in un valore discreto scelto in un insieme finito di elementi 
+          - Converte un valore discreto in un valore continuo proporzionale all'intensità del segnale acquisito dal sensore
           - Fornisce una misura quantitativa dell'intensità complessiva dell'immagine
           - Quantifica il numero di campioni del segnale in funzione del numero di sensori adottati per acquisirlo
           - Lascia questa domanda in bianco
@@ -1176,7 +1176,7 @@ groups:
         choices:
           - ~CORRECT~ Uno spazio in cui la distanza tra due punti A e B è proporzionale alla differenza percepita dal cervello umano tra i corrispondenti colori rappresentatati da A e B 
           - Uno spazio in cui tutti i suoi punti corrispondono a colori percepiti in maniera uniforme dal cervello umano   
-          - Uno spazio in cui i colori hanno una distribuzione di probabilità uniforme e la somma delle distanza tra tre punti A, B e C è proporzionale alla somma delle corrispondenti lunghezze d'onda 
+          - Uno spazio in cui i colori hanno una distribuzione di probabilità uniforme e la somma delle distanze tra tre punti A, B e C è proporzionale alla somma delle corrispondenti lunghezze d'onda 
           - Nessuna delle altre risposte è corretta
           - Lascia questa domanda in bianco
         shuffle: true
@@ -1248,12 +1248,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          In un'istogramma cumulativo di un'immagine, il valore del bin n-esimo:
+          In un istogramma tridimensionale di un'immagine a colori RGB (senza binning), il valore del bin (i,j,k):
         choices:
-          - ~CORRECT~ E' il numero di pixel con valori d'intensità minori o uguali ad n
-          - E' la somma dei valori d'intensità dei primi n pixel dell'immagine  
-          - E' la probabilità che ci siano pixel d'intensità n  
-          - E' il valore cumulativo dei tre colori primari corrispondenti al pixel n-esimo
+          - ~CORRECT~ E' il numero di pixel dell'immagine che hanno un valore di rosso i, verde j e blu k
+          - E' la terna dei valori RGB del pixel dell'immagine di coordinate (i,j)  
+          - E' il valore cumulativo dei pixel dell'immagine quantizzata con k valori d'intensità  
+          - E' il valore cumulativo dei tre colori primari d'intensità minore o uguale a k fino al pixel di coordinate (i,j)
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1286,7 +1286,7 @@ groups:
           - ~CORRECT~ Viene tipicamente applicato a tutti i pixel dell'immagine, prendendo in input un valore d'intensità e restituendone un altro  
           - Viene tipicamente applicato a tutti i pixel dell'immagine, producendo un output che dipende in maniera omogenea dal pixel attuale e dai suoi vicini
           - Si basa su una funzione necessariamente non lineare e applicata al valore di intensità di un unico pixel
-          - Si basa su una funzione che ha come argomento le coordinate di un pixel specifico
+          - Si basa su una funzione che ha come unico argomento le coordinate di un pixel specifico
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1297,12 +1297,12 @@ groups:
         is_optional_page: false
         title: Domanda
         prompt: |
-          La procedura di automatic contrast adjustment:
+          La procedura di automatic contrast adjustment applicata ad un'immagine I in scala di grigi definiti in un intervallo [A, B]:
         choices:
-          - ~CORRECT~ Modifica i valori dei pixel di un'immagine scalandoli ed aggiungendo un offset in modo da ottenere dei nuovi valori definiti in un intervallo diverso da quello di partenza 
-          - Modifica i valori d'intensità dei pixel di un'immagine moltiplicandoli tra di loro in modo da ottenere un contrasto più netto rispetto al contrasto dell'immagine originaria
-          - Migliora il contrasto dell'immagine normalizzando ogni pixel sottraendogli il valore della media e dividendolo per la deviazione standard, entrambe calcolate usando tutti i valori dei pixel dell'immagine originaria 
-          - Nessuna delle altre risposte è corretta
+          - ~CORRECT~ Cambia l'intervallo di valori in [C, D].  Gli intervalli [A, B] e [C, D] possono essere sovrapposti  
+          - Modifica i valori d'intensità dei pixel di I moltiplicandoli tra di loro in modo da ottenere un contrasto più netto rispetto al contrasto dell'immagine originaria
+          - Cambia l'intervallo di valori in [C, D].  Gli intervalli [A, B] e [C, D] non devono intersecarsi 
+          - Modifica i valori d'intensità dei pixel di I in modo da ottenere un contrasto più netto rispetto al contrasto dell'immagine originaria ma lascia inalterato l'intervallo [A, B]
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1379,8 +1379,8 @@ groups:
         prompt: |
           Nella convoluzione di un'immagine X con un filtro definito dal kernel K:
         choices:
-          - ~CORRECT~ Per ogni finestra di X, moltiplico i valori dei pixel della finestra con i corrispondenti elementi di K e sommo il risultato di tutte le moltiplicazioni
-          - Per ogni finestra di X, sommo i valori dei pixel della finestra con i corrispondenti elementi di K e moltiplico il risultato di tutte le somme
+          - ~CORRECT~ Per ogni finestra di X delle stesse dimensioni di K, moltiplico i valori dei pixel della finestra con i corrispondenti elementi di K e sommo il risultato di tutte le moltiplicazioni
+          - Per ogni finestra di X delle stesse dimensioni di K, sommo i valori dei pixel della finestra con i corrispondenti elementi di K e moltiplico il risultato di tutte le somme
           - Sommo il valore dei pixel di X con i corrispondenti elementi di K traslati in modo che l'hot spot coincida con l'origine di X 
           - Moltiplico elemento per elemento i pixel di X con gli elementi di K traslati in modo che l'hot spot corrisponda all'elemento centrale di K
           - Lascia questa domanda in bianco
@@ -1459,7 +1459,7 @@ groups:
         prompt: |
           Per calcolare gli edge di un'immagine:
         choices:
-          - ~CORRECT~ Ho bisogno di un filtro perchè devo confrontare il valore di un pixel con quello dei suoi vicini
+          - ~CORRECT~ Ho bisogno di usare dei filtri perchè devo confrontare il valore di un pixel con quello dei suoi vicini
           - Ho bisogno di un operatore puntuale perchè devo sogliare il valore di intensità di un pixel selezionando i pixel di luminosità massima 
           - Ho bisogno che l'immagine sia una funzione continua perché devo calcolarmi le sue derivate orizzontali e verticali
           - Ho bisogno che le derivate orizzontali e verticali dell'immagine siano definite tra 0 ed 1 
@@ -1585,7 +1585,7 @@ groups:
         prompt: |
           Se applico un filtro Gaussiano "passa basso" ad F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine, vuol dire che:
         choices:
-          - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al cento di F e diminuisce man mano che ci si allontana dal centro
+          - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al cento di F e tende a 0 man mano che ci si allontana dal centro
           - Sommo ai coefficienti in F un valore variabile, che è proporzionale alla loro distanza rispetto al centro di F
           - Modifico i coefficienti di F trasformandoli nei valori reali di una Gaussiana bidimensionale, centrata sul cento di F
           - Calcolo la funzione esponenziale (elemento per elemento) di F, usando "e" (numero di Nepero) come base ed i coefficienti di F come esponente
@@ -1600,9 +1600,9 @@ groups:
         prompt: |
           Per rimuovere del rumore periodico da un'immagine è possibile:
         choices:
-          - ~CORRECT~ Agire sui coefficienti DFT dell'immagine, con un filtro Notch o Band reject
-          - Agire sui coefficienti DFT dell'immagine, con un filtro Butterworth
-          - Agire sui coefficienti DFT dell'immagine, con un filtro Guassiano
-          - Agire sul dominio spaziale dell'immagine, applicando un filtro Butterworth
+          - ~CORRECT~ Agire sui coefficienti DFT dell'immagine con un filtro Notch o Band reject
+          - Agire sui coefficienti DFT dell'immagine con un filtro Butterworth
+          - Agire sui coefficienti DFT dell'immagine con un filtro Guassiano
+          - Agire sul dominio spaziale dell'immagine applicando un filtro Butterworth
           - Lascia questa domanda in bianco
         shuffle: true        
