@@ -1352,7 +1352,7 @@ groups:
           - ~CORRECT~ L'applicazione di una funzione ad una finestra dei pixel dell'immagine, facendo scorrere tale finestra su tutta l'immagine
           - Nessuna delle altre risposte è corretta
           - L'applicazione di una funzione che prende in input tutti i pixel dell'immagine e ne calcola la somma pesata
-          - L'applicazione di una funzione che filtra i valori dei pixel di una specifica finestra dell'immagine centrata sulla parte centrale di quest'ultima
+          - L'applicazione di una funzione che filtra i valori dei pixel di una specifica finestra dell'immagine centrata sulla parte centrale dell'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1408,10 +1408,10 @@ groups:
         prompt: |
           Il filtro mediano si applica:
         choices:
-          - ~CORRECT~ Considerando il valore dei pixel contenuti nella finestra dell'immagine, ordinandoli e restituendo l'elemento centrale
-          - Applicando un'operazione lineare che calcola la mediana di una regione dell'immagine
-          - Considerando gli elementi contenuti nella finestra dell'immagine e calcolandone la media
-          - Eliminando i pixel della finestra dell'immagine il cui valore è diverso dalla mediana calcolata su tutta l'immagine
+          - ~CORRECT~ Considerando il valore dei pixel contenuti nella finestra corrente dell'immagine, ordinandoli e restituendo l'elemento centrale
+          - Applicando un'operazione lineare che calcola la mediana della finestra corrente dell'immagine
+          - Considerando gli elementi contenuti nella finestra corrente dell'immagine e calcolandone la media
+          - Eliminando i pixel della finestra corrente dell'immagine il cui valore è diverso dalla mediana calcolata su tutta l'immagine
           - Lascia questa domanda in bianco
         shuffle: true
 
