@@ -1585,9 +1585,9 @@ groups:
         prompt: |
           Se applico un filtro Gaussiano "passa basso" ad F, dove F è la matrice "centrata" dei coefficienti DFT di un'immagine, vuol dire che:
         choices:
-          - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al cento di F e tende a 0 man mano che ci si allontana dal centro
+          - ~CORRECT~ Moltiplico i coefficienti in F per un valore variabile, che è massimo al centro di F e tende a 0 man mano che ci si allontana dal centro
           - Sommo ai coefficienti in F un valore variabile, che è proporzionale alla loro distanza rispetto al centro di F
-          - Modifico i coefficienti di F trasformandoli nei valori reali di una Gaussiana bidimensionale, centrata sul cento di F
+          - Modifico i coefficienti di F trasformandoli nei valori reali di una Gaussiana bidimensionale, centrata sul centro di F
           - Calcolo la funzione esponenziale (elemento per elemento) di F, usando "e" (numero di Nepero) come base ed i coefficienti di F come esponente
           - Lascia questa domanda in bianco
         shuffle: true        
