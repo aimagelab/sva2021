@@ -1426,7 +1426,7 @@ groups:
           - ~CORRECT~ Può contenere coefficienti sia positivi che negativi
           - Può contenere solo coefficienti positivi
           - Può contenere solo coefficienti interi
-          - Può contenere solo coefficienti compresi tra 0 ed 1
+          - Può contenere solo coefficienti compresi tra -1 ed 1
           - Lascia questa domanda in bianco
         shuffle: true
 
@@ -1513,7 +1513,7 @@ groups:
           - ~CORRECT~ Tanti quanti il numero di pixel dell'immagine di partenza 
           - Tanti quanti il numero di livelli di grigio dell'immagine di partenza
           - Tutti valori positivi
-          - Tutti valori compresi tra 0 ed 1 
+          - Tutti valori compresi tra -1 ed 1 
           - Lascia questa domanda in bianco
         shuffle: true
 
